@@ -12,7 +12,7 @@ body .serif{font-family:'Noto Serif TC',serif}
 body{font-family: 'Noto Sans TC','Microsoft Jhenghei';letter-spacing: 0.05em;font-size: 15px;width: 100%;overflow-x: hidden;color: #262626;background: #f5f5f5}
 button:focus,input:focus,textarea:focus,a:focus{outline: none}
 a{color: #2e2e2e}
-a:hover{text-decoration: none;color: #f67100}
+a:hover{text-decoration: none;color: #6091ff}
 img{max-width: 100%}
 .desc img{height: auto!important;margin: auto;display: block}
 .text-danger{color: #ff0000!important}

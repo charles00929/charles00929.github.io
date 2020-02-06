@@ -11,7 +11,14 @@ const portfolio = [
         ,"type": "cart"
         ,"images": ["benetton_01.jpg"]
         ,"url": "https://www.benetton.com"
-        ,"description": ""
+        ,"description": 
+        `本站中實作多樣促銷模組，大多是零售業常用的促銷，如：買一送一、買上衣下褲n折、檔期促銷、買額折扣等等。
+        <br>此外，促銷模組尚有細節機制：
+        <ul>
+            <li>促銷折扣可以在商品購買前計算出促銷價格供消費者參考</li>
+            <li>此模組支援退貨機制，依照退貨品項，判斷失效的促銷再計算退款</li>
+            <li>隨著購物清單內的數量增減，動態更新正確的促銷價格</li>
+        </ul>`
     }
     // ,{
     //     "name": "大前展威運動用品"
@@ -116,7 +123,7 @@ const portfolio = [
         ,"type": "cart"
         ,"images": ["facha_01.jpg"]
         ,"url": "https://www.facha.com.tw"
-        ,"description": ""
+        ,"description": `3D服裝展示，可調整布料及部位樣式，全站提供相當多的部位樣式供客戶選擇`
     }
     ,{
         "name": "樂享企業"
