@@ -1,3 +1,3 @@
-# [作品集](charles00929.github.io)
+# [作品集](https://charles00929.github.io)
 
 點擊上方連結即可觀看，內容為在職期間 參與/獨立 實作的專案，大類分為「購物車」及「形象官網」兩類。部分專案中有特殊的功能實作，如[班尼頓服飾](https://www.benetton.com.tw)中的多樣促銷模組、[法裁西服](https://www.facha.com.tw)中的3D展示客製服裝、[瑞德利手錶](https://www.watch-readily.com.tw)中的商品保固註冊管理系統、[大前展威運動用品](https://www.team-uniform.com.tw)中的商品多重庫存管理擴充，以及....
