@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天賦池瀏覽器</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    body { background: #1a1c1e; color: #d8dde3; font-size: .875rem; }
+    .layer-badge {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 700;
+      padding: .1rem .35rem;
+      border-radius: .25rem;
+      vertical-align: middle;
+      margin-right: .3rem;
+    }
+    .l1 { background:#495057; color:#fff; }
+    .l2 { background:#1a6fc4; color:#fff; }
+    .l3 { background:#3a3d42; color:#adb5bd; }
+    .l4 { background:#2e3136; color:#8a9099; }
+
+    .section-card {
+      background:#26292d;
+      border-radius:.5rem;
+      box-shadow:0 1px 6px rgba(0,0,0,.4);
+      margin-bottom:1rem;
+      border:1px solid #3a3d42;
+    }
+    .section-header {
+      display:flex; align-items:center; gap:.5rem;
+      padding:.6rem 1rem;
+      border-bottom:1px solid #3a3d42;
+      cursor:pointer;
+      user-select:none;
+      border-radius:.5rem .5rem 0 0;
+      font-size:1rem;
+    }
+    .section-header strong { font-size:1rem; }
+    .section-header:hover { background:#2e3136; }
+    .section-body { padding:.75rem 1rem; }
+
+    .talent-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+    }
+    .talent-chip {
+      display:inline-flex; align-items:center; gap:.35rem;
+      padding:.3rem .55rem;
+      border-radius:.3rem;
+      background:#1a1c1e;
+      border:1px solid #3a3d42;
+      font-size:.78rem;
+      color:#c8cdd3;
+      cursor:default;
+      transition: background .1s, border-color .1s;
+    }
+    .talent-chip:hover { background:#2e3136; border-color:#5a6069; color:#fff; }
+    .talent-chip img {
+      width:28px; height:28px; object-fit:contain; border-radius:.25rem;
+      background:#111315; padding:1px;
+    }
+    .chip-id { font-size:.68rem; color:#555; margin-left:.1rem; }
+    .chip-empty { color:#555; font-style:italic; font-size:.75rem; }
+
+    .filter-bar { background:#26292d; border-bottom:1px solid #3a3d42; }
+    .filter-bar select, .filter-bar input {
+      font-size:.82rem;
+      background:#1a1c1e; color:#d8dde3; border-color:#4a4d52;
+    }
+    .filter-bar select:focus, .filter-bar input:focus {
+      background:#1a1c1e; color:#fff; border-color:#6c9fd4; box-shadow:none;
+    }
+    .filter-bar select option { background:#26292d; }
+
+    .sub-section {
+      border-left: 2px solid #3a3d42;
+      padding-left: 1.25rem;
+      margin-top: .6rem;
+    }
+    .sub-section.l2-battle  { border-color: #1a6fc4; }
+    .sub-section.l2-craft   { border-color: #c06000; }
+    .sub-section.l2-general { border-color: #4a4d52; }
+    .sub-section.l3 { border-color: #3a3d42; padding-left: 1.5rem; }
+    .sub-section.l4 { border-color: #2e3136; padding-left: 1.75rem; }
+
+    .sub-label {
+      font-size:.72rem; font-weight:700; text-transform:uppercase;
+      letter-spacing:.05em; color:#7a8290; margin-bottom:.35rem;
+    }
+    .collapse-icon { margin-left:auto; color:#555; font-size:.8rem; }
+    .badge-count { background:#3a3d42; color:#adb5bd; font-size:.65rem;
+                   padding:.1rem .35rem; border-radius:.25rem; }
+
+    /* L2 sub-headers */
+    .section-header.l2-header { background:#1e2a38; border-radius:.35rem; border:1px solid #2a4060; }
+    .section-header.l2-header:hover { background:#243347; }
+    .section-header.l3-header { background:transparent; border-radius:.35rem; border:none; padding-left:0; }
+    .section-header.l3-header:hover { background:#2e3136; border-radius:.3rem; }
+
+    /* Navbar override */
+    .navbar.bg-dark { background:#111315 !important; border-bottom:1px solid #2a2d30; }
+    .btn-outline-light { border-color:#4a4d52; color:#aaa; }
+    .btn-outline-light:hover { background:#2e3136; color:#fff; border-color:#6c9fd4; }
+    .btn-outline-secondary { border-color:#4a4d52; color:#aaa; background:transparent; }
+    .btn-outline-secondary:hover { background:#2e3136; color:#fff; border-color:#6c9fd4; }
+    strong { color:#e0e4ea; }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-2 sticky-top">
+    <div class="container-fluid">
+      <span class="navbar-brand h6 mb-0">⚔️ Soulmask</span>
+      <div class="position-absolute start-50 translate-middle-x d-flex gap-1">
+        <a href="index.html" class="btn btn-sm btn-outline-light">天賦模擬器</a>
+        <span class="btn btn-sm btn-secondary disabled">天賦池瀏覽器</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Filter bar -->
+  <div class="filter-bar sticky-top py-2 px-3 d-flex gap-2 align-items-center flex-wrap" style="top:52px;z-index:100">
+    <input v-model="search" type="text" class="form-control form-control-sm" style="max-width:200px" placeholder="搜尋天賦名稱...">
+    <select v-model="filterSlot" class="form-select form-select-sm" style="max-width:160px">
+      <option value="">所有 Slot</option>
+      <option value="normal">一般 (normal)</option>
+      <option value="tribe">部落 (tribe)</option>
+      <option value="origin">出身 (origin)</option>
+      <option value="title">稱號 (title)</option>
+      <option value="experience">經驗 (experience)</option>
+    </select>
+    <span class="text-muted small ms-2">共 {{ matchCount }} 筆天賦</span>
+    <button class="btn btn-outline-secondary btn-sm ms-auto" @click="expandAll">全展開</button>
+    <button class="btn btn-outline-secondary btn-sm" @click="collapseAll">全收合</button>
+  </div>
+
+  <div v-if="loading" class="text-center py-5 text-muted">
+    <div class="spinner-border spinner-border-sm me-2"></div>載入資料中...
+  </div>
+
+  <div v-else class="container-fluid py-3" style="max-width:1400px">
+
+    <!-- Experience -->
+    <template v-if="!filterSlot || filterSlot === 'experience'">
+      <div class="section-card">
+        <div class="section-header" @click="toggle('experience')">
+          <span class="layer-badge l1">L1</span>
+          <strong>experience — 經驗天賦</strong>
+          <span class="badge-count">{{ pools.experience?.length ?? 0 }}</span>
+          <span class="collapse-icon">{{ open.experience ? '▲' : '▼' }}</span>
+        </div>
+        <div class="section-body" v-show="open.experience">
+          <div class="talent-grid">
+            <template v-if="filteredIds(pools.experience ?? []).length">
+              <div v-for="id in filteredIds(pools.experience ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                <span>{{ tm[id]?.name }}</span>
+                <span class="chip-id">#{{ id }}</span>
+              </div>
+            </template>
+            <span v-else class="chip-empty">無符合結果</span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Tribe -->
+    <template v-if="!filterSlot || filterSlot === 'tribe'">
+      <div class="section-card">
+        <div class="section-header" @click="toggle('tribe')">
+          <span class="layer-badge l1">L1</span>
+          <strong>tribe — 部落天賦</strong>
+          <span class="badge-count">{{ tribeTotal }}</span>
+          <span class="collapse-icon">{{ open.tribe ? '▲' : '▼' }}</span>
+        </div>
+        <div class="section-body" v-show="open.tribe">
+          <div v-for="(ids, tribeKey) in tribeSlots" :key="tribeKey" class="sub-section l3 mb-3">
+            <div class="sub-label">
+              <span class="layer-badge l3">部落</span>{{ tribeKey }}
+              <span class="badge-count ms-1">{{ ids.length }}</span>
+            </div>
+            <div class="talent-grid">
+              <template v-if="filteredIds(ids).length">
+                <div v-for="id in filteredIds(ids)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                  <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                  <span>{{ tm[id]?.name }}</span>
+                  <span class="chip-id">#{{ id }}</span>
+                </div>
+              </template>
+              <span v-else class="chip-empty">無符合結果</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Origin -->
+    <template v-if="!filterSlot || filterSlot === 'origin'">
+      <div class="section-card">
+        <div class="section-header" @click="toggle('origin')">
+          <span class="layer-badge l1">L1</span>
+          <strong>origin — 出身天賦</strong>
+          <span class="badge-count">{{ slotTotal('origin') }}</span>
+          <span class="collapse-icon">{{ open.origin ? '▲' : '▼' }}</span>
+        </div>
+        <div class="section-body" v-show="open.origin">
+          <template v-for="(ids, cat) in pools.origin" :key="cat">
+            <div class="sub-section mb-2" :class="'l2-'+cat">
+              <div class="sub-label">
+                <span class="layer-badge l2">{{ cat === 'ungroup' ? 'ungroup' : 'L2' }}</span>{{ cat }}
+                <span class="badge-count ms-1">{{ ids.length }}</span>
+              </div>
+              <div class="talent-grid">
+                <template v-if="filteredIds(ids).length">
+                  <div v-for="id in filteredIds(ids)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                    <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                    <span>{{ tm[id]?.name }}</span>
+                    <span class="chip-id">#{{ id }}</span>
+                  </div>
+                </template>
+                <span v-else class="chip-empty">無符合結果</span>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </template>
+
+    <!-- Title -->
+    <template v-if="!filterSlot || filterSlot === 'title'">
+      <div class="section-card">
+        <div class="section-header" @click="toggle('title')">
+          <span class="layer-badge l1">L1</span>
+          <strong>title — 稱號天賦</strong>
+          <span class="badge-count">{{ slotTotal('title') }}</span>
+          <span class="collapse-icon">{{ open.title ? '▲' : '▼' }}</span>
+        </div>
+        <div class="section-body" v-show="open.title">
+          <template v-for="(ids, cat) in pools.title" :key="cat">
+            <div class="sub-section mb-2" :class="'l2-'+cat">
+              <div class="sub-label">
+                <span class="layer-badge l2">{{ cat === 'ungroup' ? 'ungroup' : 'L2' }}</span>{{ cat }}
+                <span class="badge-count ms-1">{{ ids.length }}</span>
+              </div>
+              <div class="talent-grid">
+                <template v-if="filteredIds(ids).length">
+                  <div v-for="id in filteredIds(ids)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                    <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                    <span>{{ tm[id]?.name }}</span>
+                    <span class="chip-id">#{{ id }}</span>
+                  </div>
+                </template>
+                <span v-else class="chip-empty">無符合結果</span>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </template>
+
+    <!-- Normal (4-layer) -->
+    <template v-if="!filterSlot || filterSlot === 'normal'">
+      <div class="section-card">
+        <div class="section-header" @click="toggle('normal')">
+          <span class="layer-badge l1">L1</span>
+          <strong>normal — 一般天賦</strong>
+          <span class="badge-count">{{ normalTotal }}</span>
+          <span class="collapse-icon">{{ open.normal ? '▲' : '▼' }}</span>
+        </div>
+        <div class="section-body" v-show="open.normal">
+
+          <!-- ungroup -->
+          <div class="sub-section mb-3">
+            <div class="sub-label">
+              <span class="layer-badge l1">ungroup</span>所有角色通用
+              <span class="badge-count ms-1">{{ (pools.normal?.ungroup ?? []).length }}</span>
+            </div>
+            <div class="talent-grid">
+              <template v-if="filteredIds(pools.normal?.ungroup ?? []).length">
+                <div v-for="id in filteredIds(pools.normal?.ungroup ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                  <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                  <span>{{ tm[id]?.name }}</span>
+                  <span class="chip-id">#{{ id }}</span>
+                </div>
+              </template>
+              <span v-else class="chip-empty">無符合結果</span>
+            </div>
+          </div>
+
+          <!-- battle / craft -->
+          <div v-for="cat in ['battle','craft']" :key="cat" class="mb-3">
+            <div class="section-header l2-header rounded" @click="toggle('normal_'+cat)">
+              <span class="layer-badge l2">L2</span>
+              <strong>{{ cat === 'battle' ? '⚔️ battle — 戰鬥類' : '🔨 craft — 工藝類' }}</strong>
+              <span class="badge-count">{{ countNormalCat(cat) }}</span>
+              <span class="collapse-icon">{{ open['normal_'+cat] ? '▲' : '▼' }}</span>
+            </div>
+
+            <div v-show="open['normal_'+cat]" class="ps-2 pt-2">
+              <!-- L2 ungroup -->
+              <div class="sub-section mb-2" :class="'l2-'+cat">
+                <div class="sub-label">
+                  <span class="layer-badge l2">ungroup</span>{{ cat }} 通用（無部落限制）
+                  <span class="badge-count ms-1">{{ (pools.normal?.[cat]?.ungroup ?? []).length }}</span>
+                </div>
+                <div class="talent-grid">
+                  <template v-if="filteredIds(pools.normal?.[cat]?.ungroup ?? []).length">
+                    <div v-for="id in filteredIds(pools.normal?.[cat]?.ungroup ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                      <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                      <span>{{ tm[id]?.name }}</span>
+                      <span class="chip-id">#{{ id }}</span>
+                    </div>
+                  </template>
+                  <span v-else class="chip-empty">無（所有 {{ cat }} 天賦皆歸屬部落）</span>
+                </div>
+              </div>
+
+              <!-- L3 tribes -->
+              <div v-for="(tribeBucket, tribeKey) in tribeEntries(cat)" :key="tribeKey"
+                   class="sub-section l3 mb-2">
+                <div class="section-header l3-header rounded py-1"
+                     @click="toggle('normal_'+cat+'_'+tribeKey)">
+                  <span class="layer-badge l3">L3</span>
+                  <strong>{{ tribeKey }}</strong>
+                  <span class="badge-count">{{ countTribeBucket(tribeBucket) }}</span>
+                  <span class="collapse-icon">{{ open['normal_'+cat+'_'+tribeKey] ? '▲' : '▼' }}</span>
+                </div>
+
+                <div v-show="open['normal_'+cat+'_'+tribeKey]" class="ps-2 pt-2">
+                  <!-- L3 ungroup -->
+                  <div v-if="tribeBucket.ungroup?.length || search" class="sub-section l3 mb-2">
+                    <div class="sub-label">
+                      <span class="layer-badge l3">ungroup</span>{{ tribeKey }} × {{ cat }} 通用
+                      <span class="badge-count ms-1">{{ tribeBucket.ungroup?.length ?? 0 }}</span>
+                    </div>
+                    <div class="talent-grid">
+                      <template v-if="filteredIds(tribeBucket.ungroup ?? []).length">
+                        <div v-for="id in filteredIds(tribeBucket.ungroup ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                          <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                          <span>{{ tm[id]?.name }}</span>
+                          <span class="chip-id">#{{ id }}</span>
+                        </div>
+                      </template>
+                      <span v-else class="chip-empty">無</span>
+                    </div>
+                  </div>
+
+                  <!-- L4 specific classes -->
+                  <div v-for="(classIds, classKey) in l4Entries(tribeBucket)" :key="classKey"
+                       class="sub-section l4 mb-2">
+                    <div class="sub-label">
+                      <span class="layer-badge l4">L4</span>{{ tribeKey }} × {{ classKey }}
+                      <span class="badge-count ms-1">{{ classIds.length }}</span>
+                    </div>
+                    <div class="talent-grid">
+                      <template v-if="filteredIds(classIds).length">
+                        <div v-for="id in filteredIds(classIds)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
+                          <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
+                          <span>{{ tm[id]?.name }}</span>
+                          <span class="chip-id">#{{ id }}</span>
+                        </div>
+                      </template>
+                      <span v-else class="chip-empty">無</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </template>
+
+  </div>
+</div>
+
+<!-- Tooltip popup -->
+<div id="g-tip" style="
+  display:none; position:fixed; z-index:9999;
+  max-width:240px; background:rgba(20,20,30,.92); color:#f0f0f0;
+  border-radius:.4rem; padding:.5rem .65rem; font-size:.78rem;
+  pointer-events:none; line-height:1.45; box-shadow:0 3px 12px rgba(0,0,0,.4)
+"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+const { createApp } = Vue;
+
+createApp({
+  data() {
+    return {
+      loading: true,
+      talents: [],
+      tm: {},       // id → talent
+      pools: {},
+      search: '',
+      filterSlot: '',
+      open: {},     // section open state
+    };
+  },
+
+  computed: {
+    tribeSlots() {
+      const t = this.pools.tribe || {};
+      return Object.fromEntries(Object.entries(t).filter(([k]) => k !== 'ungroup'));
+    },
+    tribeTotal() {
+      return Object.values(this.tribeSlots).reduce((s, v) => s + v.length, 0);
+    },
+    normalTotal() {
+      const n = this.pools.normal;
+      if (!n) return 0;
+      const countObj = o => {
+        if (Array.isArray(o)) return o.length;
+        return Object.values(o).reduce((s, v) => s + countObj(v), 0);
+      };
+      return countObj(n);
+    },
+    matchCount() {
+      const q = this.search.trim().toLowerCase();
+      if (!q) return this.talents.length;
+      return this.talents.filter(t => t.name.toLowerCase().includes(q)).length;
+    },
+  },
+
+  methods: {
+    async loadData() {
+      const [talents, pools] = await Promise.all([
+        fetch('data/talents.json').then(r => r.json()),
+        fetch('data/talent_pools.json').then(r => r.json()),
+      ]);
+      this.talents = talents;
+      this.tm      = Object.fromEntries(talents.map(t => [t.id, t]));
+      this.pools   = pools;
+      // 預設展開 L1
+      this.open = {
+        experience: true, tribe: true, origin: true, title: true, normal: true,
+        normal_battle: true, normal_craft: true,
+      };
+    },
+
+    toggle(key) {
+      this.open[key] = !this.open[key];
+    },
+
+    expandAll() {
+      const keys = ['experience','tribe','origin','title','normal','normal_battle','normal_craft'];
+      const tribes = Object.keys(this.tribeSlots);
+      for (const cat of ['battle','craft']) {
+        for (const tr of tribes) keys.push(`normal_${cat}_${tr}`);
+      }
+      keys.forEach(k => { this.open[k] = true; });
+    },
+
+    collapseAll() {
+      Object.keys(this.open).forEach(k => { this.open[k] = false; });
+    },
+
+    filteredIds(ids) {
+      const q = this.search.trim().toLowerCase();
+      if (!q) return ids;
+      return ids.filter(id => (this.tm[id]?.name || '').toLowerCase().includes(q));
+    },
+
+    slotTotal(slot) {
+      const b = this.pools[slot];
+      if (!b) return 0;
+      return Object.values(b).reduce((s, v) => s + v.length, 0);
+    },
+
+    countNormalCat(cat) {
+      const b = this.pools.normal?.[cat];
+      if (!b) return 0;
+      const count = o => Array.isArray(o) ? o.length : Object.values(o).reduce((s, v) => s + count(v), 0);
+      return count(b);
+    },
+
+    countTribeBucket(tb) {
+      const count = o => Array.isArray(o) ? o.length : Object.values(o).reduce((s, v) => s + count(v), 0);
+      return count(tb);
+    },
+
+    tribeEntries(cat) {
+      const b = this.pools.normal?.[cat] || {};
+      return Object.fromEntries(Object.entries(b).filter(([k]) => k !== 'ungroup'));
+    },
+
+    l4Entries(tribeBucket) {
+      return Object.fromEntries(Object.entries(tribeBucket).filter(([k]) => k !== 'ungroup'));
+    },
+
+    tip(id) {
+      const t = this.tm[id];
+      if (!t) return '';
+      let desc = t.description || '';
+      if (t.description_values?.length) {
+        const vals = t.description_values;
+        let i = 0;
+        desc = desc.replace(/#/g, () => vals[i++] ?? '#');
+      }
+      return `${t.name}\n${desc}`;
+    },
+    showTip(e, id) {
+      const t = this.tm[id];
+      if (!t) return;
+      let desc = t.description || '';
+      if (t.description_values?.length) {
+        const vals = t.description_values;
+        let i = 0;
+        desc = desc.replace(/#/g, () => vals[i++] ?? '#');
+      }
+      const el = document.getElementById('g-tip');
+      el.innerHTML = `<div style="font-weight:700;margin-bottom:.2rem">${t.name}</div><div>${desc}</div>`;
+      el.style.display = 'block';
+      const r = e.target.closest('.talent-chip').getBoundingClientRect();
+      el.style.left = (r.right + 8) + 'px';
+      el.style.top  = r.top + 'px';
+    },
+    hideTip() {
+      document.getElementById('g-tip').style.display = 'none';
+    },
+  },
+
+  async mounted() {
+    await this.loadData();
+    this.loading = false;
+  },
+}).mount('#app');
+
+// (tooltip handled by Vue showTip/hideTip methods)
+</script>
+</body>
+</html>

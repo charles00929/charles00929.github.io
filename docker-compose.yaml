@@ -1,0 +1,17 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: sts-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./soulmask:/usr/share/nginx/html:ro
+    restart: unless-stopped
+
+  python:
+    image: python:3.12-slim
+    container_name: sts-python
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    command: sleep infinity

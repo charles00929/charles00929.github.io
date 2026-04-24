@@ -1,0 +1,7 @@
+[
+  {"id": 1, "key": "savagehorn", "en_name": "Savagehorn", "ch_name": "蠻角", "tag_ids": [1]},
+  {"id": 2, "key": "wildwolf",   "en_name": "Wildwolf",   "ch_name": "野狼", "tag_ids": [2]},
+  {"id": 3, "key": "fang",       "en_name": "Fang",       "ch_name": "毒牙", "tag_ids": [3]},
+  {"id": 4, "key": "claw",       "en_name": "Claw",       "ch_name": "利爪", "tag_ids": [4]},
+  {"id": 5, "key": "flint",      "en_name": "Flint",      "ch_name": "火石", "tag_ids": [5]}
+]

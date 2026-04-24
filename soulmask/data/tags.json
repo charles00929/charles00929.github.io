@@ -1,0 +1,13 @@
+[
+  {"id": 1,  "category": "tribe",   "key": "savagehorn", "en_name": "Savagehorn", "ch_name": "蠻角"},
+  {"id": 2,  "category": "tribe",   "key": "wildwolf",   "en_name": "Wildwolf",   "ch_name": "野狼"},
+  {"id": 3,  "category": "tribe",   "key": "fang",       "en_name": "Fang",       "ch_name": "毒牙"},
+  {"id": 4,  "category": "tribe",   "key": "claw",       "en_name": "Claw",       "ch_name": "利爪"},
+  {"id": 5,  "category": "tribe",   "key": "flint",      "en_name": "Flint",      "ch_name": "火石"},
+  {"id": 6,  "category": "class",   "key": "battle",     "en_name": "Battle",     "ch_name": "戰鬥"},
+  {"id": 7,  "category": "class",   "key": "craft",      "en_name": "Craft",      "ch_name": "工藝"},
+  {"id": 8,  "category": "class",   "key": "hunter",     "en_name": "Hunter",     "ch_name": "獵手"},
+  {"id": 9,  "category": "class",   "key": "warrior",    "en_name": "Warrior",    "ch_name": "戰士"},
+  {"id": 10, "category": "class",   "key": "defender",   "en_name": "Defender",   "ch_name": "衛士"},
+  {"id": 11, "category": "general", "key": "general",    "en_name": "General",    "ch_name": "通用"}
+]
