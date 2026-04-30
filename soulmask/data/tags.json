@@ -4,10 +4,16 @@
   {"id": 3,  "category": "tribe",   "key": "fang",       "en_name": "Fang",       "ch_name": "毒牙"},
   {"id": 4,  "category": "tribe",   "key": "claw",       "en_name": "Claw",       "ch_name": "利爪"},
   {"id": 5,  "category": "tribe",   "key": "flint",      "en_name": "Flint",      "ch_name": "火石"},
-  {"id": 6,  "category": "class",   "key": "battle",     "en_name": "Battle",     "ch_name": "戰鬥"},
-  {"id": 7,  "category": "class",   "key": "craft",      "en_name": "Craft",      "ch_name": "工藝"},
-  {"id": 8,  "category": "class",   "key": "hunter",     "en_name": "Hunter",     "ch_name": "獵手"},
-  {"id": 9,  "category": "class",   "key": "warrior",    "en_name": "Warrior",    "ch_name": "戰士"},
-  {"id": 10, "category": "class",   "key": "defender",   "en_name": "Defender",   "ch_name": "衛士"},
-  {"id": 11, "category": "general", "key": "general",    "en_name": "General",    "ch_name": "通用"}
+
+  {"id":80,  "category": "class",   "key": "battle",     "en_name": "Battle",     "ch_name": "戰鬥"},
+  {"id":81,  "category": "class",   "key": "hunter",     "en_name": "Hunter",     "ch_name": "獵手"},
+  {"id":82,  "category": "class",   "key": "warrior",    "en_name": "Warrior",    "ch_name": "戰士"},
+  {"id":83,  "category": "class",   "key": "defender",   "en_name": "Defender",   "ch_name": "衛士"},
+
+  {"id":50, "category": "class",   "key": "craft",      "en_name": "Craft",      "ch_name": "工藝"},
+  {"id":51, "category": "class",   "key": "laborer",      "en_name": "Laborer",      "ch_name": "力工"},
+  {"id":52, "category": "class",   "key": "porter",      "en_name": "Porter",      "ch_name": "雜工"},
+  {"id":53, "category": "class",   "key": "craftman",      "en_name": "Craftman",      "ch_name": "匠人"},
+
+  {"id": 187, "category": "general", "key": "general",    "en_name": "General",    "ch_name": "通用"}
 ]

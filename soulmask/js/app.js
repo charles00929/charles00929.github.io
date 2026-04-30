@@ -275,7 +275,7 @@ createApp({
     manualTribeOptions() {
       const tribeKey = this.tribes.find(t => t.id === this.manualForm?.tribe_id)?.key;
       if (!tribeKey) return [];
-      return this.talents.filter(t => t.slot === 'tribe.' + tribeKey);
+      return this.pools.tribe?.[tribeKey] || [];
     },
 
     // Manual modal 用：一般天賦選項
@@ -393,9 +393,9 @@ createApp({
     // 回傳 slot 的天賦物件陣列（給 ManualForm 選項用），依職業群過濾
     buildSlotPool(slot, cls) {
       const bucket  = this.pools[slot] || {};
-      const general = (bucket.ungroup || []).map(id => this.talentsMap[id]).filter(Boolean);
+      const general = bucket.ungroup || [];
       if (!cls) return general;
-      const catPool = (bucket[cls.category] || []).map(id => this.talentsMap[id]).filter(Boolean);
+      const catPool = bucket[cls.category] || [];
       const seen = new Set(catPool.map(t => t.id));
       return [...catPool, ...general.filter(t => !seen.has(t.id))];
     },
@@ -417,31 +417,55 @@ createApp({
     },
 
     // 回傳一般天賦候選 ID 陣列（L1→L4 巢狀聯集）
+    // 支援新格式：craft 無部落層，直接為 class bucket
     buildNormalPool(tribe_id, class_id) {
       const n     = this.pools.normal || {};
       const tribe = tribe_id ? this.tribes.find(t => t.id === tribe_id)  : null;
       const cls   = class_id ? this.classes.find(c => c.id === class_id) : null;
-      const ids   = new Set(n.ungroup || []);
+      const ids   = new Set();
+      const add   = arr => (arr || []).forEach(id => ids.add(id));
+
+      add(n.ungroup);  // L1 ungroup（無 category tag）
 
       const cats = cls ? [cls.category] : ['battle', 'craft'];
       cats.forEach(cat => {
-        const catBucket = n[cat] || {};
-        (catBucket.ungroup || []).forEach(id => ids.add(id));
+        const catBucket = n[cat];
+        if (!catBucket) return;
+        if (Array.isArray(catBucket)) { add(catBucket); return; }
 
-        if (tribe) {
-          const tribeBucket = catBucket[tribe.key] || {};
-          (tribeBucket.ungroup || []).forEach(id => ids.add(id));
+        add(catBucket.ungroup);  // L2 ungroup（category 通用）
 
-          if (cls) {
-            // L4：具體職業（hunter/warrior/defender 等）
-            const baseKey = cls.key.replace(/_(low|mid|high)$/, '');
-            (tribeBucket[baseKey] || []).forEach(id => ids.add(id));
+        const tribeKey    = tribe?.key;
+        const tribeBucket = tribeKey ? catBucket[tribeKey] : null;
+
+        if (tribeBucket != null) {
+          // 有部落層（battle）
+          if (Array.isArray(tribeBucket)) {
+            add(tribeBucket);
           } else {
-            // 無職業：展開部落內所有 L4
-            Object.entries(tribeBucket).forEach(([k, v]) => {
-              if (k !== 'ungroup') v.forEach(id => ids.add(id));
-            });
+            add(tribeBucket.ungroup);  // L3 ungroup
+            if (cls) {
+              add(tribeBucket[cls.key]);  // L4 specific class
+            } else {
+              Object.entries(tribeBucket)
+                .filter(([k]) => k !== 'ungroup')
+                .forEach(([, v]) => add(Array.isArray(v) ? v : []));
+            }
           }
+        } else {
+          // 無部落層（craft），class bucket 直接在 catBucket 下
+          if (cls) {
+            add(catBucket[cls.key]);
+          } else if (!tribeKey) {
+            // 無部落篩選：展開所有 sub-bucket
+            Object.entries(catBucket)
+              .filter(([k]) => k !== 'ungroup')
+              .forEach(([, v]) => {
+                if (Array.isArray(v)) add(v);
+                else { add(v.ungroup); Object.entries(v).filter(([k]) => k !== 'ungroup').forEach(([, a]) => add(a)); }
+              });
+          }
+          // else: 有部落篩選但此 category 無部落層，僅 L2 ungroup 已加入
         }
       });
 
@@ -452,12 +476,14 @@ createApp({
       return arr.length ? arr[Math.floor(Math.random() * arr.length)] : null;
     },
 
-    // pool: id 陣列；amount: 取幾個；used: Set（傳入時過濾並更新）
+    // pool: talent 物件或 id 陣列；amount: 取幾個；used: Set（以 id 過濾並更新）
     pickTalents(pool, amount, used = null) {
-      const avail  = used ? pool.filter(id => !used.has(id)) : [...pool];
+      const getId = item => (typeof item === 'object' && item !== null) ? item.id : item;
+      const avail  = used ? pool.filter(item => !used.has(getId(item))) : [...pool];
       const picked = avail.sort(() => Math.random() - 0.5).slice(0, amount);
-      if (used) picked.forEach(id => used.add(id));
-      return picked;
+      const ids    = picked.map(getId);
+      if (used) ids.forEach(id => used.add(id));
+      return ids;
     },
 
 

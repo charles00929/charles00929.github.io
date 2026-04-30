@@ -144,240 +144,12 @@
   </div>
 
   <div v-else class="container-fluid py-3" style="max-width:1400px">
-
-    <!-- Experience -->
-    <template v-if="!filterSlot || filterSlot === 'experience'">
-      <div class="section-card">
-        <div class="section-header" @click="toggle('experience')">
-          <span class="layer-badge l1">L1</span>
-          <strong>experience — 經驗天賦</strong>
-          <span class="badge-count">{{ pools.experience?.length ?? 0 }}</span>
-          <span class="collapse-icon">{{ open.experience ? '▲' : '▼' }}</span>
-        </div>
-        <div class="section-body" v-show="open.experience">
-          <div class="talent-grid">
-            <template v-if="filteredIds(pools.experience ?? []).length">
-              <div v-for="id in filteredIds(pools.experience ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                <span>{{ tm[id]?.name }}</span>
-                <span class="chip-id">#{{ id }}</span>
-              </div>
-            </template>
-            <span v-else class="chip-empty">無符合結果</span>
-          </div>
-        </div>
-      </div>
-    </template>
-
-    <!-- Tribe -->
-    <template v-if="!filterSlot || filterSlot === 'tribe'">
-      <div class="section-card">
-        <div class="section-header" @click="toggle('tribe')">
-          <span class="layer-badge l1">L1</span>
-          <strong>tribe — 部落天賦</strong>
-          <span class="badge-count">{{ tribeTotal }}</span>
-          <span class="collapse-icon">{{ open.tribe ? '▲' : '▼' }}</span>
-        </div>
-        <div class="section-body" v-show="open.tribe">
-          <div v-for="(ids, tribeKey) in tribeSlots" :key="tribeKey" class="sub-section l3 mb-3">
-            <div class="sub-label">
-              <span class="layer-badge l3">部落</span>{{ tribeKey }}
-              <span class="badge-count ms-1">{{ ids.length }}</span>
-            </div>
-            <div class="talent-grid">
-              <template v-if="filteredIds(ids).length">
-                <div v-for="id in filteredIds(ids)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                  <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                  <span>{{ tm[id]?.name }}</span>
-                  <span class="chip-id">#{{ id }}</span>
-                </div>
-              </template>
-              <span v-else class="chip-empty">無符合結果</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
-
-    <!-- Origin -->
-    <template v-if="!filterSlot || filterSlot === 'origin'">
-      <div class="section-card">
-        <div class="section-header" @click="toggle('origin')">
-          <span class="layer-badge l1">L1</span>
-          <strong>origin — 出身天賦</strong>
-          <span class="badge-count">{{ slotTotal('origin') }}</span>
-          <span class="collapse-icon">{{ open.origin ? '▲' : '▼' }}</span>
-        </div>
-        <div class="section-body" v-show="open.origin">
-          <template v-for="(ids, cat) in pools.origin" :key="cat">
-            <div class="sub-section mb-2" :class="'l2-'+cat">
-              <div class="sub-label">
-                <span class="layer-badge l2">{{ cat === 'ungroup' ? 'ungroup' : 'L2' }}</span>{{ cat }}
-                <span class="badge-count ms-1">{{ ids.length }}</span>
-              </div>
-              <div class="talent-grid">
-                <template v-if="filteredIds(ids).length">
-                  <div v-for="id in filteredIds(ids)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                    <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                    <span>{{ tm[id]?.name }}</span>
-                    <span class="chip-id">#{{ id }}</span>
-                  </div>
-                </template>
-                <span v-else class="chip-empty">無符合結果</span>
-              </div>
-            </div>
-          </template>
-        </div>
-      </div>
-    </template>
-
-    <!-- Title -->
-    <template v-if="!filterSlot || filterSlot === 'title'">
-      <div class="section-card">
-        <div class="section-header" @click="toggle('title')">
-          <span class="layer-badge l1">L1</span>
-          <strong>title — 稱號天賦</strong>
-          <span class="badge-count">{{ slotTotal('title') }}</span>
-          <span class="collapse-icon">{{ open.title ? '▲' : '▼' }}</span>
-        </div>
-        <div class="section-body" v-show="open.title">
-          <template v-for="(ids, cat) in pools.title" :key="cat">
-            <div class="sub-section mb-2" :class="'l2-'+cat">
-              <div class="sub-label">
-                <span class="layer-badge l2">{{ cat === 'ungroup' ? 'ungroup' : 'L2' }}</span>{{ cat }}
-                <span class="badge-count ms-1">{{ ids.length }}</span>
-              </div>
-              <div class="talent-grid">
-                <template v-if="filteredIds(ids).length">
-                  <div v-for="id in filteredIds(ids)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                    <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                    <span>{{ tm[id]?.name }}</span>
-                    <span class="chip-id">#{{ id }}</span>
-                  </div>
-                </template>
-                <span v-else class="chip-empty">無符合結果</span>
-              </div>
-            </div>
-          </template>
-        </div>
-      </div>
-    </template>
-
-    <!-- Normal (4-layer) -->
-    <template v-if="!filterSlot || filterSlot === 'normal'">
-      <div class="section-card">
-        <div class="section-header" @click="toggle('normal')">
-          <span class="layer-badge l1">L1</span>
-          <strong>normal — 一般天賦</strong>
-          <span class="badge-count">{{ normalTotal }}</span>
-          <span class="collapse-icon">{{ open.normal ? '▲' : '▼' }}</span>
-        </div>
-        <div class="section-body" v-show="open.normal">
-
-          <!-- ungroup -->
-          <div class="sub-section mb-3">
-            <div class="sub-label">
-              <span class="layer-badge l1">ungroup</span>所有角色通用
-              <span class="badge-count ms-1">{{ (pools.normal?.ungroup ?? []).length }}</span>
-            </div>
-            <div class="talent-grid">
-              <template v-if="filteredIds(pools.normal?.ungroup ?? []).length">
-                <div v-for="id in filteredIds(pools.normal?.ungroup ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                  <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                  <span>{{ tm[id]?.name }}</span>
-                  <span class="chip-id">#{{ id }}</span>
-                </div>
-              </template>
-              <span v-else class="chip-empty">無符合結果</span>
-            </div>
-          </div>
-
-          <!-- battle / craft -->
-          <div v-for="cat in ['battle','craft']" :key="cat" class="mb-3">
-            <div class="section-header l2-header rounded" @click="toggle('normal_'+cat)">
-              <span class="layer-badge l2">L2</span>
-              <strong>{{ cat === 'battle' ? '⚔️ battle — 戰鬥類' : '🔨 craft — 工藝類' }}</strong>
-              <span class="badge-count">{{ countNormalCat(cat) }}</span>
-              <span class="collapse-icon">{{ open['normal_'+cat] ? '▲' : '▼' }}</span>
-            </div>
-
-            <div v-show="open['normal_'+cat]" class="ps-2 pt-2">
-              <!-- L2 ungroup -->
-              <div class="sub-section mb-2" :class="'l2-'+cat">
-                <div class="sub-label">
-                  <span class="layer-badge l2">ungroup</span>{{ cat }} 通用（無部落限制）
-                  <span class="badge-count ms-1">{{ (pools.normal?.[cat]?.ungroup ?? []).length }}</span>
-                </div>
-                <div class="talent-grid">
-                  <template v-if="filteredIds(pools.normal?.[cat]?.ungroup ?? []).length">
-                    <div v-for="id in filteredIds(pools.normal?.[cat]?.ungroup ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                      <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                      <span>{{ tm[id]?.name }}</span>
-                      <span class="chip-id">#{{ id }}</span>
-                    </div>
-                  </template>
-                  <span v-else class="chip-empty">無（所有 {{ cat }} 天賦皆歸屬部落）</span>
-                </div>
-              </div>
-
-              <!-- L3 tribes -->
-              <div v-for="(tribeBucket, tribeKey) in tribeEntries(cat)" :key="tribeKey"
-                   class="sub-section l3 mb-2">
-                <div class="section-header l3-header rounded py-1"
-                     @click="toggle('normal_'+cat+'_'+tribeKey)">
-                  <span class="layer-badge l3">L3</span>
-                  <strong>{{ tribeKey }}</strong>
-                  <span class="badge-count">{{ countTribeBucket(tribeBucket) }}</span>
-                  <span class="collapse-icon">{{ open['normal_'+cat+'_'+tribeKey] ? '▲' : '▼' }}</span>
-                </div>
-
-                <div v-show="open['normal_'+cat+'_'+tribeKey]" class="ps-2 pt-2">
-                  <!-- L3 ungroup -->
-                  <div v-if="tribeBucket.ungroup?.length || search" class="sub-section l3 mb-2">
-                    <div class="sub-label">
-                      <span class="layer-badge l3">ungroup</span>{{ tribeKey }} × {{ cat }} 通用
-                      <span class="badge-count ms-1">{{ tribeBucket.ungroup?.length ?? 0 }}</span>
-                    </div>
-                    <div class="talent-grid">
-                      <template v-if="filteredIds(tribeBucket.ungroup ?? []).length">
-                        <div v-for="id in filteredIds(tribeBucket.ungroup ?? [])" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                          <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                          <span>{{ tm[id]?.name }}</span>
-                          <span class="chip-id">#{{ id }}</span>
-                        </div>
-                      </template>
-                      <span v-else class="chip-empty">無</span>
-                    </div>
-                  </div>
-
-                  <!-- L4 specific classes -->
-                  <div v-for="(classIds, classKey) in l4Entries(tribeBucket)" :key="classKey"
-                       class="sub-section l4 mb-2">
-                    <div class="sub-label">
-                      <span class="layer-badge l4">L4</span>{{ tribeKey }} × {{ classKey }}
-                      <span class="badge-count ms-1">{{ classIds.length }}</span>
-                    </div>
-                    <div class="talent-grid">
-                      <template v-if="filteredIds(classIds).length">
-                        <div v-for="id in filteredIds(classIds)" :key="id" class="talent-chip" @mouseenter="showTip($event, id)" @mouseleave="hideTip()">
-                          <img :src="tm[id]?.icon" @error="$event.target.style.opacity='.2'">
-                          <span>{{ tm[id]?.name }}</span>
-                          <span class="chip-id">#{{ id }}</span>
-                        </div>
-                      </template>
-                      <span v-else class="chip-empty">無</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </template>
-
+    <pool-node
+      v-for="slotKey in visibleSlotKeys" :key="slotKey"
+      :node-key="slotKey"
+      :data="pools[slotKey] ?? []"
+      :depth="0" :path="[]">
+    </pool-node>
   </div>
 </div>
 
@@ -392,43 +164,51 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
-const { createApp } = Vue;
+const { createApp, computed } = Vue;
 
-createApp({
+const SLOT_ORDER  = ['experience', 'tribe', 'origin', 'title', 'normal'];
+const SLOT_LABELS = {
+  experience: 'experience — 經驗天賦',
+  tribe:      'tribe — 部落天賦',
+  origin:     'origin — 出身天賦',
+  title:      'title — 稱號天賦',
+  normal:     'normal — 一般天賦',
+};
+
+const app = createApp({
   data() {
     return {
-      loading: true,
-      talents: [],
-      tm: {},       // id → talent
-      pools: {},
-      search: '',
+      loading:    true,
+      talents:    [],
+      pools:      {},
+      search:     '',
       filterSlot: '',
-      open: {},     // section open state
+      open:       {},
     };
   },
 
   computed: {
-    tribeSlots() {
-      const t = this.pools.tribe || {};
-      return Object.fromEntries(Object.entries(t).filter(([k]) => k !== 'ungroup'));
-    },
-    tribeTotal() {
-      return Object.values(this.tribeSlots).reduce((s, v) => s + v.length, 0);
-    },
-    normalTotal() {
-      const n = this.pools.normal;
-      if (!n) return 0;
-      const countObj = o => {
-        if (Array.isArray(o)) return o.length;
-        return Object.values(o).reduce((s, v) => s + countObj(v), 0);
-      };
-      return countObj(n);
-    },
     matchCount() {
       const q = this.search.trim().toLowerCase();
       if (!q) return this.talents.length;
       return this.talents.filter(t => t.name.toLowerCase().includes(q)).length;
     },
+    visibleSlotKeys() {
+      return SLOT_ORDER.filter(k =>
+        this.pools[k] !== undefined && (!this.filterSlot || this.filterSlot === k)
+      );
+    },
+  },
+
+  provide() {
+    return {
+      openState: this.open,                                        // reactive object
+      doToggle:  (key) => { this.open[key] = !this.open[key]; },
+      searchRef: computed(() => this.search),                      // reactive ref
+      deepCount: (v) => this.deepCount(v),
+      showTip:   (e, t) => this.showTip(e, t),
+      hideTip:   () => this.hideTip(),
+    };
   },
 
   methods: {
@@ -438,104 +218,166 @@ createApp({
         fetch('data/talent_pools.json').then(r => r.json()),
       ]);
       this.talents = talents;
-      this.tm      = Object.fromEntries(talents.map(t => [t.id, t]));
       this.pools   = pools;
-      // 預設展開 L1
-      this.open = {
-        experience: true, tribe: true, origin: true, title: true, normal: true,
-        normal_battle: true, normal_craft: true,
-      };
-    },
-
-    toggle(key) {
-      this.open[key] = !this.open[key];
+      this.expandAll();
     },
 
     expandAll() {
-      const keys = ['experience','tribe','origin','title','normal','normal_battle','normal_craft'];
-      const tribes = Object.keys(this.tribeSlots);
-      for (const cat of ['battle','craft']) {
-        for (const tr of tribes) keys.push(`normal_${cat}_${tr}`);
-      }
-      keys.forEach(k => { this.open[k] = true; });
+      const walk = (data, path) => {
+        if (path.length) this.open[path.join('_')] = true;
+        if (!Array.isArray(data) && typeof data === 'object' && data !== null)
+          Object.entries(data).forEach(([k, v]) => walk(v, [...path, k]));
+      };
+      SLOT_ORDER.forEach(k => { if (this.pools[k] !== undefined) walk(this.pools[k], [k]); });
     },
 
-    collapseAll() {
-      Object.keys(this.open).forEach(k => { this.open[k] = false; });
+    collapseAll() { Object.keys(this.open).forEach(k => { this.open[k] = false; }); },
+
+    deepCount(val) {
+      if (Array.isArray(val)) return val.length;
+      if (typeof val !== 'object' || val === null) return 0;
+      return Object.values(val).reduce((s, v) => s + this.deepCount(v), 0);
     },
 
-    filteredIds(ids) {
-      const q = this.search.trim().toLowerCase();
-      if (!q) return ids;
-      return ids.filter(id => (this.tm[id]?.name || '').toLowerCase().includes(q));
-    },
-
-    slotTotal(slot) {
-      const b = this.pools[slot];
-      if (!b) return 0;
-      return Object.values(b).reduce((s, v) => s + v.length, 0);
-    },
-
-    countNormalCat(cat) {
-      const b = this.pools.normal?.[cat];
-      if (!b) return 0;
-      const count = o => Array.isArray(o) ? o.length : Object.values(o).reduce((s, v) => s + count(v), 0);
-      return count(b);
-    },
-
-    countTribeBucket(tb) {
-      const count = o => Array.isArray(o) ? o.length : Object.values(o).reduce((s, v) => s + count(v), 0);
-      return count(tb);
-    },
-
-    tribeEntries(cat) {
-      const b = this.pools.normal?.[cat] || {};
-      return Object.fromEntries(Object.entries(b).filter(([k]) => k !== 'ungroup'));
-    },
-
-    l4Entries(tribeBucket) {
-      return Object.fromEntries(Object.entries(tribeBucket).filter(([k]) => k !== 'ungroup'));
-    },
-
-    tip(id) {
-      const t = this.tm[id];
-      if (!t) return '';
-      let desc = t.description || '';
-      if (t.description_values?.length) {
-        const vals = t.description_values;
+    showTip(event, talent) {
+      let desc = talent.description || '';
+      if (talent.description_values?.length) {
         let i = 0;
-        desc = desc.replace(/#/g, () => vals[i++] ?? '#');
-      }
-      return `${t.name}\n${desc}`;
-    },
-    showTip(e, id) {
-      const t = this.tm[id];
-      if (!t) return;
-      let desc = t.description || '';
-      if (t.description_values?.length) {
-        const vals = t.description_values;
-        let i = 0;
-        desc = desc.replace(/#/g, () => vals[i++] ?? '#');
+        desc = desc.replace(/#/g, () => talent.description_values[i++] ?? '#');
       }
       const el = document.getElementById('g-tip');
-      el.innerHTML = `<div style="font-weight:700;margin-bottom:.2rem">${t.name}</div><div>${desc}</div>`;
+      el.innerHTML = `<div style="font-weight:700;margin-bottom:.2rem">${talent.name}</div><div>${desc}</div>`;
       el.style.display = 'block';
-      const r = e.target.closest('.talent-chip').getBoundingClientRect();
+      const r = event.target.closest('.talent-chip').getBoundingClientRect();
       el.style.left = (r.right + 8) + 'px';
       el.style.top  = r.top + 'px';
     },
-    hideTip() {
-      document.getElementById('g-tip').style.display = 'none';
-    },
+    hideTip() { document.getElementById('g-tip').style.display = 'none'; },
   },
 
   async mounted() {
     await this.loadData();
     this.loading = false;
   },
-}).mount('#app');
+});
 
-// (tooltip handled by Vue showTip/hideTip methods)
+// ── talent-grid ──────────────────────────────────────────────────────────────
+// Renders a flat chip grid; receives pre-filtered talent objects.
+app.component('talent-grid', {
+  props: { talents: { type: Array, default: () => [] } },
+  inject: ['showTip', 'hideTip'],
+  template: `
+    <div class="talent-grid">
+      <template v-if="talents.length">
+        <div v-for="t in talents" :key="t.id" class="talent-chip"
+             @mouseenter="showTip($event, t)" @mouseleave="hideTip()">
+          <img :src="t.icon" @error="$event.target.style.opacity='.2'">
+          <span>{{ t.name }}</span>
+          <span class="chip-id">#{{ t.id }}</span>
+        </div>
+      </template>
+      <span v-else class="chip-empty">無符合結果</span>
+    </div>
+  `,
+});
+
+// ── pool-node ─────────────────────────────────────────────────────────────────
+// Recursive component:
+//   Array  → leaf  → labeled sub-section + talent-grid  (depth 1+)
+//           OR top-level section card with inline grid   (depth 0)
+//   Object → node  → collapsible header + recurse into children
+app.component('pool-node', {
+  name: 'PoolNode',
+  props: {
+    nodeKey: { type: String, required: true },
+    data:    { type: [Array, Object], required: true },
+    depth:   { type: Number, default: 0 },
+    path:    { type: Array,  default: () => [] },
+  },
+  inject: ['openState', 'doToggle', 'searchRef', 'deepCount'],
+
+  computed: {
+    openKey()   { return [...this.path, this.nodeKey].join('_'); },
+    isOpen()    { return this.openState[this.openKey] !== false; },
+    isLeaf()    { return Array.isArray(this.data); },
+    entries()   { return this.isLeaf ? [] : Object.entries(this.data); },
+    childPath() { return [...this.path, this.nodeKey]; },
+
+    // filtered leaf items — reactive via searchRef
+    filtered() {
+      if (!this.isLeaf) return [];
+      const q = this.searchRef.value?.trim().toLowerCase();
+      if (!q) return this.data;
+      return this.data.filter(t => (t.name || '').toLowerCase().includes(q));
+    },
+
+    // header counts: unfiltered total
+    total() { return this.isLeaf ? this.data.length : this.deepCount(this.data); },
+
+    slotLabel() { return SLOT_LABELS[this.nodeKey] || this.nodeKey; },
+    badge()     { return this.nodeKey === 'ungroup' ? 'ungroup' : ['L1','L2','L3','L4'][Math.min(this.depth, 3)]; },
+    badgeCls()  { return ['l1','l2','l3','l4'][Math.min(this.depth, 3)]; },
+    headerCls() { return this.depth <= 1 ? 'l2-header' : 'l3-header'; },
+    // border-color for leaf sub-sections derived purely from nodeKey + depth
+    sectionCls() {
+      if (this.depth === 1) return 'l2-' + this.nodeKey;   // e.g. l2-battle, l2-craft
+      if (this.depth === 2) return 'l3';
+      return 'l4';
+    },
+  },
+
+  template: `
+    <!-- depth 0: L1 section card ───────────────────────────────────────── -->
+    <template v-if="depth === 0">
+      <div class="section-card">
+        <div class="section-header" @click="doToggle(openKey)">
+          <span class="layer-badge l1">L1</span>
+          <strong>{{ slotLabel }}</strong>
+          <span class="badge-count">{{ total }}</span>
+          <span class="collapse-icon">{{ isOpen ? '▲' : '▼' }}</span>
+        </div>
+        <div class="section-body" v-show="isOpen">
+          <talent-grid v-if="isLeaf" :talents="filtered"></talent-grid>
+          <pool-node v-else
+            v-for="[k, v] in entries" :key="k"
+            :node-key="k" :data="v" :depth="1" :path="childPath">
+          </pool-node>
+        </div>
+      </div>
+    </template>
+
+    <!-- depth 1+, non-leaf: collapsible sub-header ─────────────────────── -->
+    <template v-else-if="!isLeaf">
+      <div class="mb-2">
+        <div class="section-header rounded" :class="headerCls" @click="doToggle(openKey)">
+          <span class="layer-badge" :class="badgeCls">{{ badge }}</span>
+          <strong>{{ nodeKey }}</strong>
+          <span class="badge-count">{{ total }}</span>
+          <span class="collapse-icon">{{ isOpen ? '▲' : '▼' }}</span>
+        </div>
+        <div v-show="isOpen" class="ps-2 pt-1">
+          <pool-node
+            v-for="[k, v] in entries" :key="k"
+            :node-key="k" :data="v" :depth="depth + 1" :path="childPath">
+          </pool-node>
+        </div>
+      </div>
+    </template>
+
+    <!-- depth 1+, leaf: labeled sub-section ────────────────────────────── -->
+    <template v-else>
+      <div class="sub-section mb-2" :class="sectionCls">
+        <div class="sub-label">
+          <span class="layer-badge" :class="badgeCls">{{ badge }}</span>{{ nodeKey }}
+          <span class="badge-count ms-1">{{ filtered.length }}</span>
+        </div>
+        <talent-grid :talents="filtered"></talent-grid>
+      </div>
+    </template>
+  `,
+});
+
+app.mount('#app');
 </script>
 </body>
 </html>

@@ -1,7 +1,5 @@
 [
   {
-    "id": 1,
-    "slot": "normal",
     "game_ids": [
       100011,
       100012,
@@ -15,13 +13,9 @@
       9
     ],
     "icon": "img/ng/tianfu_yidongsudutisheng.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 2,
-    "slot": "normal",
     "game_ids": [
       100021,
       100022,
@@ -35,13 +29,9 @@
       9
     ],
     "icon": "img/ng/tianfu_gongjisudutisheng.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 3,
-    "slot": "normal",
     "game_ids": [
       100031,
       100032,
@@ -55,13 +45,9 @@
       9
     ],
     "icon": "img/ng/tianfu_gongjilitisheng.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 4,
-    "slot": "normal",
     "game_ids": [
       100041,
       100042,
@@ -75,13 +61,9 @@
       9
     ],
     "icon": "img/ng/tianfu_fangyutisheng.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 5,
-    "slot": "normal",
     "game_ids": [
       100051,
       100052,
@@ -95,13 +77,9 @@
       9
     ],
     "icon": "img/ng/tianfu_shanghaijianmiantisheng.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 6,
-    "slot": "normal",
     "game_ids": [
       100061,
       100062,
@@ -115,13 +93,9 @@
       9
     ],
     "icon": "img/ng/tianfu_shengmingzhitisheng.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 7,
-    "slot": "normal",
     "game_ids": [
       100071,
       100072,
@@ -135,13 +109,9 @@
       50
     ],
     "icon": "img/ng/tianfu_bulvqingying.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 8,
-    "slot": "normal",
     "game_ids": [
       100081,
       100082,
@@ -155,13 +125,9 @@
       50
     ],
     "icon": "img/ng/tianfu_qiaowushengxi.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 9,
-    "slot": "normal",
     "game_ids": [
       100091,
       100092,
@@ -175,13 +141,9 @@
       60
     ],
     "icon": "img/ng/tianfu_shanyuweizhuang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 10,
-    "slot": "normal",
     "game_ids": [
       100101,
       100102,
@@ -195,13 +157,9 @@
       35
     ],
     "icon": "img/ng/tianfu_jimin.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 11,
-    "slot": "normal",
     "game_ids": [
       100123
     ],
@@ -209,13 +167,9 @@
     "description": "I'm always a step ahead of death. Movement Speed +5%.",
     "description_values": null,
     "icon": "img/ng/tianfu_tuijiaolinghuo.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 12,
-    "slot": "normal",
     "game_ids": [
       100133
     ],
@@ -223,13 +177,9 @@
     "description": "This body has endured so much. Max Stamina +20.",
     "description_values": null,
     "icon": "img/ng/tianfu_shenqianglizhuang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 13,
-    "slot": "normal",
     "game_ids": [
       100143
     ],
@@ -237,13 +187,9 @@
     "description": "When attacked, has a 20% chance to increase DEF and Max HP by 5% each for 30 seconds. (CD: 50s)",
     "description_values": null,
     "icon": "img/ng/tianfu_weijifanying.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 14,
-    "slot": "normal",
     "game_ids": [
       100153
     ],
@@ -251,13 +197,9 @@
     "description": "Recovers 15% of HP in 5 seconds when HP is below 15%. (CD: 35s)",
     "description_values": null,
     "icon": "img/ng/tianfu_chuisizhengzha.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 15,
-    "slot": "normal",
     "game_ids": [
       100163
     ],
@@ -265,13 +207,9 @@
     "description": "Gains a 5% damage boost for 6 seconds after blocking an enemy attack. (CD: 15s)",
     "description_values": null,
     "icon": "img/ng/tianfu_fanjishike.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 16,
-    "slot": "normal",
     "game_ids": [
       100173
     ],
@@ -279,13 +217,9 @@
     "description": "When HP is low (<15% or near death) and under attack, the attacker may face God's fury. (CD: 15s)",
     "description_values": null,
     "icon": "img/ng/tianfu_taotuosuming.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 17,
-    "slot": "normal",
     "game_ids": [
       110011,
       110012,
@@ -299,13 +233,9 @@
       60
     ],
     "icon": "img/ng/tianfu_fuzhongtisheng.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 18,
-    "slot": "normal",
     "game_ids": [
       110021,
       110022,
@@ -319,13 +249,9 @@
       40
     ],
     "icon": "img/ng/tianfu_kangjie.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 19,
-    "slot": "normal",
     "game_ids": [
       110031,
       110032,
@@ -339,13 +265,9 @@
       40
     ],
     "icon": "img/ng/tianfu_kangkouke.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 20,
-    "slot": "normal",
     "game_ids": [
       110041,
       110042,
@@ -359,13 +281,9 @@
       10
     ],
     "icon": "img/ng/tianfu_qianliyan.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 21,
-    "slot": "normal",
     "game_ids": [
       110051,
       110052,
@@ -379,13 +297,9 @@
       15
     ],
     "icon": "img/ng/tianfu_shunfenger.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 22,
-    "slot": "normal",
     "game_ids": [
       120011,
       120012,
@@ -399,13 +313,9 @@
       200
     ],
     "icon": "img/ng/tianfu_shengminghuifujiakuai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 23,
-    "slot": "normal",
     "game_ids": [
       120021,
       120022,
@@ -419,13 +329,9 @@
       50
     ],
     "icon": "img/ng/tianfu_tilihuifujiakuai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 24,
-    "slot": "normal",
     "game_ids": [
       120031,
       120032,
@@ -439,13 +345,9 @@
       50
     ],
     "icon": "img/ng/tianfu_baoshiduxiaohaosudujiangdi.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 25,
-    "slot": "normal",
     "game_ids": [
       120041,
       120042,
@@ -459,13 +361,9 @@
       50
     ],
     "icon": "img/ng/tianfu_shuifenxiaohaosudujiangdi.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 26,
-    "slot": "normal",
     "game_ids": [
       120051,
       120052,
@@ -479,13 +377,9 @@
       80
     ],
     "icon": "img/ng/tianfu_kuaisuchengzhang.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 27,
-    "slot": "normal",
     "game_ids": [
       130011,
       130012,
@@ -499,13 +393,9 @@
       9
     ],
     "icon": "img/ng/tianfu_daoleiwuqishanghaitigao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 28,
-    "slot": "normal",
     "game_ids": [
       130021,
       130022,
@@ -519,13 +409,9 @@
       9
     ],
     "icon": "img/ng/tianfu_maoleiwuqishanghaitigao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 29,
-    "slot": "normal",
     "game_ids": [
       130031,
       130032,
@@ -539,13 +425,9 @@
       9
     ],
     "icon": "img/ng/tianfu_gongleiwuqishanghaitigao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 30,
-    "slot": "normal",
     "game_ids": [
       130041,
       130042,
@@ -559,13 +441,9 @@
       9
     ],
     "icon": "img/ng/tianfu_chuileiwuqishanghaitigao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 31,
-    "slot": "normal",
     "game_ids": [
       130051,
       130052,
@@ -579,13 +457,9 @@
       9
     ],
     "icon": "img/ng/tianfu_quantaoiwuqishanghaitigao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 32,
-    "slot": "normal",
     "game_ids": [
       130061,
       130062,
@@ -599,13 +473,9 @@
       9
     ],
     "icon": "img/ng/tianfu_zhongjianwuqishanghaitigao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 33,
-    "slot": "normal",
     "game_ids": [
       130071,
       130072,
@@ -619,13 +489,9 @@
       9
     ],
     "icon": "img/ng/tianfu_shuangdaowuqishanghaitigao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 34,
-    "slot": "normal",
     "game_ids": [
       130081,
       130082,
@@ -639,13 +505,9 @@
       20
     ],
     "icon": "img/ng/tianfu_yingpikangchuanci.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 35,
-    "slot": "normal",
     "game_ids": [
       130091,
       130092,
@@ -659,13 +521,9 @@
       20
     ],
     "icon": "img/ng/tianfu_yingpikangqiege.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 36,
-    "slot": "normal",
     "game_ids": [
       130101,
       130102,
@@ -679,13 +537,9 @@
       20
     ],
     "icon": "img/ng/tianfu_yingpikangdaji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 37,
-    "slot": "normal",
     "game_ids": [
       150011,
       150012,
@@ -699,13 +553,9 @@
       15
     ],
     "icon": "img/ng/tianfu__tongkunizhuan.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 38,
-    "slot": "normal",
     "game_ids": [
       150021
     ],
@@ -713,13 +563,9 @@
     "description": "[Hunter Exclusive] Mastered the exclusive multi-shooting skill of bows. Shoots more arrows at the same time every time using this kind of skill.",
     "description_values": null,
     "icon": "img/ng/tianfu_duochongsheji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 39,
-    "slot": "normal",
     "game_ids": [
       150041,
       150042,
@@ -733,13 +579,9 @@
       30
     ],
     "icon": "img/ng/tianfu_qiaojin.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 40,
-    "slot": "normal",
     "game_ids": [
       150051,
       150052,
@@ -753,13 +595,9 @@
       9
     ],
     "icon": "img/ng/tianfu_shanchangroubo.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 41,
-    "slot": "normal",
     "game_ids": [
       150061,
       150062,
@@ -773,13 +611,9 @@
       9
     ],
     "icon": "img/ng/tianfu_yuanchengdaji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 42,
-    "slot": "normal",
     "game_ids": [
       150071,
       150072,
@@ -793,13 +627,9 @@
       20
     ],
     "icon": "img/ng/tianfu_xingyun.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 43,
-    "slot": "normal",
     "game_ids": [
       150081,
       150082,
@@ -813,13 +643,9 @@
       20
     ],
     "icon": "img/ng/tianfu_sheshoujiaobu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 44,
-    "slot": "normal",
     "game_ids": [
       150091,
       150092,
@@ -833,13 +659,9 @@
       55
     ],
     "icon": "img/ng/tianfu_shuliansheji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 45,
-    "slot": "normal",
     "game_ids": [
       150101,
       150102,
@@ -853,13 +675,9 @@
       50
     ],
     "icon": "img/ng/tianfu_kuaisutianzhuang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 46,
-    "slot": "normal",
     "game_ids": [
       150111,
       150112,
@@ -873,13 +691,9 @@
       15
     ],
     "icon": "img/ng/tianfu__zhuiguzhishang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 47,
-    "slot": "normal",
     "game_ids": [
       160011,
       160012,
@@ -893,13 +707,9 @@
       30
     ],
     "icon": "img/ng/tianfu_huiguangfanzhao.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 48,
-    "slot": "normal",
     "game_ids": [
       160021,
       160022,
@@ -913,13 +723,9 @@
       20
     ],
     "icon": "img/ng/tianfu_yexingjuexing.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 49,
-    "slot": "normal",
     "game_ids": [
       160031,
       160032,
@@ -932,14 +738,9 @@
       2
     ],
     "icon": "img/ng/tianfu__nuyanfenshen.webp",
-    "tags": [
-      "claw",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 50,
-    "slot": "normal",
     "game_ids": [
       160041,
       160042,
@@ -953,13 +754,9 @@
       3
     ],
     "icon": "img/ng/tianfu__lieyankuosan.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 51,
-    "slot": "normal",
     "game_ids": [
       160051,
       160052,
@@ -973,13 +770,9 @@
       25
     ],
     "icon": "img/ng/tianfu__zhiming.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 52,
-    "slot": "normal",
     "game_ids": [
       160061,
       160062,
@@ -993,13 +786,9 @@
       30
     ],
     "icon": "img/ng/tianfu_yingjifanying.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 53,
-    "slot": "normal",
     "game_ids": [
       160071,
       160072,
@@ -1013,13 +802,9 @@
       50
     ],
     "icon": "img/ng/tianfu_renrufuzhong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 54,
-    "slot": "normal",
     "game_ids": [
       160081,
       160082,
@@ -1033,14 +818,9 @@
       4
     ],
     "icon": "img/ng/tianfu_yuzhanyuyong.webp",
-    "tags": [
-      "claw",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 55,
-    "slot": "normal",
     "game_ids": [
       160091,
       160092,
@@ -1054,13 +834,9 @@
       8
     ],
     "icon": "img/ng/tianfu__ranshaoweixie.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 56,
-    "slot": "normal",
     "game_ids": [
       160111,
       160112,
@@ -1074,13 +850,9 @@
       30
     ],
     "icon": "img/ng/tianfu_kewangxianxue.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 57,
-    "slot": "normal",
     "game_ids": [
       160121,
       160122,
@@ -1090,13 +862,9 @@
     "description": "Each part has weak spots. 10% chance for taking any part hit as a weak spot.",
     "description_values": null,
     "icon": "img/ng/tianfu_gongqibubei.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 58,
-    "slot": "normal",
     "game_ids": [
       160131,
       160132,
@@ -1110,15 +878,9 @@
       25
     ],
     "icon": "img/ng/tianfu_yizhijianding.webp",
-    "tags": [
-      "flint",
-      "battle",
-      "defender"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 59,
-    "slot": "normal",
     "game_ids": [
       160141,
       160142,
@@ -1132,13 +894,9 @@
       25
     ],
     "icon": "img/ng/tianfu_linghuotaotuo.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 60,
-    "slot": "normal",
     "game_ids": [
       160151,
       160152,
@@ -1151,13 +909,9 @@
       3
     ],
     "icon": "img/ng/tianfu_yinghuashenqu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 61,
-    "slot": "normal",
     "game_ids": [
       160161,
       160162,
@@ -1171,13 +925,9 @@
       50
     ],
     "icon": "img/ng/tianfu_toubuyingji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 62,
-    "slot": "normal",
     "game_ids": [
       160171,
       160172,
@@ -1191,13 +941,9 @@
       50
     ],
     "icon": "img/ng/tianfu_shoubiyingji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 63,
-    "slot": "normal",
     "game_ids": [
       160181,
       160182,
@@ -1211,13 +957,9 @@
       50
     ],
     "icon": "img/ng/tianfu_quganyingji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 64,
-    "slot": "normal",
     "game_ids": [
       160191,
       160192,
@@ -1231,13 +973,9 @@
       50
     ],
     "icon": "img/ng/tianfu_datuiyingji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 65,
-    "slot": "normal",
     "game_ids": [
       160201,
       160202,
@@ -1251,13 +989,9 @@
       25
     ],
     "icon": "img/ng/tianfu_zhitipohuai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 66,
-    "slot": "normal",
     "game_ids": [
       160211,
       160212,
@@ -1271,13 +1005,9 @@
       25
     ],
     "icon": "img/ng/tianfu_quganpohuai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 67,
-    "slot": "normal",
     "game_ids": [
       160221,
       160222,
@@ -1291,13 +1021,9 @@
       25
     ],
     "icon": "img/ng/tianfu_toubupohuai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 68,
-    "slot": "normal",
     "game_ids": [
       160231,
       160232,
@@ -1311,13 +1037,9 @@
       25
     ],
     "icon": "img/ng/tianfu_weibupohuai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 69,
-    "slot": "normal",
     "game_ids": [
       160241,
       160242,
@@ -1331,13 +1053,9 @@
       60
     ],
     "icon": "img/ng/tianfu_ruodianqianghua.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 70,
-    "slot": "normal",
     "game_ids": [
       160251,
       160252,
@@ -1351,13 +1069,9 @@
       20
     ],
     "icon": "img/ng/tianfu_fenqifanji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 71,
-    "slot": "normal",
     "game_ids": [
       160261,
       160262,
@@ -1371,13 +1085,9 @@
       25
     ],
     "icon": "img/ng/tianfu_ruodianzhongji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 72,
-    "slot": "normal",
     "game_ids": [
       160271,
       160272,
@@ -1390,13 +1100,9 @@
       15
     ],
     "icon": "img/ng/tianfu_qingzhuangsuxing.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 73,
-    "slot": "normal",
     "game_ids": [
       160281,
       160282,
@@ -1410,13 +1116,9 @@
       40
     ],
     "icon": "img/ng/tianfu_zhongzhuangbenxi.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 74,
-    "slot": "normal",
     "game_ids": [
       160291,
       160292,
@@ -1430,13 +1132,9 @@
       80
     ],
     "icon": "img/ng/tianfu__rennai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 75,
-    "slot": "normal",
     "game_ids": [
       160301,
       160302,
@@ -1450,13 +1148,9 @@
       50
     ],
     "icon": "img/ng/tianfu_zhuanshouweigong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 76,
-    "slot": "normal",
     "game_ids": [
       160331,
       160332,
@@ -1469,13 +1163,9 @@
       20
     ],
     "icon": "img/ng/tianfu_bishijixu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 77,
-    "slot": "normal",
     "game_ids": [
       160341,
       160342,
@@ -1489,13 +1179,9 @@
       35
     ],
     "icon": "img/ng/tianfu_jixianshanbi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 78,
-    "slot": "normal",
     "game_ids": [
       160351,
       160352,
@@ -1509,15 +1195,9 @@
       30
     ],
     "icon": "img/ng/tianfu__zhanshushanbi.webp",
-    "tags": [
-      "flint",
-      "battle",
-      "defender"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 79,
-    "slot": "normal",
     "game_ids": [
       160371,
       160372,
@@ -1531,14 +1211,9 @@
       2
     ],
     "icon": "img/ng/tianfu_qidingshenxian.webp",
-    "tags": [
-      "fang",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 80,
-    "slot": "normal",
     "game_ids": [
       160381,
       160382,
@@ -1552,13 +1227,9 @@
       25
     ],
     "icon": "img/ng/tianfu_jingtaihuifu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 81,
-    "slot": "normal",
     "game_ids": [
       160391,
       160392,
@@ -1572,13 +1243,9 @@
       40
     ],
     "icon": "img/ng/tianfu_famuqiaoshou.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 82,
-    "slot": "normal",
     "game_ids": [
       160401,
       160402,
@@ -1592,13 +1259,9 @@
       40
     ],
     "icon": "img/ng/tianfu_kuangmaishouhu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 83,
-    "slot": "normal",
     "game_ids": [
       160411,
       160412,
@@ -1612,13 +1275,9 @@
       20
     ],
     "icon": "img/ng/tianfu_zhongzhinengshou.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 84,
-    "slot": "normal",
     "game_ids": [
       160421,
       160422,
@@ -1628,13 +1287,9 @@
     "description": "The multi-time 3rd place of the tribe's bandaging competition. Bandage Time -30%.",
     "description_values": null,
     "icon": "img/ng/tianfu_kuaisubaoza.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 85,
-    "slot": "normal",
     "game_ids": [
       160431,
       160432,
@@ -1648,13 +1303,9 @@
       15
     ],
     "icon": "img/ng/tianfu_xianxuexishou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 86,
-    "slot": "normal",
     "game_ids": [
       160441,
       160442,
@@ -1668,14 +1319,9 @@
       15
     ],
     "icon": "img/ng/tianfu_silieshangkou.webp",
-    "tags": [
-      "fang",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 87,
-    "slot": "normal",
     "game_ids": [
       160451,
       160452,
@@ -1689,13 +1335,9 @@
       40
     ],
     "icon": "img/ng/tianfu_shemingxiangbo.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 88,
-    "slot": "normal",
     "game_ids": [
       160461,
       160462,
@@ -1708,13 +1350,9 @@
       30
     ],
     "icon": "img/ng/tianfu_yuxuehuifu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 89,
-    "slot": "normal",
     "game_ids": [
       160471,
       160472,
@@ -1728,13 +1366,9 @@
       60
     ],
     "icon": "img/ng/tianfu_liangbaijushang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 90,
-    "slot": "normal",
     "game_ids": [
       160481,
       160482,
@@ -1748,14 +1382,9 @@
       15
     ],
     "icon": "img/ng/tianfu_shidalichen.webp",
-    "tags": [
-      "claw",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 91,
-    "slot": "normal",
     "game_ids": [
       160491,
       160492,
@@ -1769,13 +1398,9 @@
       7
     ],
     "icon": "img/ng/tianfu_fangyufanji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 92,
-    "slot": "normal",
     "game_ids": [
       160501,
       160502,
@@ -1789,15 +1414,9 @@
       30
     ],
     "icon": "img/ng/tianfu_rennaibaofa.webp",
-    "tags": [
-      "flint",
-      "battle",
-      "defender"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 93,
-    "slot": "normal",
     "game_ids": [
       160511,
       160512,
@@ -1811,13 +1430,9 @@
       35
     ],
     "icon": "img/ng/tianfu_jiqiaohuifu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 94,
-    "slot": "normal",
     "game_ids": [
       160521,
       160522,
@@ -1831,13 +1446,9 @@
       7
     ],
     "icon": "img/ng/tianfu_dongchafangyu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 95,
-    "slot": "normal",
     "game_ids": [
       160531,
       160532,
@@ -1851,13 +1462,9 @@
       20
     ],
     "icon": "img/ng/tianfu_fuchouzhinu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 96,
-    "slot": "normal",
     "game_ids": [
       160541,
       160542,
@@ -1870,13 +1477,9 @@
       3
     ],
     "icon": "img/ng/tianfu_disunkuangre.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 97,
-    "slot": "normal",
     "game_ids": [
       160551,
       160552,
@@ -1890,13 +1493,9 @@
       15
     ],
     "icon": "img/ng/tianfu_shouduancairen.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 98,
-    "slot": "normal",
     "game_ids": [
       160561,
       160562,
@@ -1910,13 +1509,9 @@
       10
     ],
     "icon": "img/ng/tianfu_tulukuangre.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 99,
-    "slot": "normal",
     "game_ids": [
       160571,
       160572,
@@ -1930,13 +1525,9 @@
       2
     ],
     "icon": "img/ng/tianfu_jiandingbuyi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 100,
-    "slot": "normal",
     "game_ids": [
       160581,
       160582,
@@ -1950,14 +1541,9 @@
       4
     ],
     "icon": "img/ng/tianfu_zhimingjiezou.webp",
-    "tags": [
-      "claw",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 101,
-    "slot": "normal",
     "game_ids": [
       160591,
       160592,
@@ -1971,13 +1557,9 @@
       25
     ],
     "icon": "img/ng/tianfu_zhijiyaohai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 102,
-    "slot": "normal",
     "game_ids": [
       160601,
       160602,
@@ -1991,14 +1573,9 @@
       80
     ],
     "icon": "img/ng/tianfu_bikaiyaohai.webp",
-    "tags": [
-      "flint",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 103,
-    "slot": "normal",
     "game_ids": [
       160611,
       160612,
@@ -2012,13 +1589,9 @@
       50
     ],
     "icon": "img/ng/tianfu_gangtiezhiqu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 104,
-    "slot": "normal",
     "game_ids": [
       160621,
       160622,
@@ -2032,14 +1605,9 @@
       15
     ],
     "icon": "img/ng/tianfu_duqu.webp",
-    "tags": [
-      "fang",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 105,
-    "slot": "normal",
     "game_ids": [
       160631,
       160632,
@@ -2053,13 +1621,9 @@
       20
     ],
     "icon": "img/ng/tianfu_xinnianheyi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 106,
-    "slot": "normal",
     "game_ids": [
       160641,
       160642,
@@ -2073,13 +1637,9 @@
       15
     ],
     "icon": "img/ng/tianfu_chuantoufangyu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 107,
-    "slot": "normal",
     "game_ids": [
       160651,
       160652,
@@ -2093,14 +1653,9 @@
       15
     ],
     "icon": "img/ng/tianfu_cuodiruiqi.webp",
-    "tags": [
-      "claw",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 108,
-    "slot": "normal",
     "game_ids": [
       160661,
       160662,
@@ -2114,13 +1669,9 @@
       15
     ],
     "icon": "img/ng/tianfu_yizhibaoli.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 109,
-    "slot": "normal",
     "game_ids": [
       160671,
       160672,
@@ -2134,13 +1685,9 @@
       3
     ],
     "icon": "img/ng/tianfu_eyi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 110,
-    "slot": "normal",
     "game_ids": [
       160681,
       160682,
@@ -2153,13 +1700,9 @@
       3
     ],
     "icon": "img/ng/tianfu__zuitaiganying.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 111,
-    "slot": "normal",
     "game_ids": [
       160691,
       160692,
@@ -2173,13 +1716,9 @@
       30
     ],
     "icon": "img/ng/tianfu__menggong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 112,
-    "slot": "normal",
     "game_ids": [
       160701,
       160702,
@@ -2193,13 +1732,9 @@
       30
     ],
     "icon": "img/ng/tianfu_beibaokuorong.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 113,
-    "slot": "normal",
     "game_ids": [
       160711,
       160712,
@@ -2213,15 +1748,9 @@
       10
     ],
     "icon": "img/ng/tianfu_jingzhifangju.webp",
-    "tags": [
-      "flint",
-      "craft",
-      "craftman"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 114,
-    "slot": "normal",
     "game_ids": [
       160721,
       160722,
@@ -2235,13 +1764,9 @@
       10
     ],
     "icon": "img/ng/tianfu_wuqijingzhu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 115,
-    "slot": "normal",
     "game_ids": [
       160731,
       160732,
@@ -2255,13 +1780,9 @@
       10
     ],
     "icon": "img/ng/tianfu_jingzhizhubao.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 116,
-    "slot": "normal",
     "game_ids": [
       160741,
       160742,
@@ -2275,13 +1796,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasupaomu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 117,
-    "slot": "normal",
     "game_ids": [
       160751,
       160752,
@@ -2295,14 +1812,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuqieshi.webp",
-    "tags": [
-      "craft",
-      "porter"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 118,
-    "slot": "normal",
     "game_ids": [
       160761,
       160762,
@@ -2316,14 +1828,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuronglian.webp",
-    "tags": [
-      "craft",
-      "porter"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 119,
-    "slot": "normal",
     "game_ids": [
       160771,
       160772,
@@ -2337,13 +1844,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuroupi.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 120,
-    "slot": "normal",
     "game_ids": [
       160781,
       160782,
@@ -2357,13 +1860,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasufangzhi.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 121,
-    "slot": "normal",
     "game_ids": [
       160791,
       160792,
@@ -2377,13 +1876,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuzhitao.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 122,
-    "slot": "normal",
     "game_ids": [
       160801,
       160802,
@@ -2397,13 +1892,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuyanmo.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 123,
-    "slot": "normal",
     "game_ids": [
       160811,
       160812,
@@ -2417,13 +1908,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuqijuzhizao.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 124,
-    "slot": "normal",
     "game_ids": [
       160821,
       160822,
@@ -2437,13 +1924,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuwuqizhizao.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 125,
-    "slot": "normal",
     "game_ids": [
       160831,
       160832,
@@ -2457,13 +1940,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasufangjuzhizao.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 126,
-    "slot": "normal",
     "game_ids": [
       160841,
       160842,
@@ -2477,13 +1956,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasuzhubaozhizao.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 127,
-    "slot": "normal",
     "game_ids": [
       160851,
       160852,
@@ -2497,14 +1972,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasujianzhuzhizao.webp",
-    "tags": [
-      "craft",
-      "porter"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 128,
-    "slot": "normal",
     "game_ids": [
       160861,
       160862,
@@ -2518,13 +1988,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasulianjin.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 129,
-    "slot": "normal",
     "game_ids": [
       160871,
       160872,
@@ -2538,13 +2004,9 @@
       30
     ],
     "icon": "img/ng/tianfu_jiasupengren.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 130,
-    "slot": "normal",
     "game_ids": [
       160891,
       160892,
@@ -2558,13 +2020,9 @@
       80
     ],
     "icon": "img/ng/tianfu__panshiyizhi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 131,
-    "slot": "normal",
     "game_ids": [
       160901,
       160902,
@@ -2578,14 +2036,9 @@
       8
     ],
     "icon": "img/ng/tianfu_yiyahuanya.webp",
-    "tags": [
-      "claw",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 132,
-    "slot": "normal",
     "game_ids": [
       160911,
       160912,
@@ -2599,13 +2052,9 @@
       20
     ],
     "icon": "img/ng/tianfu_gedangfanji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 133,
-    "slot": "normal",
     "game_ids": [
       160921,
       160922,
@@ -2619,14 +2068,9 @@
       8
     ],
     "icon": "img/ng/tianfu_nuhuoqingxie.webp",
-    "tags": [
-      "fang",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 134,
-    "slot": "normal",
     "game_ids": [
       160931,
       160932,
@@ -2640,13 +2084,9 @@
       7
     ],
     "icon": "img/ng/tianfu_houfazhiren.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 135,
-    "slot": "normal",
     "game_ids": [
       160941,
       160942,
@@ -2660,14 +2100,9 @@
       20
     ],
     "icon": "img/ng/tianfu_jifadouzhi.webp",
-    "tags": [
-      "flint",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 136,
-    "slot": "normal",
     "game_ids": [
       160951,
       160952,
@@ -2681,13 +2116,9 @@
       3
     ],
     "icon": "img/ng/tianfu_juejingyingji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 137,
-    "slot": "normal",
     "game_ids": [
       160961,
       160962,
@@ -2701,13 +2132,9 @@
       3
     ],
     "icon": "img/ng/tianfu_huajieweiji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 138,
-    "slot": "normal",
     "game_ids": [
       160971,
       160972,
@@ -2721,13 +2148,9 @@
       15
     ],
     "icon": "img/ng/tianfu__chuxueyizhi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 139,
-    "slot": "normal",
     "game_ids": [
       170001,
       170002,
@@ -2741,13 +2164,9 @@
       30
     ],
     "icon": "img/ng/tianfu__weifengjinyu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 140,
-    "slot": "normal",
     "game_ids": [
       170011,
       170012,
@@ -2761,14 +2180,9 @@
       10
     ],
     "icon": "img/ng/tianfu__qunlangpihu.webp",
-    "tags": [
-      "wildwolf",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 141,
-    "slot": "normal",
     "game_ids": [
       170021,
       170022,
@@ -2782,14 +2196,9 @@
       10
     ],
     "icon": "img/ng/tianfu__manjiaobihu.webp",
-    "tags": [
-      "savagehorn",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 142,
-    "slot": "normal",
     "game_ids": [
       170031,
       170032,
@@ -2803,13 +2212,9 @@
       6
     ],
     "icon": "img/ng/tianfu__huiguangfanji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 143,
-    "slot": "normal",
     "game_ids": [
       170041,
       170042,
@@ -2823,13 +2228,9 @@
       12
     ],
     "icon": "img/ng/tianfu__juetihuaxue.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 144,
-    "slot": "normal",
     "game_ids": [
       170051,
       170052,
@@ -2843,13 +2244,9 @@
       12
     ],
     "icon": "img/ng/tianfu__juetihuaren.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 145,
-    "slot": "normal",
     "game_ids": [
       170061,
       170062,
@@ -2863,13 +2260,9 @@
       30
     ],
     "icon": "img/ng/tianfu__tanxinghuifu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 146,
-    "slot": "normal",
     "game_ids": [
       170071,
       170072,
@@ -2883,13 +2276,9 @@
       25
     ],
     "icon": "img/ng/tianfu__shisijuexin.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 147,
-    "slot": "normal",
     "game_ids": [
       170081,
       170082,
@@ -2902,13 +2291,9 @@
       9
     ],
     "icon": "img/ng/tianfu__yujin.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 148,
-    "slot": "normal",
     "game_ids": [
       170091,
       170092,
@@ -2922,13 +2307,9 @@
       15
     ],
     "icon": "img/ng/tianfu__tilihongxi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 149,
-    "slot": "normal",
     "game_ids": [
       170101,
       170102,
@@ -2942,13 +2323,9 @@
       25
     ],
     "icon": "img/ng/tianfu__jiexuezhugong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 150,
-    "slot": "normal",
     "game_ids": [
       170111,
       170112,
@@ -2962,13 +2339,9 @@
       15
     ],
     "icon": "img/ng/tianfu__mianshangqiyou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 151,
-    "slot": "normal",
     "game_ids": [
       170121,
       170122,
@@ -2982,13 +2355,9 @@
       3
     ],
     "icon": "img/ng/tianfu_xueranjingji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 152,
-    "slot": "normal",
     "game_ids": [
       170131,
       170132,
@@ -3002,13 +2371,9 @@
       25
     ],
     "icon": "img/ng/tianfu_shengmingjiesuo.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 153,
-    "slot": "normal",
     "game_ids": [
       170141,
       170142,
@@ -3022,14 +2387,9 @@
       12
     ],
     "icon": "img/ng/tianfu_jiahuo.webp",
-    "tags": [
-      "savagehorn",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 154,
-    "slot": "normal",
     "game_ids": [
       170151,
       170152,
@@ -3043,14 +2403,9 @@
       12
     ],
     "icon": "img/ng/tianfu_jiaozha.webp",
-    "tags": [
-      "wildwolf",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 155,
-    "slot": "normal",
     "game_ids": [
       170161,
       170162,
@@ -3064,13 +2419,9 @@
       15
     ],
     "icon": "img/ng/tianfu__jinjizhiqu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 156,
-    "slot": "normal",
     "game_ids": [
       170171,
       170172,
@@ -3084,13 +2435,9 @@
       15
     ],
     "icon": "img/ng/tianfu__baozou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 157,
-    "slot": "normal",
     "game_ids": [
       170181,
       170182,
@@ -3104,13 +2451,9 @@
       15
     ],
     "icon": "img/ng/tianfu__yongqijiliu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 158,
-    "slot": "normal",
     "game_ids": [
       170191,
       170192,
@@ -3124,13 +2467,9 @@
       15
     ],
     "icon": "img/ng/tianfu__zengshangqiyou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 159,
-    "slot": "normal",
     "game_ids": [
       170201,
       170202,
@@ -3144,15 +2483,9 @@
       15
     ],
     "icon": "img/ng/tianfu__kuifangchongji.webp",
-    "tags": [
-      "savagehorn",
-      "battle",
-      "defender"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 160,
-    "slot": "normal",
     "game_ids": [
       170211,
       170212,
@@ -3166,14 +2499,9 @@
       15
     ],
     "icon": "img/ng/tianfu__zengshangqiequ.webp",
-    "tags": [
-      "wildwolf",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 161,
-    "slot": "normal",
     "game_ids": [
       170221,
       170222,
@@ -3187,14 +2515,9 @@
       15
     ],
     "icon": "img/ng/tianfu__mianshangqiequ.webp",
-    "tags": [
-      "savagehorn",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 162,
-    "slot": "normal",
     "game_ids": [
       170231,
       170232,
@@ -3208,13 +2531,9 @@
       15
     ],
     "icon": "img/ng/tianfu__gongjiqiequ.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 163,
-    "slot": "normal",
     "game_ids": [
       170241,
       170242,
@@ -3228,13 +2547,9 @@
       15
     ],
     "icon": "img/ng/tianfu_fangyuqiequ.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 164,
-    "slot": "normal",
     "game_ids": [
       170251,
       170252,
@@ -3248,13 +2563,9 @@
       15
     ],
     "icon": "img/ng/tianfu_tiliqiequ.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 165,
-    "slot": "normal",
     "game_ids": [
       170261,
       170262,
@@ -3268,13 +2579,9 @@
       15
     ],
     "icon": "img/ng/tianfu_baojiqiequ.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 166,
-    "slot": "normal",
     "game_ids": [
       170271,
       170272,
@@ -3288,13 +2595,9 @@
       15
     ],
     "icon": "img/ng/tianfu_baokangqiequ.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 167,
-    "slot": "normal",
     "game_ids": [
       170281,
       170282,
@@ -3308,13 +2611,9 @@
       3
     ],
     "icon": "img/ng/tianfu_yushijufen.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 168,
-    "slot": "normal",
     "game_ids": [
       170291,
       170292,
@@ -3328,13 +2627,9 @@
       20
     ],
     "icon": "img/ng/tianfu_gongfanpingheng1.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 169,
-    "slot": "normal",
     "game_ids": [
       170301,
       170302,
@@ -3348,13 +2643,9 @@
       20
     ],
     "icon": "img/ng/tianfu_shanghaigongming1.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 170,
-    "slot": "normal",
     "game_ids": [
       170311,
       170312,
@@ -3368,13 +2659,9 @@
       15
     ],
     "icon": "img/ng/tianfu_gongshouyishi1.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 171,
-    "slot": "normal",
     "game_ids": [
       170321,
       170322,
@@ -3388,13 +2675,9 @@
       15
     ],
     "icon": "img/ng/tianfu_guzhuyizhi1.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 172,
-    "slot": "normal",
     "game_ids": [
       170331,
       170332,
@@ -3408,13 +2691,9 @@
       30
     ],
     "icon": "img/ng/tianfu_quanshengzhuangtai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 173,
-    "slot": "normal",
     "game_ids": [
       170341,
       170342,
@@ -3428,13 +2707,9 @@
       50
     ],
     "icon": "img/ng/tianfu__xiangong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 174,
-    "slot": "normal",
     "game_ids": [
       170351,
       170352,
@@ -3448,13 +2723,9 @@
       15
     ],
     "icon": "img/ng/tianfu__zhuoxuezhidu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 175,
-    "slot": "normal",
     "game_ids": [
       170361,
       170362,
@@ -3468,13 +2739,9 @@
       15
     ],
     "icon": "img/ng/tianfu__zhihuanzhidu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 176,
-    "slot": "normal",
     "game_ids": [
       170371,
       170372,
@@ -3488,13 +2755,9 @@
       15
     ],
     "icon": "img/ng/tianfu__zuzhouzhiji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 177,
-    "slot": "normal",
     "game_ids": [
       170381,
       170382,
@@ -3508,13 +2771,9 @@
       15
     ],
     "icon": "img/ng/tianfu__dongmaipohuai.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 178,
-    "slot": "normal",
     "game_ids": [
       170391,
       170392,
@@ -3528,13 +2787,9 @@
       3
     ],
     "icon": "img/ng/tianfu__fangyuqiangxi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 179,
-    "slot": "normal",
     "game_ids": [
       170401,
       170402,
@@ -3548,13 +2803,9 @@
       25
     ],
     "icon": "img/ng/tianfu_gongfanpingheng2.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 180,
-    "slot": "normal",
     "game_ids": [
       170411,
       170412,
@@ -3568,13 +2819,9 @@
       25
     ],
     "icon": "img/ng/tianfu_shanghaigongming2.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 181,
-    "slot": "normal",
     "game_ids": [
       170421,
       170422,
@@ -3588,13 +2835,9 @@
       20
     ],
     "icon": "img/ng/tianfu_gongshouyishi2.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 182,
-    "slot": "normal",
     "game_ids": [
       170431,
       170432,
@@ -3608,13 +2851,9 @@
       20
     ],
     "icon": "img/ng/tianfu_guzhuyizhi2.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 183,
-    "slot": "normal",
     "game_ids": [
       170441,
       170442,
@@ -3628,13 +2867,9 @@
       15
     ],
     "icon": "img/ng/tianfu_hunluanfangyu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 184,
-    "slot": "normal",
     "game_ids": [
       170451,
       170452,
@@ -3648,13 +2883,9 @@
       15
     ],
     "icon": "img/ng/tianfu_mihuofangyu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 185,
-    "slot": "normal",
     "game_ids": [
       170461,
       170462,
@@ -3668,13 +2899,9 @@
       15
     ],
     "icon": "img/ng/tianfu_fangyuzhendang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 186,
-    "slot": "normal",
     "game_ids": [
       170471,
       170472,
@@ -3687,13 +2914,9 @@
       40
     ],
     "icon": "img/ng/tianfu_batibengjie.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 187,
-    "slot": "normal",
     "game_ids": [
       170481,
       170482,
@@ -3707,13 +2930,9 @@
       10
     ],
     "icon": "img/ng/tianfu_hunluanfantan.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 188,
-    "slot": "normal",
     "game_ids": [
       170491,
       170492,
@@ -3727,13 +2946,9 @@
       10
     ],
     "icon": "img/ng/tianfu_mihuofantan.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 189,
-    "slot": "normal",
     "game_ids": [
       170501,
       170502,
@@ -3747,13 +2962,9 @@
       30
     ],
     "icon": "img/ng/tianfu_duoshi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 190,
-    "slot": "normal",
     "game_ids": [
       170511,
       170512,
@@ -3767,13 +2978,9 @@
       10
     ],
     "icon": "img/ng/tianfu_fantanzhendang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 191,
-    "slot": "normal",
     "game_ids": [
       170521,
       170522,
@@ -3787,13 +2994,9 @@
       4
     ],
     "icon": "img/ng/tianfu__liansuoshanbi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 192,
-    "slot": "normal",
     "game_ids": [
       170531,
       170532,
@@ -3807,13 +3010,9 @@
       25
     ],
     "icon": "img/ng/tianfu__pohuaishanji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 193,
-    "slot": "normal",
     "game_ids": [
       170541,
       170542,
@@ -3827,13 +3026,9 @@
       8
     ],
     "icon": "img/ng/tianfu__yigongdaishou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 194,
-    "slot": "normal",
     "game_ids": [
       170551,
       170552,
@@ -3846,13 +3041,9 @@
       20
     ],
     "icon": "img/ng/tianfu__chongzhengqigu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 195,
-    "slot": "normal",
     "game_ids": [
       170561,
       170562,
@@ -3866,13 +3057,9 @@
       20
     ],
     "icon": "img/ng/tianfu__chujueweixie.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 196,
-    "slot": "normal",
     "game_ids": [
       170571,
       170572,
@@ -3886,13 +3073,9 @@
       50
     ],
     "icon": "img/ng/tianfu__wanmeixishou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 197,
-    "slot": "normal",
     "game_ids": [
       170581,
       170582,
@@ -3906,14 +3089,9 @@
       15
     ],
     "icon": "img/ng/tianfu__qunlangzhanhun.webp",
-    "tags": [
-      "wildwolf",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 198,
-    "slot": "normal",
     "game_ids": [
       170591,
       170592,
@@ -3927,14 +3105,9 @@
       15
     ],
     "icon": "img/ng/tianfu__manjiaozhanhun.webp",
-    "tags": [
-      "savagehorn",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 199,
-    "slot": "normal",
     "game_ids": [
       170601,
       170602,
@@ -3948,13 +3121,9 @@
       20
     ],
     "icon": "img/ng/tianfu__yongqichuandi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 200,
-    "slot": "normal",
     "game_ids": [
       170611,
       170612,
@@ -3968,13 +3137,9 @@
       25
     ],
     "icon": "img/ng/tianfu__xuemaiyazhi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 201,
-    "slot": "normal",
     "game_ids": [
       170621,
       170622,
@@ -3988,13 +3153,9 @@
       20
     ],
     "icon": "img/ng/tianfu__xunjiegongminggong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 202,
-    "slot": "normal",
     "game_ids": [
       170631,
       170632,
@@ -4008,13 +3169,9 @@
       25
     ],
     "icon": "img/ng/tianfu__xunjiegongmingfang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 203,
-    "slot": "normal",
     "game_ids": [
       170641,
       170642,
@@ -4028,13 +3185,9 @@
       30
     ],
     "icon": "img/ng/tianfu__sihuifuran.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 204,
-    "slot": "normal",
     "game_ids": [
       170651,
       170652,
@@ -4048,13 +3201,9 @@
       15
     ],
     "icon": "img/ng/tianfu__nishanfangyu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 205,
-    "slot": "normal",
     "game_ids": [
       170661,
       170662,
@@ -4068,13 +3217,9 @@
       10
     ],
     "icon": "img/ng/tianfu__nishantanfan.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 206,
-    "slot": "normal",
     "game_ids": [
       170671,
       170672,
@@ -4088,13 +3233,9 @@
       15
     ],
     "icon": "img/ng/tianfu__baoranzhizhong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 207,
-    "slot": "normal",
     "game_ids": [
       170681,
       170682,
@@ -4108,13 +3249,9 @@
       15
     ],
     "icon": "img/ng/tianfu__baoduzhizhong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 208,
-    "slot": "normal",
     "game_ids": [
       170691,
       170692,
@@ -4128,13 +3265,9 @@
       15
     ],
     "icon": "img/ng/tianfu__baoxuezhizhong.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 209,
-    "slot": "normal",
     "game_ids": [
       170701,
       170702,
@@ -4148,14 +3281,9 @@
       15
     ],
     "icon": "img/ng/tianfu__yisuqiequ.webp",
-    "tags": [
-      "savagehorn",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 210,
-    "slot": "normal",
     "game_ids": [
       170711,
       170712,
@@ -4169,14 +3297,9 @@
       15
     ],
     "icon": "img/ng/tianfu__gongsuqiequ.webp",
-    "tags": [
-      "wildwolf",
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 211,
-    "slot": "normal",
     "game_ids": [
       170721,
       170722,
@@ -4190,13 +3313,9 @@
       9
     ],
     "icon": "img/ng/tianfu__cibianzengshang.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 212,
-    "slot": "normal",
     "game_ids": [
       170731,
       170732,
@@ -4210,13 +3329,9 @@
       25
     ],
     "icon": "img/ng/tianfu_guijizhishou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 213,
-    "slot": "normal",
     "game_ids": [
       170751,
       170752,
@@ -4230,13 +3345,9 @@
       20
     ],
     "icon": "img/ng/tianfu_duochongtouzhi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 214,
-    "slot": "normal",
     "game_ids": [
       170761,
       170762,
@@ -4249,13 +3360,9 @@
       15
     ],
     "icon": "img/ng/tianfu_shanbitouzhi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 215,
-    "slot": "normal",
     "game_ids": [
       170771,
       170772,
@@ -4265,13 +3372,9 @@
     "description": "Hitting a target with a Throwing Axe, Knife, or Spear pulls them towards the character.",
     "description_values": null,
     "icon": "img/ng/tianfu_qianyintouzhi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 216,
-    "slot": "normal",
     "game_ids": [
       170781,
       170782,
@@ -4285,13 +3388,9 @@
       20
     ],
     "icon": "img/ng/tianfu_baofagongming1.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 217,
-    "slot": "normal",
     "game_ids": [
       170791,
       170792,
@@ -4305,13 +3404,9 @@
       15
     ],
     "icon": "img/ng/tianfu_baofazhuanhuan1.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 218,
-    "slot": "normal",
     "game_ids": [
       170801,
       170802,
@@ -4325,13 +3420,9 @@
       25
     ],
     "icon": "img/ng/tianfu_baofagongming2.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 219,
-    "slot": "normal",
     "game_ids": [
       170811,
       170812,
@@ -4345,13 +3436,9 @@
       20
     ],
     "icon": "img/ng/tianfu_baofazhuanhuan2.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 220,
-    "slot": "normal",
     "game_ids": [
       170821,
       170822,
@@ -4365,13 +3452,9 @@
       4
     ],
     "icon": "img/ng/tianfu_luetijifeng.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 221,
-    "slot": "normal",
     "game_ids": [
       170831,
       170832,
@@ -4384,13 +3467,9 @@
       75
     ],
     "icon": "img/ng/tianfu_ranhunjuji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 222,
-    "slot": "normal",
     "game_ids": [
       170841,
       170842,
@@ -4404,13 +3483,9 @@
       15
     ],
     "icon": "img/ng/tianfu_podanzhongji.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 223,
-    "slot": "normal",
     "game_ids": [
       170851,
       170852,
@@ -4424,13 +3499,9 @@
       8
     ],
     "icon": "img/ng/tianfu_quanshengzhanyi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 224,
-    "slot": "normal",
     "game_ids": [
       170861,
       170862,
@@ -4444,13 +3515,9 @@
       15
     ],
     "icon": "img/ng/tianfu_xunjieliuzhuan1.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 225,
-    "slot": "normal",
     "game_ids": [
       170871,
       170872,
@@ -4464,13 +3531,9 @@
       20
     ],
     "icon": "img/ng/tianfu_xunjieliuzhuan2.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 226,
-    "slot": "normal",
     "game_ids": [
       171001,
       171002,
@@ -4483,14 +3546,9 @@
       10
     ],
     "icon": "img/ng/tianfu_cuifengqiaoshou.webp",
-    "tags": [
-      "wildwolf",
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 227,
-    "slot": "normal",
     "game_ids": [
       171011,
       171012,
@@ -4503,14 +3561,9 @@
       10
     ],
     "icon": "img/ng/tianfu_qiaozhufangju.webp",
-    "tags": [
-      "savagehorn",
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 228,
-    "slot": "normal",
     "game_ids": [
       171021,
       171022,
@@ -4520,13 +3573,9 @@
     "description": "[Craftsman Exclusive] Exceptionally focused when crafting armor, chance to produce high-quality items +5%.",
     "description_values": null,
     "icon": "img/ng/tianfu_zhijiazhuanzhu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 229,
-    "slot": "normal",
     "game_ids": [
       171031,
       171032,
@@ -4540,13 +3589,9 @@
       10
     ],
     "icon": "img/ng/tianfu_duanqizhuanzhu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 230,
-    "slot": "normal",
     "game_ids": [
       171041,
       171042,
@@ -4559,13 +3604,9 @@
       35
     ],
     "icon": "img/ng/tianfu_wuqijingxiu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 231,
-    "slot": "normal",
     "game_ids": [
       171051,
       171052,
@@ -4578,13 +3619,9 @@
       35
     ],
     "icon": "img/ng/tianfu_fangjujingxiu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 232,
-    "slot": "normal",
     "game_ids": [
       171061,
       171062,
@@ -4597,13 +3634,9 @@
       35
     ],
     "icon": "img/ng/tianfu_gongjujingxiu.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "normal"
   },
   {
-    "id": 233,
-    "slot": "origin",
     "game_ids": [
       500011,
       500012,
@@ -4613,13 +3646,9 @@
     "description": "Born into a poor and inferior clan and makes a living through hard manual labor. Proficiency growth rate for logging, mining, planting, and harvesting +50%.",
     "description_values": null,
     "icon": "img/ng/chushen_kuli.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "origin"
   },
   {
-    "id": 234,
-    "slot": "origin",
     "game_ids": [
       500021,
       500022,
@@ -4629,13 +3658,9 @@
     "description": "There are many apprentices in the clan, and as a result of the influences, the proficiency growth rate for learning weaving, potting, wood & stone, leatherworking, and kilning +50%.",
     "description_values": null,
     "icon": "img/ng/chushen_zagong.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "origin"
   },
   {
-    "id": 235,
-    "slot": "origin",
     "game_ids": [
       500031,
       500032,
@@ -4645,13 +3670,9 @@
     "description": "Born into a craftsman clan and skilled in crafting. Proficiency growth rate for learning craftsmanship, alchemy, weapon crafting, armor crafting and cooking +50%.",
     "description_values": null,
     "icon": "img/ng/chushen_zongjiang.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "origin"
   },
   {
-    "id": 236,
-    "slot": "origin",
     "game_ids": [
       500041,
       500042,
@@ -4661,13 +3682,9 @@
     "description": "Born into a warrior clan and skilled in fighting. Proficiency growth rate for blade, dual-blade, hammer, great sword, and gauntlets +50%.",
     "description_values": null,
     "icon": "img/ng/chushen_bodou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "origin"
   },
   {
-    "id": 237,
-    "slot": "origin",
     "game_ids": [
       500051,
       500052,
@@ -4677,13 +3694,9 @@
     "description": "Born into a hunter clan and skilled in hunting. Proficiency growth rate for bow, spear, blade, dual-blade, and gauntlets +50%.",
     "description_values": null,
     "icon": "img/ng/chushen_shoulie.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "origin"
   },
   {
-    "id": 238,
-    "slot": "origin",
     "game_ids": [
       500061,
       500062,
@@ -4693,13 +3706,9 @@
     "description": "Raised in the company of a squad of clan guards, and as a result of their influences, the proficiency growth rate for great sword, blade, spear, shield, and bow +50%.",
     "description_values": null,
     "icon": "img/ng/chushen_huwei.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "origin"
   },
   {
-    "id": 239,
-    "slot": "origin",
     "game_ids": [
       500071,
       500072,
@@ -4709,13 +3718,9 @@
     "description": "亲人有着出色的生存技巧，从小耳濡目染学习医疗、游泳、攀爬的熟练度成长速度大幅度提升。",
     "description_values": null,
     "icon": "img/ng/chushen_shengcun.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "origin"
   },
   {
-    "id": 240,
-    "slot": "experience",
     "game_ids": [
       700011,
       700012,
@@ -4729,13 +3734,9 @@
       60
     ],
     "icon": "img/ng/Icon_NG_JingLi_nengzhengshanzhan.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "experience"
   },
   {
-    "id": 241,
-    "slot": "title",
     "game_ids": [
       600011
     ],
@@ -4743,13 +3744,9 @@
     "description": "Proficient in a variety of weapons, DMG dealt with any weapon +10%, Attack Speed +10%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_wuqidashi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 242,
-    "slot": "title",
     "game_ids": [
       600012
     ],
@@ -4757,13 +3754,9 @@
     "description": "A true master of endurance. Immune to critical hits if the unit's Resilience is above 50% when attacked.",
     "description_values": null,
     "icon": "img/ng/ChengHao_yinggutou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 243,
-    "slot": "title",
     "game_ids": [
       600013
     ],
@@ -4771,13 +3764,9 @@
     "description": "The notorious executioner of the tribe. +12% Damage when attacking the Torso of the target.",
     "description_values": null,
     "icon": "img/ng/ChengHao_duoxinzhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 244,
-    "slot": "title",
     "game_ids": [
       600014
     ],
@@ -4785,13 +3774,9 @@
     "description": "Get used to the dark and become a part of it. When moving at night, Movement Speed +10%, Crit +5%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_yexingzhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 245,
-    "slot": "title",
     "game_ids": [
       600015
     ],
@@ -4799,13 +3784,9 @@
     "description": "The ancestral throwing axe skill has the power to render prey fragile. Hitting a target with the throwing axe increases its DMG taken by 10% for 10 seconds.",
     "description_values": null,
     "icon": "img/ng/ChengHao_fatoushashou.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 246,
-    "slot": "title",
     "game_ids": [
       600016
     ],
@@ -4813,13 +3794,9 @@
     "description": "Made a name by taking down a tribal leader with a fly cutter from several meters away, leaving him bleeding out. When hitting the target, inflicts a bleeding effect that drains HP equal to 20% of self ATK per second, lasting 10s, and stackable.",
     "description_values": null,
     "icon": "img/ng/ChengHao_feidaocike.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 247,
-    "slot": "title",
     "game_ids": [
       600017
     ],
@@ -4827,13 +3804,9 @@
     "description": "Throws off the prey's breathing rhythm. Hitting a target with the lance reduces its Stamina Recovery by 80% for 10 seconds.",
     "description_values": null,
     "icon": "img/ng/ChengHao_chuanfeizhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 248,
-    "slot": "title",
     "game_ids": [
       600018
     ],
@@ -4841,13 +3814,9 @@
     "description": "The prey's destiny is sealed as the arrow leaves the bowstring. Using a bow grants a 20% chance to designate any hit part as a weak spot, and reduces the target's Movement Speed by 50% for 6 seconds.",
     "description_values": null,
     "icon": "img/ng/ChengHao_jianshudashi.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 249,
-    "slot": "title",
     "game_ids": [
       600021
     ],
@@ -4855,13 +3824,9 @@
     "description": "Skilled in crafting, the proficiency growth rate for cooking and crafting +50%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_shougongnengren.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "title"
   },
   {
-    "id": 250,
-    "slot": "title",
     "game_ids": [
       600022
     ],
@@ -4869,13 +3834,9 @@
     "description": "Skilled in crafting, the proficiency growth rate for weapon crafting, armor crafting, and alchemy +50%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_jingzaoqiaoshou.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "title"
   },
   {
-    "id": 251,
-    "slot": "title",
     "game_ids": [
       600031
     ],
@@ -4883,13 +3844,9 @@
     "description": "Animal killer; Damage dealt to non-human creatures +10%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_linzhongtufu.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 252,
-    "slot": "title",
     "game_ids": [
       600041
     ],
@@ -4897,13 +3854,9 @@
     "description": "Gets a rush from attacking near-death enemies or enemies below 30% of Max HP, gaining a 25% chance to increase ATK and Movement Speed by 20%, and Attack Speed by 10% for 8 seconds. (CD: 30s)",
     "description_values": null,
     "icon": "img/ng/ChengHao_songzangzhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 253,
-    "slot": "title",
     "game_ids": [
       600052
     ],
@@ -4911,13 +3864,9 @@
     "description": "Able to quickly open any box, no matter how intricate it is. The speed of opening boxes +80%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_poxiangren.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "title"
   },
   {
-    "id": 254,
-    "slot": "title",
     "game_ids": [
       600053
     ],
@@ -4925,13 +3874,9 @@
     "description": "There are always a few lucky folks in every village, and I'm one of them! Chance of dropping rare items +20%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_xingyunzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "title"
   },
   {
-    "id": 255,
-    "slot": "title",
     "game_ids": [
       600055
     ],
@@ -4939,13 +3884,9 @@
     "description": "Tireless as a machine and make people worry about the mental health. Max Morale +100%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_laodongkuangren.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "title"
   },
   {
-    "id": 256,
-    "slot": "title",
     "game_ids": [
       600057
     ],
@@ -4953,13 +3894,9 @@
     "description": "Because of their strange skin, tribesmen see them as alien. They are not affected by burn or ignition effects.",
     "description_values": null,
     "icon": "img/ng/ChengHao_bufenzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "title"
   },
   {
-    "id": 257,
-    "slot": "title",
     "game_ids": [
       600059
     ],
@@ -4967,13 +3904,9 @@
     "description": "Blood nourishment. 40% of Bleeding DMG dealt to melee targets is converted into healing. If the unit is currently Bleeding, this effect is increased to 80%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_yinxuezhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 258,
-    "slot": "title",
     "game_ids": [
       600060
     ],
@@ -4981,13 +3914,9 @@
     "description": "Sacrifices Dodge ability for Immunity to Hitstun.",
     "description_values": null,
     "icon": "img/ng/ChengHao_wuweizhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 259,
-    "slot": "title",
     "game_ids": [
       600061
     ],
@@ -4995,13 +3924,9 @@
     "description": "Attentive to details. Proficiency growth rate for weaving, potting, and leatherworking +50%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_xihaonengshou.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "title"
   },
   {
-    "id": 260,
-    "slot": "title",
     "game_ids": [
       600062
     ],
@@ -5009,13 +3934,9 @@
     "description": "Good at heavy works. Proficiency growth rate for wood planing, stone cutting, and kilning +50%",
     "description_values": null,
     "icon": "img/ng/ChengHao_cuhuonengshou.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "title"
   },
   {
-    "id": 261,
-    "slot": "title",
     "game_ids": [
       600063
     ],
@@ -5023,13 +3944,9 @@
     "description": "Suppress enemies with an invisible hand clamping their throat. Taking damage from melee attackers reduces their talent skill activation chance by 5% for 12 seconds. Stacks up to 5 times.",
     "description_values": null,
     "icon": "img/ng/ChengHao_eyunzhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 262,
-    "slot": "title",
     "game_ids": [
       600064
     ],
@@ -5037,13 +3954,9 @@
     "description": "Greatsword Mastery: Release the button at the perfect moment during a Charged Heavy Strike to unleash an even more devastating slash.",
     "description_values": null,
     "icon": "img/ng/ChengHao_duanguzhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 263,
-    "slot": "title",
     "game_ids": [
       600068
     ],
@@ -5051,13 +3964,9 @@
     "description": "Hitting an enemy has a 15% chance to inflict a 15-sec Dread on them: the target's single-hit damage capped at 300. Cap scales with the [Tribal Status] of both parties. (CD: 30s)",
     "description_values": null,
     "icon": "img/ng/ChengHao_zhenyazhe.webp",
-    "tags": [
-      "battle"
-    ]
+    "slot": "title"
   },
   {
-    "id": 264,
-    "slot": "title",
     "game_ids": [
       600071
     ],
@@ -5065,13 +3974,9 @@
     "description": "Destined to be a hardworking laborer, with a 50% increase in proficiency growth rate for logging, mining.",
     "description_values": null,
     "icon": "img/ng/ChengHao_tianshengkuli.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "title"
   },
   {
-    "id": 265,
-    "slot": "title",
     "game_ids": [
       600072
     ],
@@ -5079,13 +3984,9 @@
     "description": "Experienced in farming. The crops the character plants grow 20% faster.",
     "description_values": null,
     "icon": "img/ng/ChengHao_zhongtiannengshou.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "title"
   },
   {
-    "id": 266,
-    "slot": "title",
     "game_ids": [
       600073
     ],
@@ -5093,13 +3994,9 @@
     "description": "The best slaughter in the village; output from slaughtering animals increases by 20%.",
     "description_values": null,
     "icon": "img/ng/ChengHao_tuzainengshou.webp",
-    "tags": [
-      "craft"
-    ]
+    "slot": "title"
   },
   {
-    "id": 267,
-    "slot": "tribe",
     "game_ids": [
       100113
     ],
@@ -5107,13 +4004,9 @@
     "description": "As a survivor of the tribe wars, you'll need strength to survive in this land. Max Load +20%.",
     "description_values": null,
     "icon": "img/ng/Icon_NG_BuLuo_xingcunzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 268,
-    "slot": "tribe",
     "game_ids": [
       400011,
       400012,
@@ -5127,15 +4020,9 @@
       8
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw",
-      "flint",
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 269,
-    "slot": "tribe",
     "game_ids": [
       400021,
       400022,
@@ -5149,13 +4036,9 @@
       10
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 270,
-    "slot": "tribe",
     "game_ids": [
       400031,
       400032,
@@ -5169,13 +4052,9 @@
       8
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 271,
-    "slot": "tribe",
     "game_ids": [
       410011,
       410012,
@@ -5189,13 +4068,9 @@
       9
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 272,
-    "slot": "tribe",
     "game_ids": [
       410021,
       410022,
@@ -5209,13 +4084,9 @@
       25
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 273,
-    "slot": "tribe",
     "game_ids": [
       410031,
       410032,
@@ -5229,13 +4100,9 @@
       9
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 274,
-    "slot": "tribe",
     "game_ids": [
       420011,
       420012,
@@ -5249,13 +4116,9 @@
       30
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 275,
-    "slot": "tribe",
     "game_ids": [
       420021,
       420022,
@@ -5269,13 +4132,9 @@
       25
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 276,
-    "slot": "tribe",
     "game_ids": [
       420031,
       420032,
@@ -5289,13 +4148,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 277,
-    "slot": "tribe",
     "game_ids": [
       420041,
       420042,
@@ -5309,13 +4164,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 278,
-    "slot": "tribe",
     "game_ids": [
       420051,
       420052,
@@ -5329,13 +4180,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 279,
-    "slot": "tribe",
     "game_ids": [
       420061,
       420062,
@@ -5349,13 +4196,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 280,
-    "slot": "tribe",
     "game_ids": [
       420071,
       420072,
@@ -5369,13 +4212,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 281,
-    "slot": "tribe",
     "game_ids": [
       420081,
       420082,
@@ -5389,13 +4228,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 282,
-    "slot": "tribe",
     "game_ids": [
       420091,
       420092,
@@ -5409,13 +4244,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 283,
-    "slot": "tribe",
     "game_ids": [
       420101,
       420102,
@@ -5429,13 +4260,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 284,
-    "slot": "tribe",
     "game_ids": [
       420111,
       420112,
@@ -5449,13 +4276,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 285,
-    "slot": "tribe",
     "game_ids": [
       420121,
       420122,
@@ -5469,13 +4292,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 286,
-    "slot": "tribe",
     "game_ids": [
       420131,
       420132,
@@ -5489,13 +4308,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 287,
-    "slot": "tribe",
     "game_ids": [
       420141,
       420142,
@@ -5509,13 +4324,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 288,
-    "slot": "tribe",
     "game_ids": [
       420151,
       420152,
@@ -5529,13 +4340,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 289,
-    "slot": "tribe",
     "game_ids": [
       420161,
       420162,
@@ -5549,13 +4356,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
-    "tags": [
-      "claw"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 290,
-    "slot": "tribe",
     "game_ids": [
       420171,
       420172,
@@ -5569,13 +4372,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 291,
-    "slot": "tribe",
     "game_ids": [
       420181,
       420182,
@@ -5589,13 +4388,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
-    "tags": [
-      "flint"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 292,
-    "slot": "tribe",
     "game_ids": [
       420191,
       420192,
@@ -5609,13 +4404,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 293,
-    "slot": "tribe",
     "game_ids": [
       420201,
       420202,
@@ -5629,13 +4420,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
-    "tags": [
-      "fang"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 294,
-    "slot": "tribe",
     "game_ids": [
       420401,
       420402,
@@ -5649,13 +4436,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 295,
-    "slot": "tribe",
     "game_ids": [
       420411,
       420412,
@@ -5669,13 +4452,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 296,
-    "slot": "tribe",
     "game_ids": [
       420421,
       420422,
@@ -5689,13 +4468,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 297,
-    "slot": "tribe",
     "game_ids": [
       420501,
       420502,
@@ -5709,13 +4484,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
-    "tags": [
-      "wildwolf"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 298,
-    "slot": "tribe",
     "game_ids": [
       420511,
       420512,
@@ -5729,13 +4500,9 @@
       8
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
-    "tags": [
-      "wildwolf"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 299,
-    "slot": "tribe",
     "game_ids": [
       420521,
       420522,
@@ -5749,13 +4516,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
-    "tags": [
-      "wildwolf"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 300,
-    "slot": "tribe",
     "game_ids": [
       420531,
       420532,
@@ -5769,13 +4532,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
-    "tags": [
-      "wildwolf"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 301,
-    "slot": "tribe",
     "game_ids": [
       420541,
       420542,
@@ -5789,13 +4548,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
-    "tags": [
-      "wildwolf"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 302,
-    "slot": "tribe",
     "game_ids": [
       420551,
       420552,
@@ -5809,13 +4564,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
-    "tags": [
-      "wildwolf"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 303,
-    "slot": "tribe",
     "game_ids": [
       420601,
       420602,
@@ -5829,13 +4580,9 @@
       20
     ],
     "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
-    "tags": [
-      "savagehorn"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 304,
-    "slot": "tribe",
     "game_ids": [
       420611,
       420612,
@@ -5849,13 +4596,9 @@
       8
     ],
     "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
-    "tags": [
-      "savagehorn"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 305,
-    "slot": "tribe",
     "game_ids": [
       420621,
       420622,
@@ -5869,13 +4612,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
-    "tags": [
-      "savagehorn"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 306,
-    "slot": "tribe",
     "game_ids": [
       420631,
       420632,
@@ -5889,13 +4628,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
-    "tags": [
-      "savagehorn"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 307,
-    "slot": "tribe",
     "game_ids": [
       420641,
       420642,
@@ -5909,13 +4644,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
-    "tags": [
-      "savagehorn"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 308,
-    "slot": "tribe",
     "game_ids": [
       420651,
       420652,
@@ -5929,13 +4660,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
-    "tags": [
-      "savagehorn"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 309,
-    "slot": "tribe",
     "game_ids": [
       420701,
       420702,
@@ -5949,13 +4676,9 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "tribe"
   },
   {
-    "id": 310,
-    "slot": "tribe",
     "game_ids": [
       420711,
       420712,
@@ -5969,8 +4692,6 @@
       15
     ],
     "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
-    "tags": [
-      "general"
-    ]
+    "slot": "tribe"
   }
 ]

@@ -8,13 +8,13 @@
   {"id": 7,  "key": "warrior_low",    "en_name": "Warrior (Low)",    "ch_name": "戰士(低)", "category": "battle", "tag_ids": [6, 9]},
   {"id": 8,  "key": "warrior_mid",    "en_name": "Warrior (Mid)",    "ch_name": "戰士(中)", "category": "battle", "tag_ids": [6, 9]},
   {"id": 9,  "key": "warrior_high",   "en_name": "Warrior (High)",   "ch_name": "戰士(高)", "category": "battle", "tag_ids": [6, 9]},
-  {"id": 10, "key": "artisan_low",    "en_name": "Artisan (Low)",    "ch_name": "匠人(低)", "category": "craft",  "tag_ids": [7]},
-  {"id": 11, "key": "artisan_mid",    "en_name": "Artisan (Mid)",    "ch_name": "匠人(中)", "category": "craft",  "tag_ids": [7]},
-  {"id": 12, "key": "artisan_high",   "en_name": "Artisan (High)",   "ch_name": "匠人(高)", "category": "craft",  "tag_ids": [7]},
-  {"id": 13, "key": "handyman_low",   "en_name": "Handyman (Low)",   "ch_name": "雜工(低)", "category": "craft",  "tag_ids": [7]},
-  {"id": 14, "key": "handyman_mid",   "en_name": "Handyman (Mid)",   "ch_name": "雜工(中)", "category": "craft",  "tag_ids": [7]},
-  {"id": 15, "key": "handyman_high",  "en_name": "Handyman (High)",  "ch_name": "雜工(高)", "category": "craft",  "tag_ids": [7]},
-  {"id": 16, "key": "laborer_low",    "en_name": "Laborer (Low)",    "ch_name": "力工(低)", "category": "craft",  "tag_ids": [7]},
-  {"id": 17, "key": "laborer_mid",    "en_name": "Laborer (Mid)",    "ch_name": "力工(中)", "category": "craft",  "tag_ids": [7]},
-  {"id": 18, "key": "laborer_high",   "en_name": "Laborer (High)",   "ch_name": "力工(高)", "category": "craft",  "tag_ids": [7]}
+  {"id": 10, "key": "artisan_low",    "en_name": "Artisan (Low)",    "ch_name": "匠人(低)", "category": "craft",  "tag_ids": [7, 12]},
+  {"id": 11, "key": "artisan_mid",    "en_name": "Artisan (Mid)",    "ch_name": "匠人(中)", "category": "craft",  "tag_ids": [7, 12]},
+  {"id": 12, "key": "artisan_high",   "en_name": "Artisan (High)",   "ch_name": "匠人(高)", "category": "craft",  "tag_ids": [7, 12]},
+  {"id": 13, "key": "handyman_low",   "en_name": "Handyman (Low)",   "ch_name": "雜工(低)", "category": "craft",  "tag_ids": [7, 13]},
+  {"id": 14, "key": "handyman_mid",   "en_name": "Handyman (Mid)",   "ch_name": "雜工(中)", "category": "craft",  "tag_ids": [7, 13]},
+  {"id": 15, "key": "handyman_high",  "en_name": "Handyman (High)",  "ch_name": "雜工(高)", "category": "craft",  "tag_ids": [7, 13]},
+  {"id": 16, "key": "laborer_low",    "en_name": "Laborer (Low)",    "ch_name": "力工(低)", "category": "craft",  "tag_ids": [7, 14]},
+  {"id": 17, "key": "laborer_mid",    "en_name": "Laborer (Mid)",    "ch_name": "力工(中)", "category": "craft",  "tag_ids": [7, 14]},
+  {"id": 18, "key": "laborer_high",   "en_name": "Laborer (High)",   "ch_name": "力工(高)", "category": "craft",  "tag_ids": [7, 14]}
 ]
