@@ -201,14 +201,10 @@ const CharacterCard = {
       <div class="small fw-bold text-truncate">
         {{ char.name }} <span class="text-muted fw-normal">(#{{ char.id }})</span>
       </div>
-      <div class="dropdown flex-shrink-0 ms-1">
-        <button class="btn btn-sm btn-link p-0 lh-1 text-muted" data-bs-toggle="dropdown">⋮</button>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><button class="dropdown-item small" @click="$emit('edit', char)">✏️ 編輯</button></li>
-          <li><button class="dropdown-item small" @click="$emit('inherit', char)">🔗 傳承</button></li>
-          <li><hr class="dropdown-divider my-1"></li>
-          <li><button class="dropdown-item small text-danger" @click="$emit('delete', char.id)">🗑 刪除</button></li>
-        </ul>
+      <div class="flex-shrink-0 ms-1 d-flex gap-1">
+        <button class="btn btn-sm py-0 px-1 lh-1" title="編輯" @click="$emit('edit', char)">✏️</button>
+        <button class="btn btn-sm py-0 px-1 lh-1" title="傳承" @click="$emit('inherit', char)">🔗</button>
+        <button class="btn btn-sm py-0 px-1 lh-1" title="刪除" @click="$emit('delete', char.id)">🗑</button>
       </div>
     </div>
     <div class="text-muted small mb-2">{{ tribeName }} — {{ className }}</div>
@@ -233,7 +229,7 @@ createApp({
       loading: true,
       talents: [],
       talentsMap: {},
-      pools: {},
+      pools2: [],
       tribes: [],
       classes: [],
       characters: [],
@@ -243,6 +239,7 @@ createApp({
       manualForm: {
         id: null, name: '', tribe_id: null, class_id: null,
         origin_talent_id: null, experience_talent_id: null, title_talent_id: null,
+        tribe_talent_id: null,
         talent_ids: [],
       },
 
@@ -260,30 +257,6 @@ createApp({
   },
 
   computed: {
-    originTalents() {
-      const cls = this.classes.find(c => c.id === this.manualForm?.class_id);
-      return this.buildSlotPool('origin', cls);
-    },
-    experienceTalents() { return this.talents.filter(t => t.slot === 'experience'); },
-    titleTalents() {
-      const cls = this.classes.find(c => c.id === this.manualForm?.class_id);
-      return this.buildSlotPool('title', cls);
-    },
-    normalTalents()     { return this.talents.filter(t => t.slot === 'normal'); },
-
-    // Manual modal 用：部落天賦選項（依選取的部落過濾）
-    manualTribeOptions() {
-      const tribeKey = this.tribes.find(t => t.id === this.manualForm?.tribe_id)?.key;
-      if (!tribeKey) return [];
-      return this.pools.tribe?.[tribeKey] || [];
-    },
-
-    // Manual modal 用：一般天賦選項
-    manualNormalOptions() {
-      return this.talents.filter(t => t.slot === 'normal');
-    },
-
-
     // 傳承：徒弟必須天賦未滿 6 且不能是師父
     eligibleStudents() {
       return this.characters.filter(c =>
@@ -313,17 +286,18 @@ createApp({
     async loadData() {
       this.loading = true;
       try {
-        const [talents, pools, tribes, classes] = await Promise.all([
+        const [talents, pools, tags] = await Promise.all([
           fetch('data/talents.json').then(r => r.json()),
           fetch('data/talent_pools.json').then(r => r.json()),
-          fetch('data/tribes.json').then(r => r.json()),
-          fetch('data/classes.json').then(r => r.json()),
+          fetch('data/tags.json').then(r => r.json()),
         ]);
-        this.talents    = talents;
-        this.talentsMap = Object.fromEntries(talents.map(t => [t.id, t]));
-        this.pools      = pools;
-        this.tribes     = tribes;
-        this.classes    = classes;
+        
+        // 確保把原始資料的 talent_id 對應到 id，供前端統一使用
+        this.talents = talents.map(t => ({ ...t, id: t.talent_id }));
+        this.talentsMap = Object.fromEntries(this.talents.map(t => [t.id, t]));
+        this.pools2     = pools;
+        this.tribes     = tags.filter(t => t.category === 'tribe');
+        this.classes    = tags.filter(t => t.category === 'class');
       } catch (e) {
         console.error('Failed to load data', e);
       }
@@ -347,6 +321,36 @@ createApp({
       localStorage.setItem('soulmask_chars', LZString.compressToUTF16(data));
     },
 
+    // ── 通用方法：取得對應池子的天賦 ──────────────────────────────────────────
+    getTalentsForSlot(slot, tribeId, classId) {
+      if (!tribeId || !classId) return [];
+      
+      const tribe = this.tribes.find(t => t.id === tribeId);
+      const cls = this.classes.find(c => c.id === classId);
+      if (!tribe || !cls) return [];
+      
+      const tribeData = this.pools2.find(p => p.key === tribe.key);
+      if (!tribeData) return [];
+
+      const poolClassKey = cls.key;
+      
+      if (!tribeData.classes[poolClassKey]) return [];
+      
+      const ids = tribeData.classes[poolClassKey][slot] || [];
+      return ids.map(id => this.talentsMap[id]).filter(Boolean);
+    },
+    
+    slotName(key) {
+      const dic = {
+        tribe: '部落', origin: '出身', experience: '經驗', title: '稱號'
+      };
+      return dic[key] || key;
+    },
+
+    slotTalentOptions(slot) {
+      return this.getTalentsForSlot(slot, this.manualForm.tribe_id, this.manualForm.class_id);
+    },
+
     // ── 自然生成 ──────────────────────────────────────────────────────────────
     autoGenerate() {
       if (this.loading) return;
@@ -357,22 +361,26 @@ createApp({
       const cls   = this.pickRandom(this.classes);
 
       const used = new Set();
+      const getSlot = (slotName, amount) => {
+          const tp = this.getTalentsForSlot(slotName, tribe.id, cls.id);
+          return this.pickTalents(tp, amount, used);
+      };
 
-      // 3. 選 origin（依部落決定池子，Outcast 部落用專屬池）
-      const origin_talent_id     = this.pickTalents(this.buildOriginPool(tribe?.key, cls), 1, used)[0] ?? null;
+      // 3. 選 origin
+      const origin_talent_id     = getSlot('origin', 1)[0] ?? null;
 
-      // 4. 選稱號（依職業類別過濾）
-      const title_talent_id      = this.pickTalents(this.buildTitlePool(cls), 1, used)[0] ?? null;
+      // 4. 選稱號
+      const title_talent_id      = getSlot('title', 1)[0] ?? null;
 
       // 5. 選部落天賦（剛好 1 筆）
-      const tribe_talent_id      = this.pickTalents(this.pools.tribe?.[tribe?.key] || [], 1, used)[0] ?? null;
+      const tribe_talent_id      = getSlot('tribe', 1)[0] ?? null;
 
       // 6. 選一般天賦（1~5 筆，只從 normal 池）
       const count      = Math.floor(Math.random() * 5) + 1;
-      const talent_ids = this.pickTalents(this.buildNormalPool(tribe?.id, cls?.id), count, used);
+      const talent_ids = getSlot('normal', count);
 
-      // experience 天賦獨立選取（目前只有 1 筆）
-      const experience_talent_id = this.pickTalents(this.pools.experience || [], 1, used)[0] ?? null;
+      // experience 天賦獨立選取
+      const experience_talent_id = getSlot('experience', 1)[0] ?? null;
 
       const char = {
         id:                   this.nextId++,
@@ -388,88 +396,6 @@ createApp({
       if (this.characters.length >= 100) this.characters.shift();
       this.characters.push(char);
       this.saveCharacters();
-    },
-
-    // 回傳 slot 的天賦物件陣列（給 ManualForm 選項用），依職業群過濾
-    buildSlotPool(slot, cls) {
-      const bucket  = this.pools[slot] || {};
-      const general = bucket.ungroup || [];
-      if (!cls) return general;
-      const catPool = bucket[cls.category] || [];
-      const seen = new Set(catPool.map(t => t.id));
-      return [...catPool, ...general.filter(t => !seen.has(t.id))];
-    },
-
-    // 回傳自然生成用的 origin 候選 ID 陣列
-    buildOriginPool(tribeKey, cls) {
-      const bucket  = this.pools.origin || {};
-      const general = bucket.ungroup || [];
-      if (!cls) return general;
-      return [...new Set([...(bucket[cls.category] || []), ...general])];
-    },
-
-    // 回傳自然生成用的 title 候選 ID 陣列
-    buildTitlePool(cls) {
-      const bucket  = this.pools.title || {};
-      const general = bucket.ungroup || [];
-      if (!cls) return general;
-      return [...new Set([...(bucket[cls.category] || []), ...general])];
-    },
-
-    // 回傳一般天賦候選 ID 陣列（L1→L4 巢狀聯集）
-    // 支援新格式：craft 無部落層，直接為 class bucket
-    buildNormalPool(tribe_id, class_id) {
-      const n     = this.pools.normal || {};
-      const tribe = tribe_id ? this.tribes.find(t => t.id === tribe_id)  : null;
-      const cls   = class_id ? this.classes.find(c => c.id === class_id) : null;
-      const ids   = new Set();
-      const add   = arr => (arr || []).forEach(id => ids.add(id));
-
-      add(n.ungroup);  // L1 ungroup（無 category tag）
-
-      const cats = cls ? [cls.category] : ['battle', 'craft'];
-      cats.forEach(cat => {
-        const catBucket = n[cat];
-        if (!catBucket) return;
-        if (Array.isArray(catBucket)) { add(catBucket); return; }
-
-        add(catBucket.ungroup);  // L2 ungroup（category 通用）
-
-        const tribeKey    = tribe?.key;
-        const tribeBucket = tribeKey ? catBucket[tribeKey] : null;
-
-        if (tribeBucket != null) {
-          // 有部落層（battle）
-          if (Array.isArray(tribeBucket)) {
-            add(tribeBucket);
-          } else {
-            add(tribeBucket.ungroup);  // L3 ungroup
-            if (cls) {
-              add(tribeBucket[cls.key]);  // L4 specific class
-            } else {
-              Object.entries(tribeBucket)
-                .filter(([k]) => k !== 'ungroup')
-                .forEach(([, v]) => add(Array.isArray(v) ? v : []));
-            }
-          }
-        } else {
-          // 無部落層（craft），class bucket 直接在 catBucket 下
-          if (cls) {
-            add(catBucket[cls.key]);
-          } else if (!tribeKey) {
-            // 無部落篩選：展開所有 sub-bucket
-            Object.entries(catBucket)
-              .filter(([k]) => k !== 'ungroup')
-              .forEach(([, v]) => {
-                if (Array.isArray(v)) add(v);
-                else { add(v.ungroup); Object.entries(v).filter(([k]) => k !== 'ungroup').forEach(([, a]) => add(a)); }
-              });
-          }
-          // else: 有部落篩選但此 category 無部落層，僅 L2 ungroup 已加入
-        }
-      });
-
-      return [...ids];
     },
 
     pickRandom(arr) {
@@ -556,7 +482,7 @@ createApp({
       if (student.talent_ids.length >= 6) { this.inheritError = '徒弟已有 6 個天賦，無法再傳承。'; return; }
       if (!master.talent_ids.length)      { this.inheritError = '師父沒有一般天賦可傳授。'; return; }
       // 徒弟的有效天賦池（依部落與職業條件）
-      const studentPool  = new Set(this.buildNormalPool(student.tribe_id, student.class_id));
+      const studentPool  = new Set(this.getTalentsForSlot('normal', student.tribe_id, student.class_id).map(t => t.id));
       // 排除徒弟已擁有 或 不符合徒弟條件的天賦
       const studentOwned = new Set(student.talent_ids);
       const available    = master.talent_ids.filter(id => studentPool.has(id) && !studentOwned.has(id));

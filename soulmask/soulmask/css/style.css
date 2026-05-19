@@ -1,0 +1,180 @@
+body {
+  background: #1a1c1e;
+  color: #d8dde3;
+  font-size: .875rem;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Common Components
+───────────────────────────────────────────────────────────────── */
+.layer-badge {
+  display: inline-block;
+  font-size: .65rem;
+  font-weight: 700;
+  padding: .1rem .35rem;
+  border-radius: .25rem;
+  vertical-align: middle;
+  margin-right: .3rem;
+}
+
+.l1 { background: #495057; color: #fff; }
+.l2 { background: #1a6fc4; color: #fff; }
+.l3 { background: #3a3d42; color: #adb5bd; }
+.l4 { background: #2e3136; color: #8a9099; }
+
+.section-card {
+  background: #26292d;
+  border-radius: .5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .4);
+  margin-bottom: 1rem;
+  border: 1px solid #3a3d42;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem 1rem;
+  border-bottom: 1px solid #3a3d42;
+  cursor: pointer;
+  user-select: none;
+  border-radius: .5rem .5rem 0 0;
+  font-size: 1rem;
+}
+
+.section-header strong { font-size: 1rem; color: #e0e4ea; }
+.section-header:hover { background: #2e3136; }
+
+.section-body { padding: .75rem 1rem; }
+
+.sub-section { border-left: 2px solid #3a3d42; padding-left: 1.25rem; margin-top: .6rem; }
+.sub-section.l2-battle { border-color: #1a6fc4; }
+.sub-section.l2-craft { border-color: #c06000; }
+.sub-section.l2-general { border-color: #4a4d52; }
+.sub-section.l3 { border-color: #3a3d42; padding-left: 1.5rem; }
+.sub-section.l4 { border-color: #2e3136; padding-left: 1.75rem; }
+
+.sub-label {
+  font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: #7a8290; margin-bottom: .35rem;
+}
+
+.collapse-icon { margin-left: auto; color: #555; font-size: .8rem; }
+
+.badge-count {
+  background: #3a3d42; color: #adb5bd; font-size: .65rem;
+  padding: .1rem .35rem; border-radius: .25rem;
+}
+
+/* L2 sub-headers */
+.section-header.l2-header {
+  background: #1e2a38; border-radius: .35rem; border: 1px solid #2a4060;
+}
+.section-header.l2-header:hover { background: #243347; }
+
+.section-header.l3-header {
+  background: transparent; border-radius: .35rem; border: none; padding-left: 0;
+}
+.section-header.l3-header:hover { background: #2e3136; border-radius: .3rem; }
+
+/* ─────────────────────────────────────────────────────────────────
+   Talent UI
+───────────────────────────────────────────────────────────────── */
+.talent-grid { display: flex; flex-wrap: wrap; gap: .4rem; }
+
+.talent-chip {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .3rem .55rem; border-radius: .3rem; background: #1a1c1e;
+  border: 1px solid #3a3d42; font-size: .78rem; color: #c8cdd3;
+  cursor: default; transition: background .1s, border-color .1s;
+}
+.talent-chip:hover {
+  background: #2e3136; border-color: #5a6069; color: #fff;
+}
+.talent-chip img {
+  width: 28px; height: 28px; object-fit: contain; border-radius: .25rem;
+  background: #111315; padding: 1px;
+}
+
+.chip-id { font-size: .68rem; color: #555; margin-left: .1rem; }
+.chip-empty { color: #555; font-style: italic; font-size: .75rem; }
+
+.talent-icon { width: 40px; height: 40px; object-fit: contain; cursor: default; }
+.talent-icon-sm { width: 22px; height: 22px; object-fit: contain; }
+
+/* tooltip */
+.talent-tip {
+  position: fixed; z-index: 9999; max-width: 220px;
+  background: rgba(20,20,30,.92); color: #f0f0f0; border-radius: .4rem;
+  padding: .45rem .6rem; font-size: .78rem; pointer-events: none;
+  line-height: 1.4; box-shadow: 0 3px 12px rgba(0,0,0,.4);
+}
+.talent-tip .tip-name { font-weight: 600; margin-bottom: .2rem; }
+
+.talent-dropdown-menu {
+  position: absolute; top: 100%; left: 0; z-index: 1060; min-width: 100%;
+  background: #26292d; border: 1px solid #3a3d42; border-radius: .375rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+}
+
+.talent-dropdown-menu .dropdown-item {
+  color: #d8dde3;
+}
+.talent-dropdown-menu .dropdown-item:hover, .talent-dropdown-menu .dropdown-item.active {
+  background: #2e3136; color: #fff;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   Bootstrap Overrides 
+───────────────────────────────────────────────────────────────── */
+.navbar.bg-dark { background: #111315 !important; border-bottom: 1px solid #2a2d30; }
+
+.btn-outline-light { border-color: #4a4d52; color: #aaa; }
+.btn-outline-light:hover { background: #2e3136; color: #fff; border-color: #6c9fd4; }
+
+.btn-outline-secondary { border-color: #4a4d52; color: #aaa; background: transparent; }
+.btn-outline-secondary:hover { background: #2e3136; color: #fff; border-color: #6c9fd4; }
+
+.filter-bar { background: #26292d; border-bottom: 1px solid #3a3d42; }
+.filter-bar select, .filter-bar input {
+  font-size: .82rem; background: #1a1c1e; color: #d8dde3; border-color: #4a4d52;
+}
+.filter-bar select:focus, .filter-bar input:focus {
+  background: #1a1c1e; color: #fff; border-color: #6c9fd4; box-shadow: none;
+}
+.filter-bar select option { background: #26292d; }
+
+.card {
+  background: #26292d;
+  border-color: #3a3d42;
+  color: #d8dde3;
+}
+.modal-content {
+  background: #26292d;
+  color: #d8dde3;
+  border: 1px solid #3a3d42;
+}
+.modal-header {
+  border-bottom: 1px solid #3a3d42;
+}
+.modal-footer {
+  border-top: 1px solid #3a3d42;
+}
+.form-control, .form-select {
+  background: #1a1c1e;
+  border-color: #4a4d52;
+  color: #d8dde3;
+}
+.form-control:focus, .form-select:focus {
+  background: #1a1c1e; color: #fff; border-color: #6c9fd4; box-shadow: none;
+}
+.form-control::placeholder {
+  color: #6c757d;
+}
+.form-select option {
+  background: #26292d;
+  color: #d8dde3;
+}
+
+strong { color: #e0e4ea; }
+

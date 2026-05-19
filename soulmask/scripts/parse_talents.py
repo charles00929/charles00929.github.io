@@ -8,7 +8,7 @@ import os
 from html.parser import HTMLParser
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), '../_data')
-OUT_PATH = os.path.join(os.path.dirname(__file__), '../data/talents.raw.json')
+OUT_PATH = os.path.join(os.path.dirname(__file__), '../data/_talents.raw.json')
 
 # slot 對應各 html 檔案
 SLOT_MAP = {
@@ -18,18 +18,6 @@ SLOT_MAP = {
     'title.html':      'title',
     'tribe.html':      'tribe',   # slot 由偵測決定，形如 tribe.{key}
 }
-
-# tribe 天賦：從 title/description 推斷所屬 tribe tag key
-# 包含 tribe.html 的敘述關鍵字，以及 normal.html 中的 [X Exclusive] 標記
-TRIBE_KEYWORDS = {
-    'claw':       ['Claw Tribe', 'the Claw', 'Claw Exclusive'],
-    'flint':      ['Flint Tribe', 'the Flint', 'Flint Exclusive'],
-    'fang':       ['Fang Tribe', 'the Fang', 'Fang Exclusive'],
-    'wildwolf':   ['Wildwolf Tribe', 'Wildwolf people', 'Wildwolf Exclusive'],
-    'savagehorn': ['Savagehorn Tribe', 'Savagehorn people', 'Savagehorn Exclusive'],
-}
-OUTCAST_KEYWORD = 'Outcast'
-
 
 class TalentTableParser(HTMLParser):
     """從一個 <table class="data-table"> 中解析所有 talent row。"""
@@ -135,15 +123,6 @@ class TalentTableParser(HTMLParser):
         })
 
 
-def detect_tribe_slot(name: str, desc: str) -> str:
-    """從 name/desc 推斷 tribe slot（tribe.{key}），用於 tribe.html 分類。"""
-    text = name + ' ' + desc
-    for key, keywords in TRIBE_KEYWORDS.items():
-        if any(kw in text for kw in keywords):
-            return f'tribe.{key}'
-    return 'tribe.unknown'
-
-
 def merge_duplicates(rows: list[dict]) -> list[dict]:
     """合併同名的 level-split rows（合計 game_ids ≤ 3）。
     若合計超過 3，視為不同天賦，各自獨立保留。"""
@@ -191,22 +170,18 @@ def parse_file(filepath: str) -> list[dict]:
     return merge_duplicates(parser.rows)
 
 
-def classify_rows(rows: list[dict], default_slot: str, is_tribe: bool = False) -> list[dict]:
+def classify_rows(rows: list[dict], default_slot: str) -> list[dict]:
     """為每個 row 設定 slot。"""
     result = []
     for row in rows:
         row = dict(row)
-        # if is_tribe:
-        #     if OUTCAST_KEYWORD in (row['name'] or ''):
-        #         row['slot'] = 'tribe.outcast'
-        #     else:
-        #         row['slot'] = detect_tribe_slot(row['name'], row['description'] or '')
-        #         if row['slot'] == 'tribe.unknown':
-        #             print(f'  [WARN] tribe talent with no tribe tag: {row["name"]}')
-        # else:
         row['slot'] = default_slot
         result.append(row)
     return result
+
+
+def to_snake_case(text: str) -> str:
+    return re.sub(r'[^a-z0-9]+', '_', text.lower()).strip('_')
 
 
 def main():
@@ -220,6 +195,10 @@ def main():
         talents = classify_rows(rows, slot)
         all_talents.extend(talents)
         print(f'[OK] {filename}: {len(talents)} talents')
+
+    for i, talent in enumerate(all_talents, 1):
+        talent['talent_id'] = i
+        talent['key'] = to_snake_case(talent['name'])
 
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(all_talents, f, ensure_ascii=False, indent=2)

@@ -1,383 +1,368 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="zh-tw" data-bs-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>天賦池瀏覽器</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <style>
-    body { background: #1a1c1e; color: #d8dde3; font-size: .875rem; }
-    .layer-badge {
-      display: inline-block;
-      font-size: .65rem;
-      font-weight: 700;
-      padding: .1rem .35rem;
-      border-radius: .25rem;
-      vertical-align: middle;
-      margin-right: .3rem;
-    }
-    .l1 { background:#495057; color:#fff; }
-    .l2 { background:#1a6fc4; color:#fff; }
-    .l3 { background:#3a3d42; color:#adb5bd; }
-    .l4 { background:#2e3136; color:#8a9099; }
-
-    .section-card {
-      background:#26292d;
-      border-radius:.5rem;
-      box-shadow:0 1px 6px rgba(0,0,0,.4);
-      margin-bottom:1rem;
-      border:1px solid #3a3d42;
-    }
-    .section-header {
-      display:flex; align-items:center; gap:.5rem;
-      padding:.6rem 1rem;
-      border-bottom:1px solid #3a3d42;
-      cursor:pointer;
-      user-select:none;
-      border-radius:.5rem .5rem 0 0;
-      font-size:1rem;
-    }
-    .section-header strong { font-size:1rem; }
-    .section-header:hover { background:#2e3136; }
-    .section-body { padding:.75rem 1rem; }
-
-    .talent-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .4rem;
-    }
-    .talent-chip {
-      display:inline-flex; align-items:center; gap:.35rem;
-      padding:.3rem .55rem;
-      border-radius:.3rem;
-      background:#1a1c1e;
-      border:1px solid #3a3d42;
-      font-size:.78rem;
-      color:#c8cdd3;
-      cursor:default;
-      transition: background .1s, border-color .1s;
-    }
-    .talent-chip:hover { background:#2e3136; border-color:#5a6069; color:#fff; }
-    .talent-chip img {
-      width:28px; height:28px; object-fit:contain; border-radius:.25rem;
-      background:#111315; padding:1px;
-    }
-    .chip-id { font-size:.68rem; color:#555; margin-left:.1rem; }
-    .chip-empty { color:#555; font-style:italic; font-size:.75rem; }
-
-    .filter-bar { background:#26292d; border-bottom:1px solid #3a3d42; }
-    .filter-bar select, .filter-bar input {
-      font-size:.82rem;
-      background:#1a1c1e; color:#d8dde3; border-color:#4a4d52;
-    }
-    .filter-bar select:focus, .filter-bar input:focus {
-      background:#1a1c1e; color:#fff; border-color:#6c9fd4; box-shadow:none;
-    }
-    .filter-bar select option { background:#26292d; }
-
-    .sub-section {
-      border-left: 2px solid #3a3d42;
-      padding-left: 1.25rem;
-      margin-top: .6rem;
-    }
-    .sub-section.l2-battle  { border-color: #1a6fc4; }
-    .sub-section.l2-craft   { border-color: #c06000; }
-    .sub-section.l2-general { border-color: #4a4d52; }
-    .sub-section.l3 { border-color: #3a3d42; padding-left: 1.5rem; }
-    .sub-section.l4 { border-color: #2e3136; padding-left: 1.75rem; }
-
-    .sub-label {
-      font-size:.72rem; font-weight:700; text-transform:uppercase;
-      letter-spacing:.05em; color:#7a8290; margin-bottom:.35rem;
-    }
-    .collapse-icon { margin-left:auto; color:#555; font-size:.8rem; }
-    .badge-count { background:#3a3d42; color:#adb5bd; font-size:.65rem;
-                   padding:.1rem .35rem; border-radius:.25rem; }
-
-    /* L2 sub-headers */
-    .section-header.l2-header { background:#1e2a38; border-radius:.35rem; border:1px solid #2a4060; }
-    .section-header.l2-header:hover { background:#243347; }
-    .section-header.l3-header { background:transparent; border-radius:.35rem; border:none; padding-left:0; }
-    .section-header.l3-header:hover { background:#2e3136; border-radius:.3rem; }
-
-    /* Navbar override */
-    .navbar.bg-dark { background:#111315 !important; border-bottom:1px solid #2a2d30; }
-    .btn-outline-light { border-color:#4a4d52; color:#aaa; }
-    .btn-outline-light:hover { background:#2e3136; color:#fff; border-color:#6c9fd4; }
-    .btn-outline-secondary { border-color:#4a4d52; color:#aaa; background:transparent; }
-    .btn-outline-secondary:hover { background:#2e3136; color:#fff; border-color:#6c9fd4; }
-    strong { color:#e0e4ea; }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<div id="app">
-  <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark py-2 sticky-top">
-    <div class="container-fluid">
-      <span class="navbar-brand h6 mb-0">⚔️ Soulmask</span>
-      <div class="position-absolute start-50 translate-middle-x d-flex gap-1">
-        <a href="index.html" class="btn btn-sm btn-outline-light">天賦模擬器</a>
-        <span class="btn btn-sm btn-secondary disabled">天賦池瀏覽器</span>
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark py-2 sticky-top">
+      <div class="container-fluid">
+        <span class="navbar-brand h6 mb-0">⚔️ Soulmask</span>
+        <div class="position-absolute start-50 translate-middle-x d-flex gap-1">
+          <a href="index.html" class="btn btn-sm btn-outline-light">天賦模擬器</a>
+          <span class="btn btn-sm btn-secondary disabled">天賦池瀏覽器</span>
+        </div>
       </div>
+    </nav>
+
+    <!-- Filter bar -->
+    <div class="filter-bar sticky-top py-2 px-3 d-flex gap-2 align-items-center flex-wrap" style="top:52px;z-index:100">
+      <input v-model="search" type="text" class="form-control form-control-sm" style="max-width:200px"
+        placeholder="搜尋天賦名稱...">
+      <select v-model="filterSlot" class="form-select form-select-sm" style="max-width:160px">
+        <option value="">所有 Slot</option>
+        <option v-for="key in SLOT_KEYS" :key="key" :value="key">{{ formatSlotName(key) }}</option>
+      </select>
     </div>
-  </nav>
 
-  <!-- Filter bar -->
-  <div class="filter-bar sticky-top py-2 px-3 d-flex gap-2 align-items-center flex-wrap" style="top:52px;z-index:100">
-    <input v-model="search" type="text" class="form-control form-control-sm" style="max-width:200px" placeholder="搜尋天賦名稱...">
-    <select v-model="filterSlot" class="form-select form-select-sm" style="max-width:160px">
-      <option value="">所有 Slot</option>
-      <option value="normal">一般 (normal)</option>
-      <option value="tribe">部落 (tribe)</option>
-      <option value="origin">出身 (origin)</option>
-      <option value="title">稱號 (title)</option>
-      <option value="experience">經驗 (experience)</option>
-    </select>
-    <span class="text-muted small ms-2">共 {{ matchCount }} 筆天賦</span>
-    <button class="btn btn-outline-secondary btn-sm ms-auto" @click="expandAll">全展開</button>
-    <button class="btn btn-outline-secondary btn-sm" @click="collapseAll">全收合</button>
+    <div v-if="loading" class="text-center py-5 text-muted">
+      <div class="spinner-border spinner-border-sm me-2"></div>載入資料中...
+    </div>
+
+    <div v-else class="container-fluid py-3" style="max-width:98vw;">
+      <ul class="nav nav-tabs" style="border-bottom: 1px solid #3a3d42;">
+        <li class="nav-item" v-for="tribe in pools" :key="tribe.key">
+          <a class="nav-link" 
+             :class="{ active: activeTribe === tribe.key }" 
+             @click.prevent="activeTribe = tribe.key"
+             style="cursor:pointer;"
+             :style="activeTribe === tribe.key ? 'background-color:#26292d; border-color:#3a3d42 #3a3d42 transparent; color:#64b5f6;' : 'color:#8a9099; border-color:transparent;'"
+             href="#">
+             <span class="layer-badge l1 mb-1">Tribe</span>
+             <strong>{{ tribe.en_name }}</strong> 
+             <span class="ms-1" :class="activeTribe === tribe.key ? 'text-light' : 'text-muted'">{{ tribe.ch_name }}</span>
+          </a>
+        </li>
+      </ul>
+      <tribe-content v-if="activeTribeObj" :tribe="activeTribeObj"></tribe-content>
+    </div>
   </div>
 
-  <div v-if="loading" class="text-center py-5 text-muted">
-    <div class="spinner-border spinner-border-sm me-2"></div>載入資料中...
-  </div>
-
-  <div v-else class="container-fluid py-3" style="max-width:1400px">
-    <pool-node
-      v-for="slotKey in visibleSlotKeys" :key="slotKey"
-      :node-key="slotKey"
-      :data="pools[slotKey] ?? []"
-      :depth="0" :path="[]">
-    </pool-node>
-  </div>
-</div>
-
-<!-- Tooltip popup -->
-<div id="g-tip" style="
+  <!-- Tooltip popup -->
+  <div id="g-tip" style="
   display:none; position:fixed; z-index:9999;
   max-width:240px; background:rgba(20,20,30,.92); color:#f0f0f0;
   border-radius:.4rem; padding:.5rem .65rem; font-size:.78rem;
   pointer-events:none; line-height:1.45; box-shadow:0 3px 12px rgba(0,0,0,.4)
 "></div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script>
-const { createApp, computed } = Vue;
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp } = Vue;
 
-const SLOT_ORDER  = ['experience', 'tribe', 'origin', 'title', 'normal'];
-const SLOT_LABELS = {
-  experience: 'experience — 經驗天賦',
-  tribe:      'tribe — 部落天賦',
-  origin:     'origin — 出身天賦',
-  title:      'title — 稱號天賦',
-  normal:     'normal — 一般天賦',
-};
+    const app = createApp({
+      data() {
+        return {
+          loading: true,
+          pools: [],
+          talentsMap: {},
+          tagMap: {},
+          search: '',
+          filterSlot: '',
+          SLOT_KEYS: [],
+          CLASS_KEYS: [],
+          activeTribe: ''
+        };
+      },
+      computed: {
+        activeTribeObj() {
+          return this.pools.find(p => p.key === this.activeTribe) || this.pools[0];
+        }
+      },
+      provide() {
+        return {
+          // 提供 Getter 以保持響應性與單一資料來源
+          getTalent: (id) => this.talentsMap[id],
+          getTagInfo: (key) => this.tagMap[key] || { ch_name: key, en_name: key },
+          getSearch: () => this.search,
+          getFilterSlot: () => this.filterSlot,
+          getClassKeys: () => this.CLASS_KEYS,
+          getSlotKeys: () => this.SLOT_KEYS,
+          formatSlotName: this.formatSlotName,
+          showTip: this.showTip,
+          hideTip: this.hideTip
+        };
+      },
+      async mounted() {
+        try {
+          // 單一職責：平行載入所有所需 JSON 資料
+          const [rawTalents, pools, tags] = await Promise.all([
+            fetch('data/talents.json').then(r => r.json()),
+            fetch('data/talent_pools.json').then(r => r.json()),
+            fetch('data/tags.json').then(r => r.json())
+          ]);
 
-const app = createApp({
-  data() {
-    return {
-      loading:    true,
-      talents:    [],
-      pools:      {},
-      search:     '',
-      filterSlot: '',
-      open:       {},
-    };
-  },
+          // 處理對應表
+          rawTalents.forEach((t, i) => {
+            t.id = i + 1;
+            this.talentsMap[t.id] = t;
+          });
 
-  computed: {
-    matchCount() {
-      const q = this.search.trim().toLowerCase();
-      if (!q) return this.talents.length;
-      return this.talents.filter(t => t.name.toLowerCase().includes(q)).length;
-    },
-    visibleSlotKeys() {
-      return SLOT_ORDER.filter(k =>
-        this.pools[k] !== undefined && (!this.filterSlot || this.filterSlot === k)
-      );
-    },
-  },
+          tags.forEach(t => {
+            this.tagMap[t.key] = t;
+          });
 
-  provide() {
-    return {
-      openState: this.open,                                        // reactive object
-      doToggle:  (key) => { this.open[key] = !this.open[key]; },
-      searchRef: computed(() => this.search),                      // reactive ref
-      deepCount: (v) => this.deepCount(v),
-      showTip:   (e, t) => this.showTip(e, t),
-      hideTip:   () => this.hideTip(),
-    };
-  },
+          // 修補 python 把 defender 改為 guard 所產生的 mapping 落差
+          if (!this.tagMap['guard'] && this.tagMap['defender']) {
+            this.tagMap['guard'] = { ...this.tagMap['defender'] };
+          }
 
-  methods: {
-    async loadData() {
-      const [talents, pools] = await Promise.all([
-        fetch('data/talents.json').then(r => r.json()),
-        fetch('data/talent_pools.json').then(r => r.json()),
-      ]);
-      this.talents = talents;
-      this.pools   = pools;
-      this.expandAll();
-    },
+          this.pools = pools;
 
-    expandAll() {
-      const walk = (data, path) => {
-        if (path.length) this.open[path.join('_')] = true;
-        if (!Array.isArray(data) && typeof data === 'object' && data !== null)
-          Object.entries(data).forEach(([k, v]) => walk(v, [...path, k]));
-      };
-      SLOT_ORDER.forEach(k => { if (this.pools[k] !== undefined) walk(this.pools[k], [k]); });
-    },
+          // 動態擷取 key 結構 (不 hardcode JSON 已有的結構)
+          if (this.pools.length > 0) {
+            const firstTribe = this.pools[0];
+            this.activeTribe = firstTribe.key;
+            this.CLASS_KEYS = Object.keys(firstTribe.classes || {});
+            if (this.CLASS_KEYS.length > 0) {
+              this.SLOT_KEYS = Object.keys(firstTribe.classes[this.CLASS_KEYS[0]] || {});
+            }
+          }
 
-    collapseAll() { Object.keys(this.open).forEach(k => { this.open[k] = false; }); },
-
-    deepCount(val) {
-      if (Array.isArray(val)) return val.length;
-      if (typeof val !== 'object' || val === null) return 0;
-      return Object.values(val).reduce((s, v) => s + this.deepCount(v), 0);
-    },
-
-    showTip(event, talent) {
-      let desc = talent.description || '';
-      if (talent.description_values?.length) {
-        let i = 0;
-        desc = desc.replace(/#/g, () => talent.description_values[i++] ?? '#');
+        } catch (e) {
+          console.error("載入資料失敗:", e);
+        } finally {
+          this.loading = false;
+        }
+      },
+      methods: {
+        formatSlotName(key) {
+          const dic = {
+            tribe: '部落', origin: '出身', experience: '經驗',
+            normal_exclusive: '一般 (專屬)',
+            title: '稱號', exclusive: '獨家', normal: '一般',
+          };
+          return `${dic[key] || key} (${key})`;
+        },
+        showTip(event, talent) {
+          let desc = talent.description || '';
+          if (talent.description_values?.length) {
+            let i = 0;
+            desc = desc.replace(/#/g, () => talent.description_values[i++] ?? '#');
+          }
+          const el = document.getElementById('g-tip');
+          el.innerHTML = `<h6 style="font-weight:700;margin-bottom:.2rem">${talent.name}</h6><div>${desc}</div>`;
+          el.style.display = 'block';
+          const r = event.target.closest('.talent-chip').getBoundingClientRect();
+          el.style.left = (r.right + 8) + 'px';
+          el.style.top = r.top + 'px';
+        },
+        hideTip() {
+          document.getElementById('g-tip').style.display = 'none';
+        }
       }
-      const el = document.getElementById('g-tip');
-      el.innerHTML = `<div style="font-weight:700;margin-bottom:.2rem">${talent.name}</div><div>${desc}</div>`;
-      el.style.display = 'block';
-      const r = event.target.closest('.talent-chip').getBoundingClientRect();
-      el.style.left = (r.right + 8) + 'px';
-      el.style.top  = r.top + 'px';
-    },
-    hideTip() { document.getElementById('g-tip').style.display = 'none'; },
-  },
+    });
 
-  async mounted() {
-    await this.loadData();
-    this.loading = false;
-  },
-});
+    // --- Components (單一職責) ---
 
-// ── talent-grid ──────────────────────────────────────────────────────────────
-// Renders a flat chip grid; receives pre-filtered talent objects.
-app.component('talent-grid', {
-  props: { talents: { type: Array, default: () => [] } },
-  inject: ['showTip', 'hideTip'],
-  template: `
+    // 1. 天賦網格渲染
+    app.component('talent-grid', {
+      props: { ids: Array },
+      inject: ['getTalent', 'getSearch', 'showTip', 'hideTip'],
+      computed: {
+        resolvedTalents() {
+          if (!this.ids) return [];
+          const q = this.getSearch().trim().toLowerCase();
+          // 只利用 getter 動態依賴響應性，過濾存在且符合搜尋目標的天賦
+          return this.ids
+            .map(id => this.getTalent(id))
+            .filter(t => {
+              if (!t) return false;
+              if (!q) return true;
+              const nameMatch = t.name.toLowerCase().includes(q);
+              const descMatch = t.description ? t.description.toLowerCase().includes(q) : false;
+              return nameMatch || descMatch;
+            });
+        }
+      },
+      template: `
     <div class="talent-grid">
-      <template v-if="talents.length">
-        <div v-for="t in talents" :key="t.id" class="talent-chip"
+      <template v-if="resolvedTalents.length">
+        <div v-for="t in resolvedTalents" :key="t.id" class="talent-chip"
              @mouseenter="showTip($event, t)" @mouseleave="hideTip()">
           <img :src="t.icon" @error="$event.target.style.opacity='.2'">
           <span>{{ t.name }}</span>
           <span class="chip-id">#{{ t.id }}</span>
         </div>
       </template>
-      <span v-else class="chip-empty">無符合結果</span>
     </div>
-  `,
-});
+  `
+    });
 
-// ── pool-node ─────────────────────────────────────────────────────────────────
-// Recursive component:
-//   Array  → leaf  → labeled sub-section + talent-grid  (depth 1+)
-//           OR top-level section card with inline grid   (depth 0)
-//   Object → node  → collapsible header + recurse into children
-app.component('pool-node', {
-  name: 'PoolNode',
-  props: {
-    nodeKey: { type: String, required: true },
-    data:    { type: [Array, Object], required: true },
-    depth:   { type: Number, default: 0 },
-    path:    { type: Array,  default: () => [] },
-  },
-  inject: ['openState', 'doToggle', 'searchRef', 'deepCount'],
+    // 2. 特定的槽位區塊 (包含水平分隔線)
+    app.component('slot-section', {
+      props: { name: String, ids: Array, hideDivider: Boolean },
+      inject: ['getTalent', 'getSearch', 'formatSlotName'],
+      computed: {
+        hasVisibleTalents() {
+          if (!this.ids || this.ids.length === 0) return false;
+          const q = this.getSearch().trim().toLowerCase();
+          return this.ids.some(id => {
+            const t = this.getTalent(id);
+            if (!t) return false;
+            if (!q) return true;
+            const nameMatch = t.name.toLowerCase().includes(q);
+            const descMatch = t.description ? t.description.toLowerCase().includes(q) : false;
+            return nameMatch || descMatch;
+          });
+        }
+      },
+      template: `
+    <div v-if="hasVisibleTalents" class="mb-3">
+      <div class="sub-label d-flex align-items-center">
+        <span class="layer-badge l3 me-2"></span>
+        <span style="font-size: .85rem; color:#bbb;">{{ formatSlotName(name) }}</span>
+      </div>
+      <talent-grid :ids="ids"></talent-grid>
+      <hr v-if="!hideDivider" class="my-2" style="border-color:#3a3d42;">
+    </div>
+  `
+    });
 
-  computed: {
-    openKey()   { return [...this.path, this.nodeKey].join('_'); },
-    isOpen()    { return this.openState[this.openKey] !== false; },
-    isLeaf()    { return Array.isArray(this.data); },
-    entries()   { return this.isLeaf ? [] : Object.entries(this.data); },
-    childPath() { return [...this.path, this.nodeKey]; },
+    // 3. 職業區塊 (直行)
+    app.component('class-column', {
+      props: { clsKey: String, classData: Object },
+      inject: ['getFilterSlot', 'getSlotKeys', 'getTagInfo', 'getTalent'],
+      computed: {
+        displayLabel() {
+          const info = this.getTagInfo(this.clsKey);
+          return `${info.ch_name} (${info.en_name || this.clsKey})`;
+        },
+        visibleSlots() {
+          const activeFilter = this.getFilterSlot();
+          const allSlots = this.getSlotKeys();
+          let slots = allSlots.filter(k => this.classData[k] && this.classData[k].length > 0);
 
-    // filtered leaf items — reactive via searchRef
-    filtered() {
-      if (!this.isLeaf) return [];
-      const q = this.searchRef.value?.trim().toLowerCase();
-      if (!q) return this.data;
-      return this.data.filter(t => (t.name || '').toLowerCase().includes(q));
-    },
-
-    // header counts: unfiltered total
-    total() { return this.isLeaf ? this.data.length : this.deepCount(this.data); },
-
-    slotLabel() { return SLOT_LABELS[this.nodeKey] || this.nodeKey; },
-    badge()     { return this.nodeKey === 'ungroup' ? 'ungroup' : ['L1','L2','L3','L4'][Math.min(this.depth, 3)]; },
-    badgeCls()  { return ['l1','l2','l3','l4'][Math.min(this.depth, 3)]; },
-    headerCls() { return this.depth <= 1 ? 'l2-header' : 'l3-header'; },
-    // border-color for leaf sub-sections derived purely from nodeKey + depth
-    sectionCls() {
-      if (this.depth === 1) return 'l2-' + this.nodeKey;   // e.g. l2-battle, l2-craft
-      if (this.depth === 2) return 'l3';
-      return 'l4';
-    },
-  },
-
-  template: `
-    <!-- depth 0: L1 section card ───────────────────────────────────────── -->
-    <template v-if="depth === 0">
-      <div class="section-card">
-        <div class="section-header" @click="doToggle(openKey)">
-          <span class="layer-badge l1">L1</span>
-          <strong>{{ slotLabel }}</strong>
-          <span class="badge-count">{{ total }}</span>
-          <span class="collapse-icon">{{ isOpen ? '▲' : '▼' }}</span>
-        </div>
-        <div class="section-body" v-show="isOpen">
-          <talent-grid v-if="isLeaf" :talents="filtered"></talent-grid>
-          <pool-node v-else
-            v-for="[k, v] in entries" :key="k"
-            :node-key="k" :data="v" :depth="1" :path="childPath">
-          </pool-node>
+          if (activeFilter) {
+            slots = slots.filter(k => k === activeFilter);
+          }
+          return slots;
+        },
+        normalIds() {
+          if (!this.classData['normal']) return [];
+          return this.classData['normal'].filter(id => {
+            const t = this.getTalent(id);
+            return t && !(t.description && t.description.includes('Exclusive'));
+          });
+        },
+        normalExclusiveIds() {
+          if (!this.classData['normal']) return [];
+          return this.classData['normal'].filter(id => {
+            const t = this.getTalent(id);
+            return t && t.description && t.description.includes('Exclusive');
+          });
+        }
+      },
+      template: `
+    <div class="p-3" style="background:#202225; border-radius:0 0 .4rem .4rem; border:1px solid #3a3d42; border-top:none;">
+      <div>
+        <template v-for="(slotName, idx) in visibleSlots" :key="slotName">
+          
+          <template v-if="slotName === 'normal'">
+            <slot-section 
+              name="normal_exclusive" 
+              :ids="normalExclusiveIds"
+              :hide-divider="idx === visibleSlots.length - 1">
+            </slot-section>
+            
+            <slot-section 
+              name="normal" 
+              :ids="normalIds"
+              :hide-divider="normalExclusiveIds.length === 0 && idx === visibleSlots.length - 1">
+            </slot-section>
+          </template>
+          
+          <slot-section v-else
+            :name="slotName" 
+            :ids="classData[slotName]"
+            :hide-divider="idx === visibleSlots.length - 1">
+          </slot-section>
+          
+        </template>
+        
+        <div v-if="visibleSlots.length === 0" class="text-muted text-center small py-3">
+           (無符合天賦)
         </div>
       </div>
-    </template>
+    </div>
+  `
+    });
 
-    <!-- depth 1+, non-leaf: collapsible sub-header ─────────────────────── -->
-    <template v-else-if="!isLeaf">
-      <div class="mb-2">
-        <div class="section-header rounded" :class="headerCls" @click="doToggle(openKey)">
-          <span class="layer-badge" :class="badgeCls">{{ badge }}</span>
-          <strong>{{ nodeKey }}</strong>
-          <span class="badge-count">{{ total }}</span>
-          <span class="collapse-icon">{{ isOpen ? '▲' : '▼' }}</span>
-        </div>
-        <div v-show="isOpen" class="ps-2 pt-1">
-          <pool-node
-            v-for="[k, v] in entries" :key="k"
-            :node-key="k" :data="v" :depth="depth + 1" :path="childPath">
-          </pool-node>
+    // 4. 部落內容區塊
+    app.component('tribe-content', {
+      props: { tribe: Object },
+      inject: ['getClassKeys', 'getTagInfo'],
+      data() {
+        return {
+          activeTab: ''
+        };
+      },
+      computed: {
+        classKeys() { return this.getClassKeys(); }
+      },
+      watch: {
+        classKeys: {
+          immediate: true,
+          handler(keys) {
+            if (keys && keys.length > 0 && !this.activeTab) {
+              this.activeTab = keys[0];
+            }
+          }
+        }
+      },
+      template: `
+    <div class="section-card" style="border-top-left-radius: 0;">
+      <div class="section-body">
+        <ul class="nav nav-tabs" style="border-bottom: 1px solid #3a3d42;">
+          <li class="nav-item" v-for="clsKey in classKeys" :key="clsKey">
+            <a class="nav-link" 
+               :class="{ active: activeTab === clsKey }" 
+               @click.prevent="activeTab = clsKey"
+               style="cursor:pointer;"
+               :style="activeTab === clsKey ? 'background-color:#202225; border-color:#3a3d42 #3a3d42 transparent; color:#fff;' : 'color:#8a9099; border-color:transparent;'"
+               href="#">
+               {{ getTagInfo(clsKey).ch_name }} ({{ getTagInfo(clsKey).en_name || clsKey }})
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active">
+            <class-column 
+               v-if="activeTab"
+               :cls-key="activeTab"
+               :class-data="tribe.classes[activeTab]">
+            </class-column>
+            <div v-else class="p-3 text-muted text-center" style="background:#202225; border:1px solid #303338; border-top:none;">
+              載入中...
+            </div>
+          </div>
         </div>
       </div>
-    </template>
+    </div>
+  `
+    });
 
-    <!-- depth 1+, leaf: labeled sub-section ────────────────────────────── -->
-    <template v-else>
-      <div class="sub-section mb-2" :class="sectionCls">
-        <div class="sub-label">
-          <span class="layer-badge" :class="badgeCls">{{ badge }}</span>{{ nodeKey }}
-          <span class="badge-count ms-1">{{ filtered.length }}</span>
-        </div>
-        <talent-grid :talents="filtered"></talent-grid>
-      </div>
-    </template>
-  `,
-});
-
-app.mount('#app');
-</script>
+    app.mount('#app');
+  </script>
 </body>
+
 </html>

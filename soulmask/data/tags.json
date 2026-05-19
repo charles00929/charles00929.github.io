@@ -1,19 +1,121 @@
 [
-  {"id": 1,  "category": "tribe",   "key": "savagehorn", "en_name": "Savagehorn", "ch_name": "蠻角"},
-  {"id": 2,  "category": "tribe",   "key": "wildwolf",   "en_name": "Wildwolf",   "ch_name": "野狼"},
-  {"id": 3,  "category": "tribe",   "key": "fang",       "en_name": "Fang",       "ch_name": "毒牙"},
-  {"id": 4,  "category": "tribe",   "key": "claw",       "en_name": "Claw",       "ch_name": "利爪"},
-  {"id": 5,  "category": "tribe",   "key": "flint",      "en_name": "Flint",      "ch_name": "火石"},
-
-  {"id":80,  "category": "class",   "key": "battle",     "en_name": "Battle",     "ch_name": "戰鬥"},
-  {"id":81,  "category": "class",   "key": "hunter",     "en_name": "Hunter",     "ch_name": "獵手"},
-  {"id":82,  "category": "class",   "key": "warrior",    "en_name": "Warrior",    "ch_name": "戰士"},
-  {"id":83,  "category": "class",   "key": "defender",   "en_name": "Defender",   "ch_name": "衛士"},
-
-  {"id":50, "category": "class",   "key": "craft",      "en_name": "Craft",      "ch_name": "工藝"},
-  {"id":51, "category": "class",   "key": "laborer",      "en_name": "Laborer",      "ch_name": "力工"},
-  {"id":52, "category": "class",   "key": "porter",      "en_name": "Porter",      "ch_name": "雜工"},
-  {"id":53, "category": "class",   "key": "craftman",      "en_name": "Craftman",      "ch_name": "匠人"},
-
-  {"id": 187, "category": "general", "key": "general",    "en_name": "General",    "ch_name": "通用"}
+  {
+    "id": 1,
+    "category": "tribe",
+    "key": "savagehorn",
+    "en_name": "Savagehorn",
+    "ch_name": "蠻角"
+  },
+  {
+    "id": 2,
+    "category": "tribe",
+    "key": "wildwolf",
+    "en_name": "Wildwolf",
+    "ch_name": "野狼"
+  },
+  {
+    "id": 3,
+    "category": "tribe",
+    "key": "fang",
+    "en_name": "Fang",
+    "ch_name": "毒牙"
+  },
+  {
+    "id": 4,
+    "category": "tribe",
+    "key": "claw",
+    "en_name": "Claw",
+    "ch_name": "利爪"
+  },
+  {
+    "id": 5,
+    "category": "tribe",
+    "key": "flint",
+    "en_name": "Flint",
+    "ch_name": "火石"
+  },
+  {
+    "id": 6,
+    "category": "tribe",
+    "key": "outcast",
+    "en_name": "Outcast",
+    "ch_name": "流放者"
+  },
+  {
+    "id": 21,
+    "category": "slot",
+    "key": "origin",
+    "en_name": "Origin",
+    "ch_name": "出身"
+  },
+  {
+    "id": 22,
+    "category": "slot",
+    "key": "normal",
+    "en_name": "Normal",
+    "ch_name": "一般"
+  },
+  {
+    "id": 23,
+    "category": "slot",
+    "key": "title",
+    "en_name": "Title",
+    "ch_name": "稱號"
+  },
+  {
+    "id": 24,
+    "category": "slot",
+    "key": "tribe",
+    "en_name": "Tribe",
+    "ch_name": "部落"
+  },
+  {
+    "id": 25,
+    "category": "slot",
+    "key": "experience",
+    "en_name": "Experience",
+    "ch_name": "經驗"
+  },
+  {
+    "id": 81,
+    "category": "class",
+    "key": "hunter",
+    "en_name": "Hunter",
+    "ch_name": "獵手"
+  },
+  {
+    "id": 82,
+    "category": "class",
+    "key": "warrior",
+    "en_name": "Warrior",
+    "ch_name": "戰士"
+  },
+  {
+    "id": 83,
+    "category": "class",
+    "key": "guard",
+    "en_name": "Guard",
+    "ch_name": "衛士"
+  },
+  {
+    "id": 51,
+    "category": "class",
+    "key": "laborer",
+    "en_name": "Laborer",
+    "ch_name": "力工"
+  },
+  {
+    "id": 52,
+    "category": "class",
+    "key": "porter",
+    "en_name": "Porter",
+    "ch_name": "雜工"
+  },
+  {
+    "id": 53,
+    "category": "class",
+    "key": "craftman",
+    "en_name": "Craftman",
+    "ch_name": "匠人"
+  }
 ]
