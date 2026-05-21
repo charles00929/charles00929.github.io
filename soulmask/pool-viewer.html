@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-tw" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天賦池瀏覽器</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark py-2 sticky-top">
+      <div class="container-fluid">
+        <span class="navbar-brand h6 mb-0">⚔️ Soulmask</span>
+        <div class="position-absolute start-50 translate-middle-x d-flex gap-1">
+          <a href="index.html" class="btn btn-sm btn-outline-light">天賦模擬器</a>
+          <span class="btn btn-sm btn-secondary disabled">天賦池瀏覽器</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Filter bar -->
+    <div class="filter-bar sticky-top py-2 px-3 d-flex gap-2 align-items-center flex-wrap" style="top:52px;z-index:100">
+      <input v-model="search" type="text" class="form-control form-control-sm" style="max-width:200px"
+        placeholder="搜尋天賦名稱...">
+      <select v-model="filterSlot" class="form-select form-select-sm" style="max-width:160px">
+        <option value="">所有 Slot</option>
+        <option v-for="key in SLOT_KEYS" :key="key" :value="key">{{ formatSlotName(key) }}</option>
+      </select>
+    </div>
+
+    <div v-if="loading" class="text-center py-5 text-muted">
+      <div class="spinner-border spinner-border-sm me-2"></div>載入資料中...
+    </div>
+
+    <div v-else class="container-fluid py-3" style="max-width:98vw;">
+      <ul class="nav nav-tabs" style="border-bottom: 1px solid #3a3d42;">
+        <li class="nav-item" v-for="tribe in pools" :key="tribe.key">
+          <a class="nav-link" 
+             :class="{ active: activeTribe === tribe.key }" 
+             @click.prevent="activeTribe = tribe.key"
+             style="cursor:pointer;"
+             :style="activeTribe === tribe.key ? 'background-color:#26292d; border-color:#3a3d42 #3a3d42 transparent; color:#64b5f6;' : 'color:#8a9099; border-color:transparent;'"
+             href="#">
+             <span class="layer-badge l1 mb-1">Tribe</span>
+             <strong>{{ tribe.en_name }}</strong> 
+             <span class="ms-1" :class="activeTribe === tribe.key ? 'text-light' : 'text-muted'">{{ tribe.ch_name }}</span>
+          </a>
+        </li>
+      </ul>
+      <tribe-content v-if="activeTribeObj" :tribe="activeTribeObj"></tribe-content>
+    </div>
+  </div>
+
+  <!-- Tooltip popup -->
+  <div id="g-tip" style="
+  display:none; position:fixed; z-index:9999;
+  max-width:240px; background:rgba(20,20,30,.92); color:#f0f0f0;
+  border-radius:.4rem; padding:.5rem .65rem; font-size:.78rem;
+  pointer-events:none; line-height:1.45; box-shadow:0 3px 12px rgba(0,0,0,.4)
+"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp } = Vue;
+
+    const app = createApp({
+      data() {
+        return {
+          loading: true,
+          pools: [],
+          talentsMap: {},
+          tagMap: {},
+          search: '',
+          filterSlot: '',
+          SLOT_KEYS: [],
+          CLASS_KEYS: [],
+          activeTribe: ''
+        };
+      },
+      computed: {
+        activeTribeObj() {
+          return this.pools.find(p => p.key === this.activeTribe) || this.pools[0];
+        }
+      },
+      provide() {
+        return {
+          // 提供 Getter 以保持響應性與單一資料來源
+          getTalent: (id) => this.talentsMap[id],
+          getTagInfo: (key) => this.tagMap[key] || { ch_name: key, en_name: key },
+          getSearch: () => this.search,
+          getFilterSlot: () => this.filterSlot,
+          getClassKeys: () => this.CLASS_KEYS,
+          getSlotKeys: () => this.SLOT_KEYS,
+          formatSlotName: this.formatSlotName,
+          showTip: this.showTip,
+          hideTip: this.hideTip
+        };
+      },
+      async mounted() {
+        try {
+          // 單一職責：平行載入所有所需 JSON 資料
+          const [rawTalents, pools, tags] = await Promise.all([
+            fetch('data/talents.json').then(r => r.json()),
+            fetch('data/talent_pools.json').then(r => r.json()),
+            fetch('data/tags.json').then(r => r.json())
+          ]);
+
+          // 處理對應表
+          rawTalents.forEach((t, i) => {
+            t.id = i + 1;
+            this.talentsMap[t.id] = t;
+          });
+
+          tags.forEach(t => {
+            this.tagMap[t.key] = t;
+          });
+
+          this.pools = pools;
+
+          // 動態擷取 key 結構 (不 hardcode JSON 已有的結構)
+          if (this.pools.length > 0) {
+            const firstTribe = this.pools[0];
+            this.activeTribe = firstTribe.key;
+            this.CLASS_KEYS = Object.keys(firstTribe.classes || {});
+            if (this.CLASS_KEYS.length > 0) {
+              this.SLOT_KEYS = Object.keys(firstTribe.classes[this.CLASS_KEYS[0]] || {});
+            }
+          }
+
+        } catch (e) {
+          console.error("載入資料失敗:", e);
+        } finally {
+          this.loading = false;
+        }
+      },
+      methods: {
+        formatSlotName(key) {
+          const dic = {
+            tribe: '部落', origin: '出身', experience: '經驗',
+            normal_exclusive: '一般 (專屬)',
+            title: '稱號', exclusive: '獨家', normal: '一般',
+          };
+          return `${dic[key] || key} (${key})`;
+        },
+        showTip(event, talent) {
+          let desc = talent.description || '';
+          if (talent.description_values?.length) {
+            // 一律使用陣列中最後一個值 (即最高等級的數值) 代替 #
+            desc = desc.replace(/#/g, () => talent.description_values[talent.description_values.length - 1] ?? '#');
+          }
+          const el = document.getElementById('g-tip');
+          el.innerHTML = `<h6 style="font-weight:700;margin-bottom:.2rem">${talent.name}</h6><div>${desc}</div>`;
+          el.style.display = 'block';
+          const r = event.target.closest('.talent-chip').getBoundingClientRect();
+          el.style.left = (r.right + 8) + 'px';
+          el.style.top = r.top + 'px';
+        },
+        hideTip() {
+          document.getElementById('g-tip').style.display = 'none';
+        }
+      }
+    });
+
+    // --- Components (單一職責) ---
+
+    // 1. 天賦網格渲染
+    app.component('talent-grid', {
+      props: { ids: Array },
+      inject: ['getTalent', 'getSearch', 'showTip', 'hideTip'],
+      computed: {
+        resolvedTalents() {
+          if (!this.ids) return [];
+          const q = this.getSearch().trim().toLowerCase();
+          // 只利用 getter 動態依賴響應性，過濾存在且符合搜尋目標的天賦
+          return this.ids
+            .map(id => this.getTalent(id))
+            .filter(t => {
+              if (!t) return false;
+              if (!q) return true;
+              const nameMatch = t.name.toLowerCase().includes(q);
+              const descMatch = t.description ? t.description.toLowerCase().includes(q) : false;
+              return nameMatch || descMatch;
+            });
+        }
+      },
+      template: `
+    <div class="talent-grid">
+      <template v-if="resolvedTalents.length">
+        <div v-for="t in resolvedTalents" :key="t.id" class="talent-chip"
+             @mouseenter="showTip($event, t)" @mouseleave="hideTip()">
+          <img :src="t.icon" @error="$event.target.style.opacity='.2'">
+          <span>{{ t.name }}</span>
+          <span class="chip-id">#{{ t.id }}</span>
+        </div>
+      </template>
+    </div>
+  `
+    });
+
+    // 2. 特定的槽位區塊 (包含水平分隔線)
+    app.component('slot-section', {
+      props: { name: String, ids: Array, hideDivider: Boolean },
+      inject: ['getTalent', 'getSearch', 'formatSlotName'],
+      computed: {
+        hasVisibleTalents() {
+          if (!this.ids || this.ids.length === 0) return false;
+          const q = this.getSearch().trim().toLowerCase();
+          return this.ids.some(id => {
+            const t = this.getTalent(id);
+            if (!t) return false;
+            if (!q) return true;
+            const nameMatch = t.name.toLowerCase().includes(q);
+            const descMatch = t.description ? t.description.toLowerCase().includes(q) : false;
+            return nameMatch || descMatch;
+          });
+        }
+      },
+      template: `
+    <div v-if="hasVisibleTalents" class="mb-3">
+      <div class="sub-label d-flex align-items-center">
+        <span class="layer-badge l3 me-2"></span>
+        <span style="font-size: .85rem; color:#bbb;">{{ formatSlotName(name) }}</span>
+      </div>
+      <talent-grid :ids="ids"></talent-grid>
+      <hr v-if="!hideDivider" class="my-2" style="border-color:#3a3d42;">
+    </div>
+  `
+    });
+
+    // 3. 職業區塊 (直行)
+    app.component('class-column', {
+      props: { clsKey: String, classData: Object },
+      inject: ['getFilterSlot', 'getSlotKeys', 'getTagInfo', 'getTalent'],
+      computed: {
+        displayLabel() {
+          const info = this.getTagInfo(this.clsKey);
+          return `${info.ch_name} (${info.en_name || this.clsKey})`;
+        },
+        visibleSlots() {
+          const activeFilter = this.getFilterSlot();
+          const allSlots = this.getSlotKeys();
+          let slots = allSlots.filter(k => this.classData[k] && this.classData[k].length > 0);
+
+          if (activeFilter) {
+            slots = slots.filter(k => k === activeFilter);
+          }
+          return slots;
+        },
+        normalIds() {
+          if (!this.classData['normal']) return [];
+          return this.classData['normal'].filter(id => {
+            const t = this.getTalent(id);
+            return t && !(t.description && t.description.includes('Exclusive'));
+          });
+        },
+        normalExclusiveIds() {
+          if (!this.classData['normal']) return [];
+          return this.classData['normal'].filter(id => {
+            const t = this.getTalent(id);
+            return t && t.description && t.description.includes('Exclusive');
+          });
+        }
+      },
+      template: `
+    <div class="p-3" style="background:#202225; border-radius:0 0 .4rem .4rem; border:1px solid #3a3d42; border-top:none;">
+      <div>
+        <template v-for="(slotName, idx) in visibleSlots" :key="slotName">
+          
+          <template v-if="slotName === 'normal'">
+            <slot-section 
+              name="normal_exclusive" 
+              :ids="normalExclusiveIds"
+              :hide-divider="idx === visibleSlots.length - 1">
+            </slot-section>
+            
+            <slot-section 
+              name="normal" 
+              :ids="normalIds"
+              :hide-divider="normalExclusiveIds.length === 0 && idx === visibleSlots.length - 1">
+            </slot-section>
+          </template>
+          
+          <slot-section v-else
+            :name="slotName" 
+            :ids="classData[slotName]"
+            :hide-divider="idx === visibleSlots.length - 1">
+          </slot-section>
+          
+        </template>
+        
+        <div v-if="visibleSlots.length === 0" class="text-muted text-center small py-3">
+           (無符合天賦)
+        </div>
+      </div>
+    </div>
+  `
+    });
+
+    // 4. 部落內容區塊
+    app.component('tribe-content', {
+      props: { tribe: Object },
+      inject: ['getClassKeys', 'getTagInfo'],
+      data() {
+        return {
+          activeTab: ''
+        };
+      },
+      computed: {
+        classKeys() { return this.getClassKeys(); }
+      },
+      watch: {
+        classKeys: {
+          immediate: true,
+          handler(keys) {
+            if (keys && keys.length > 0 && !this.activeTab) {
+              this.activeTab = keys[0];
+            }
+          }
+        }
+      },
+      template: `
+    <div class="section-card" style="border-top-left-radius: 0;">
+      <div class="section-body">
+        <ul class="nav nav-tabs" style="border-bottom: 1px solid #3a3d42;">
+          <li class="nav-item" v-for="clsKey in classKeys" :key="clsKey">
+            <a class="nav-link" 
+               :class="{ active: activeTab === clsKey }" 
+               @click.prevent="activeTab = clsKey"
+               style="cursor:pointer;"
+               :style="activeTab === clsKey ? 'background-color:#202225; border-color:#3a3d42 #3a3d42 transparent; color:#fff;' : 'color:#8a9099; border-color:transparent;'"
+               href="#">
+               {{ getTagInfo(clsKey).ch_name }} ({{ getTagInfo(clsKey).en_name || clsKey }})
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active">
+            <class-column 
+               v-if="activeTab"
+               :cls-key="activeTab"
+               :class-data="tribe.classes[activeTab]">
+            </class-column>
+            <div v-else class="p-3 text-muted text-center" style="background:#202225; border:1px solid #303338; border-top:none;">
+              載入中...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+    });
+
+    app.mount('#app');
+  </script>
+</body>
+
+</html>

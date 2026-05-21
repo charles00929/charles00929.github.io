@@ -1,0 +1,2216 @@
+[
+  {
+    "talent_id": 1,
+    "key": "swift_pace",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 2,
+    "key": "fierce_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 3,
+    "key": "powerful_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 4,
+    "key": "enhance_def",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 5,
+    "key": "injury_relieve",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 6,
+    "key": "full_vitality",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 7,
+    "key": "light_footsteps",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 8,
+    "key": "without_a_sound",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 9,
+    "key": "unnoticeable",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 12,
+    "key": "strong_physique",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "talent_id": 13,
+    "key": "crisis_response",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "talent_id": 14,
+    "key": "desperate_struggle",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "talent_id": 15,
+    "key": "critical_counter",
+    "tag_ids": [],
+    "exclude_tags": [
+      51,
+      52,
+      53,
+      22,
+      81,
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 16,
+    "key": "escaping_death",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "talent_id": 17,
+    "key": "camel_cow",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 18,
+    "key": "anti_hunger",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 19,
+    "key": "anti_thirst",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 20,
+    "key": "long_sight",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 21,
+    "key": "good_hearing",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 22,
+    "key": "blood_activating",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 23,
+    "key": "full_stamina",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 24,
+    "key": "slow_absorption_food",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 25,
+    "key": "slow_absorption_water",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 26,
+    "key": "rapid_growth",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 27,
+    "key": "single_blade_dmg_increase",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 28,
+    "key": "spear_dmg_increase",
+    "tag_ids": [],
+    "exclude_tags": [
+      82
+    ]
+  },
+  {
+    "talent_id": 29,
+    "key": "bow_dmg_increase",
+    "tag_ids": [],
+    "exclude_tags": [
+      82
+    ]
+  },
+  {
+    "talent_id": 30,
+    "key": "hammer_dmg_increase",
+    "tag_ids": [
+      82
+    ],
+    "exclude_tags": [
+      83
+    ]
+  },
+  {
+    "talent_id": 31,
+    "key": "gauntlets_dmg_increase",
+    "tag_ids": [],
+    "exclude_tags": [
+      83
+    ]
+  },
+  {
+    "talent_id": 32,
+    "key": "giant_sword_dmg_increase",
+    "tag_ids": [],
+    "exclude_tags": [
+      81
+    ]
+  },
+  {
+    "talent_id": 33,
+    "key": "dual_blade_dmg_increase",
+    "tag_ids": [],
+    "exclude_tags": [
+      83
+    ]
+  },
+  {
+    "talent_id": 34,
+    "key": "hardened_skin_anti_pierce",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": [
+      81,
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 35,
+    "key": "hardened_skin_anti_slash",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": [
+      81,
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 36,
+    "key": "hardened_skin_anti_blunt_strike",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": [
+      81,
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 37,
+    "key": "pain_reversal",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 38,
+    "key": "multiple_shooting",
+    "tag_ids": [
+      81
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 39,
+    "key": "trick_force",
+    "tag_ids": [],
+    "exclude_tags": [
+      52
+    ]
+  },
+  {
+    "talent_id": 40,
+    "key": "good_at_melee_combat",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 41,
+    "key": "remote_strike",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 42,
+    "key": "extraordinary_talent",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 43,
+    "key": "marksman_footstep",
+    "tag_ids": [],
+    "exclude_tags": [
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 44,
+    "key": "rapid_fire",
+    "tag_ids": [
+      81
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 45,
+    "key": "quick_reload",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 46,
+    "key": "bone_gnawing_wound",
+    "tag_ids": [
+      81
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 47,
+    "key": "last_radiance",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 48,
+    "key": "wild_nature_awakened",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 49,
+    "key": "raging_inferno",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 50,
+    "key": "spreading_flames",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 51,
+    "key": "fatal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 52,
+    "key": "acceleration_at_stress",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 53,
+    "key": "bite_the_bullet",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": [
+      81,
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 54,
+    "key": "getting_braver",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 55,
+    "key": "fire_deterrence",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 56,
+    "key": "crave_for_blood",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 57,
+    "key": "surprise_attack",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 58,
+    "key": "firm_will",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 59,
+    "key": "clever_escape",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 60,
+    "key": "hardened_body",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 61,
+    "key": "head_stress_response",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 62,
+    "key": "arm_stress_response",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 63,
+    "key": "torso_stress_response",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 64,
+    "key": "thigh_stress_response",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 65,
+    "key": "limb_destruction",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 66,
+    "key": "torso_destruction",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 67,
+    "key": "head_destruction",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 68,
+    "key": "tail_destruction",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 69,
+    "key": "weak_spot_enhance",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 70,
+    "key": "fight_back",
+    "tag_ids": [],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 71,
+    "key": "weakness_thump",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 72,
+    "key": "loadless_fast_marching",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 73,
+    "key": "loaded_raid",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 74,
+    "key": "endurance",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 75,
+    "key": "defense_to_offense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 76,
+    "key": "dodge_and_strike",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 77,
+    "key": "extreme_dodge",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 78,
+    "key": "tactical_dodge",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 79,
+    "key": "calm_and_peaceful",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 80,
+    "key": "static_recovery",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 81,
+    "key": "logging_pro",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 82,
+    "key": "vein_protection",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 83,
+    "key": "planting_pro",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 84,
+    "key": "quick_bandaging",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 85,
+    "key": "blood_absorption",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 86,
+    "key": "tear_wound",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 87,
+    "key": "fight_to_death",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 88,
+    "key": "bloodbath_recovery",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 89,
+    "key": "lose_lose",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 90,
+    "key": "overwhelming_force",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 159,
+    "key": "shield_bash",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 92,
+    "key": "endurance_burst",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 93,
+    "key": "skill_recovery",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 94,
+    "key": "insight_def",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 95,
+    "key": "wrath_of_revenge",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 96,
+    "key": "enemy_down_fervency",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 97,
+    "key": "merciless_means",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 98,
+    "key": "slaughter_fervency",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 99,
+    "key": "determined",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 100,
+    "key": "fatal_rhythm",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 101,
+    "key": "go_for_the_jugular",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 102,
+    "key": "avoid_vitals",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 103,
+    "key": "steel_body",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 104,
+    "key": "poisoned_body",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 105,
+    "key": "mind_heart_unison",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 106,
+    "key": "pen_def",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 107,
+    "key": "morale_dampener",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 108,
+    "key": "suppress_violence",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 109,
+    "key": "malice",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 110,
+    "key": "drunken_senses",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 111,
+    "key": "onslaught",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      83
+    ]
+  },
+  {
+    "talent_id": 112,
+    "key": "backpack_expansion",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 113,
+    "key": "refined_armor",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 114,
+    "key": "weapon_enhancement",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 115,
+    "key": "refined_tool",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 116,
+    "key": "accelerate_wood_stone",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 239,
+    "key": "",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 118,
+    "key": "accelerate_kiln",
+    "tag_ids": [
+      52
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 119,
+    "key": "accelerate_leatherworking",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 120,
+    "key": "accelerate_weaving",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 121,
+    "key": "accelerate_potting",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 123,
+    "key": "crafting_speed_up",
+    "tag_ids": [],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 124,
+    "key": "accelerate_weapon_crafting",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 125,
+    "key": "accelerate_armor_crafting",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 128,
+    "key": "accelerate_alchemy",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 129,
+    "key": "accelerate_cooking",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 130,
+    "key": "rock_like_resolve",
+    "tag_ids": [
+      83
+    ],
+    "exclude_tags": [
+      81,
+      82
+    ]
+  },
+  {
+    "talent_id": 131,
+    "key": "tit_for_tat",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 132,
+    "key": "riposte",
+    "tag_ids": [],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 133,
+    "key": "pouring_rage",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 134,
+    "key": "strikeback",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 135,
+    "key": "stimulate_morale",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 136,
+    "key": "desperate_response",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 137,
+    "key": "crisis_resolution",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 138,
+    "key": "blood_staunching",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 139,
+    "key": "breezy_downpour",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 140,
+    "key": "wolf_pack_protection",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 141,
+    "key": "protection_of_the_savagehorn",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 142,
+    "key": "last_light_counter",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 143,
+    "key": "body_blood_conversion",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 144,
+    "key": "body_resilience_conversion",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 145,
+    "key": "resilient_healing",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 146,
+    "key": "unyielding_will",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 147,
+    "key": "embers",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 148,
+    "key": "stamina_siphon",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 149,
+    "key": "bloodfury_pursuit",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 150,
+    "key": "damage_immunity_blessing",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 151,
+    "key": "bloodstained_thorns",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 152,
+    "key": "life_shacles",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 153,
+    "key": "scapegoat",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 154,
+    "key": "cunning",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 155,
+    "key": "tabooed_body",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 156,
+    "key": "rampage",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 157,
+    "key": "courageous_current",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 158,
+    "key": "damage_boost_blessing",
+    "tag_ids": [],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 160,
+    "key": "damage_boost_steal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 161,
+    "key": "damage_immunity_steal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 162,
+    "key": "attack_steal",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      81,
+      83
+    ]
+  },
+  {
+    "talent_id": 163,
+    "key": "defense_steal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 164,
+    "key": "stamina_steal",
+    "tag_ids": [],
+    "exclude_tags": [
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 165,
+    "key": "crit_steal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 166,
+    "key": "crit_resist_steal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 167,
+    "key": "moment_of_respite",
+    "tag_ids": [],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 169,
+    "key": "damage_resonance_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 170,
+    "key": "damage_alteration_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 171,
+    "key": "attack_defense_alteration_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 172,
+    "key": "full_power_state",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 173,
+    "key": "initiative",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 174,
+    "key": "miasmic_blood",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 175,
+    "key": "stagnating_toxin",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 176,
+    "key": "cursed_strike",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 177,
+    "key": "arterial_rupture",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 178,
+    "key": "defensive_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 179,
+    "key": "attack_defense_resonance_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 180,
+    "key": "damage_resonance_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 181,
+    "key": "damage_alteration_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 182,
+    "key": "attack_defense_alteration_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 183,
+    "key": "chaos_defense",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 184,
+    "key": "confusion_defense",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 185,
+    "key": "shock_defense",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 186,
+    "key": "superarmor_break",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 187,
+    "key": "confusion_reflect",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 188,
+    "key": "baffle_reflect",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 189,
+    "key": "momentum_shift",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 190,
+    "key": "shock_reflect",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 191,
+    "key": "chain_dodge",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 192,
+    "key": "limb_shatter",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 193,
+    "key": "offense_is_the_best_defense",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 194,
+    "key": "reorganize",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 195,
+    "key": "executioner_s_dread",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 196,
+    "key": "perfect_absorption",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 197,
+    "key": "spirit_of_the_pack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 198,
+    "key": "savagehorn_soul",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 199,
+    "key": "courage_transfer",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 200,
+    "key": "bloodline_suppression",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 201,
+    "key": "swiftness_resonance_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 202,
+    "key": "swiftness_resonance_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 203,
+    "key": "resurgence",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 204,
+    "key": "reverse_dodge_defense",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 205,
+    "key": "reverse_dodge_reflect",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 206,
+    "key": "seed_of_combustion",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 207,
+    "key": "seed_of_vemon",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 208,
+    "key": "seed_of_bloodboil",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 209,
+    "key": "movement_speed_steal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 210,
+    "key": "attack_speed_steal",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 211,
+    "key": "spiked_whip_damage_boost",
+    "tag_ids": [],
+    "exclude_tags": [
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 212,
+    "key": "sleight_of_hand",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 213,
+    "key": "multi_throw",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 214,
+    "key": "throw_dodge",
+    "tag_ids": [
+      82
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 215,
+    "key": "grapple_throw",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 216,
+    "key": "resonant_burst_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 217,
+    "key": "burst_alteration_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 218,
+    "key": "resonant_burst_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 219,
+    "key": "burst_alteration_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 220,
+    "key": "opportunistic_chain_strike",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 221,
+    "key": "soulflame_sniping",
+    "tag_ids": [],
+    "exclude_tags": [
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 222,
+    "key": "intimidating_strike",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 223,
+    "key": "prime_battle_spirit",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": [
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "talent_id": 224,
+    "key": "swiftness_alteration_attack",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 225,
+    "key": "swiftness_alteration_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 226,
+    "key": "skillful_hand",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 227,
+    "key": "masterwork_armor",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 228,
+    "key": "armorer_s_focus",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 229,
+    "key": "weaponsmith_s_focus",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 230,
+    "key": "weapon_maintenance",
+    "tag_ids": [],
+    "exclude_tags": [
+      52
+    ]
+  },
+  {
+    "talent_id": 231,
+    "key": "armor_maintenance",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 232,
+    "key": "tool_maintenance",
+    "tag_ids": [],
+    "exclude_tags": [
+      52
+    ]
+  },
+  {
+    "talent_id": 233,
+    "key": "origin_laborer",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 234,
+    "key": "origin_porter",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 235,
+    "key": "origin_craftsman",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 236,
+    "key": "origin_fighting",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      83
+    ]
+  },
+  {
+    "talent_id": 237,
+    "key": "origin_hunting",
+    "tag_ids": [],
+    "exclude_tags": [
+      82,
+      83
+    ]
+  },
+  {
+    "talent_id": 238,
+    "key": "origin_guard",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      82
+    ]
+  },
+  {
+    "talent_id": 240,
+    "key": "experience_battle_tested",
+    "tag_ids": [
+      81
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 241,
+    "key": "weapon_master",
+    "tag_ids": [],
+    "exclude_tags": [
+      53
+    ]
+  },
+  {
+    "talent_id": 242,
+    "key": "hardbone",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 243,
+    "key": "heartcaptor",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 244,
+    "key": "nightwalker",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 245,
+    "key": "axe_killer",
+    "tag_ids": [
+      81
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 246,
+    "key": "fly_cutter_assassin",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 247,
+    "key": "lung_piercer",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 248,
+    "key": "archery_master",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 249,
+    "key": "expert_craftsman",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 250,
+    "key": "skilled_hand",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 251,
+    "key": "butcher_in_woods",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 253,
+    "key": "chest_breaker",
+    "tag_ids": [
+      51,
+      52,
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 254,
+    "key": "the_chosen",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 255,
+    "key": "mad_worker",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 256,
+    "key": "the_unburned",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 257,
+    "key": "blood_drinker",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 258,
+    "key": "the_dauntless",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 259,
+    "key": "skilled_work_expert",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 260,
+    "key": "manual_labor_expert",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 261,
+    "key": "fate_choker",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 262,
+    "key": "bonebreaker",
+    "tag_ids": [
+      81,
+      82,
+      83
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 263,
+    "key": "oppressor",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 264,
+    "key": "born_laborer",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 265,
+    "key": "farming_expert",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 266,
+    "key": "expert_slaughter",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 267,
+    "key": "tribe_survivor",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 268,
+    "key": "tribe_power_of_erosion",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 269,
+    "key": "tribe_wild_power",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 270,
+    "key": "tribe_power_of_crit",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 271,
+    "key": "tribe_power_of_defense",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 272,
+    "key": "tribe_power_of_tenacity",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 273,
+    "key": "tribe_power_of_crit_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 274,
+    "key": "tribe_poison_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 275,
+    "key": "tribe_poison_immunity",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 276,
+    "key": "tribe_crit_dmg_cold_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 277,
+    "key": "tribe_crit_cold_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 278,
+    "key": "tribe_resilience_cold_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 279,
+    "key": "tribe_def_cold_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 280,
+    "key": "tribe_poison_cold_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 281,
+    "key": "tribe_poison_dmg_immunity_cold_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 282,
+    "key": "tribe_crit_dmg_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 283,
+    "key": "tribe_crit_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 284,
+    "key": "tribe_resilience_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 285,
+    "key": "tribe_def_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 287,
+    "key": "tribe_poison_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 288,
+    "key": "tribe_crit_dmg_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 289,
+    "key": "tribe_crit_dmg_scorching_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 290,
+    "key": "tribe_resilience_scorching_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 291,
+    "key": "tribe_def_scorching_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 292,
+    "key": "tribe_poison_scorching_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 293,
+    "key": "tribe_poison_dmg_immunity_scorching_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 294,
+    "key": "outcast_cold_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 310,
+    "key": "outcast_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 309,
+    "key": "outcast_scorching_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 297,
+    "key": "tribe_breath_of_the_wildwolf",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 298,
+    "key": "tribe_might_of_the_wildwolf",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 299,
+    "key": "tribe_endurance_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 300,
+    "key": "tribe_increased_damage_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 301,
+    "key": "tribe_endurance_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 302,
+    "key": "tribe_increased_damage_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 303,
+    "key": "tribe_breath_of_the_savagehorn",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 304,
+    "key": "tribe_might_of_the_savagehorn",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 305,
+    "key": "tribe_stamina_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 306,
+    "key": "tribe_dmg_immunity_heat_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 307,
+    "key": "tribe_stamina_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 308,
+    "key": "tribe_dmg_immunity_radiation_resist",
+    "tag_ids": [],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 122,
+    "key": "accelerate_grinding",
+    "tag_ids": [
+      53
+    ],
+    "exclude_tags": []
+  },
+  {
+    "talent_id": 11,
+    "key": "nimble_movement",
+    "tag_ids": [],
+    "exclude_tags": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "talent_id": 10,
+    "key": "resourceful",
+    "tag_ids": [],
+    "exclude_tags": [
+      22
+    ]
+  },
+  {
+    "talent_id": 127,
+    "key": "accelerate_building_crafting",
+    "tag_ids": [
+      52
+    ],
+    "exclude_tags": [
+      53
+    ]
+  }
+]

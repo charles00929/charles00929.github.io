@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-tw" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soulmask 天賦模擬器</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <span class="navbar-brand h6 mb-0">⚔️ Soulmask</span>
+      <div class="position-absolute start-50 translate-middle-x d-flex gap-1">
+        <span class="btn btn-sm btn-secondary disabled">天賦模擬器</span>
+        <a href="pool-viewer.html" class="btn btn-sm btn-outline-light">天賦池瀏覽器</a>
+      </div>
+      <div class="d-flex gap-2 ms-auto">
+        <button class="btn btn-success btn-sm" @click="autoGenerate">自然生成</button>
+        <button class="btn btn-primary btn-sm" @click="openManual(null)">手動生成</button>
+        <button class="btn btn-outline-light btn-sm" @click="openShare">儲存/分享</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Character List -->
+  <div class="container-fluid pt-3">
+    <div v-if="loading" class="text-center py-5 text-muted">
+      <div class="spinner-border spinner-border-sm me-2"></div>載入資料中...
+    </div>
+    <div v-else-if="!characters.length" class="text-center py-5 text-muted fst-italic">
+      尚無角色，點選上方按鈕開始
+    </div>
+    <div v-else class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col" v-for="char in characters" :key="char.id">
+        <character-card
+          :char="char"
+          :talents-map="talentsMap"
+          :tribes="tribes"
+          :classes="classes"
+          @edit="openManual(char)"
+          @delete="deleteChar(char.id)"
+          @inherit="openInherit(char)"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Modal: 手動生成 / 編輯 ── -->
+  <div class="modal fade" id="modalManual" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ manualForm.id != null ? '編輯角色' : '手動生成角色' }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">角色名稱</label>
+              <input v-model="manualForm.name" type="text" class="form-control" placeholder="族人">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label small">部落</label>
+              <select v-model="manualForm.tribe_id" class="form-select">
+                <option :value="null">— 請選擇部落 —</option>
+                <option v-for="t in tribes" :key="t.id" :value="t.id">{{ t.ch_name }}</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label small">職業</label>
+              <select v-model="manualForm.class_id" class="form-select">
+                <option :value="null">— 請選擇職業 —</option>
+                <option v-for="c in classes" :key="c.id" :value="c.id">{{ c.ch_name }}</option>
+              </select>
+            </div>
+          </div>
+          <div class="row g-3 mt-1">
+            <template v-for="slot in ['tribe', 'origin', 'experience', 'title']" :key="slot">
+              <div class="col-md-6">
+                <label class="form-label small">{{ slotName(slot) }} 天賦</label>
+                <talent-select v-model="manualForm[slot + '_talent_id']" :options="slotTalentOptions(slot)" :placeholder="manualForm.tribe_id && manualForm.class_id ? '請選擇' : '請先選擇部落與職業'" />
+              </div>
+            </template>
+            <div class="col-12 mt-3">
+              <label class="form-label small">一般天賦 <span class="text-muted">（最多 6 個，按順序）</span></label>
+              <div class="row g-2">
+                <div class="col-md-6" v-for="i in 6" :key="i">
+                  <div class="d-flex align-items-center gap-1">
+                    <span class="badge bg-secondary flex-shrink-0">{{ i }}</span>
+                    <div class="flex-grow-1">
+                      <talent-select
+                        :model-value="manualForm.talent_ids[i-1] ?? null"
+                        @update:model-value="updateTalentSlot(i-1, $event)"
+                        :options="slotTalentOptions('normal')"
+                        :placeholder="manualForm.tribe_id && manualForm.class_id ? '請選擇' : '請先選擇部落與職業'"
+                      />
+                    </div>
+                    <button v-if="manualForm.talent_ids[i-1] != null"
+                      type="button"
+                      class="btn btn-sm btn-outline-danger px-1 py-0 flex-shrink-0"
+                      style="line-height:1.6"
+                      @click="updateTalentSlot(i-1, null)">✕</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+          <button class="btn btn-primary" @click="saveManual">儲存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Modal: 傳承 ── -->
+  <div class="modal fade" id="modalInherit" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">🔗 傳承天賦</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">師父（傳授方）</label>
+            <character-select
+              v-model="inheritForm.master_id"
+              :characters="characters"
+              :talents-map="talentsMap"
+              placeholder="選擇師父"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">
+              徒弟（接受方）<span class="text-muted small ms-1">天賦未滿 6 個</span>
+            </label>
+            <character-select
+              v-model="inheritForm.student_id"
+              :characters="eligibleStudents"
+              :talents-map="talentsMap"
+              placeholder="選擇徒弟"
+            />
+          </div>
+          <div v-if="inheritResult" class="alert alert-success d-flex align-items-center gap-2 py-2">
+            <img :src="iconSrc(inheritResult.icon)" class="talent-icon rounded-1" @error="$event.target.style.opacity='.3'">
+            <div class="small"><span class="text-muted">傳授天賦：</span><strong>{{ inheritResult.name }}</strong></div>
+          </div>
+          <div v-if="inheritError" class="alert alert-warning small py-2">{{ inheritError }}</div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary"
+            :disabled="!inheritForm.master_id || !inheritForm.student_id"
+            @click="rollInherit">🎲 隨機傳授</button>
+          <button class="btn btn-primary" :disabled="!inheritResult" @click="confirmInherit">確認傳承</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Modal: 儲存/分享 ── -->
+  <div class="modal fade" id="modalShare" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">💾 儲存 / 分享</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small">角色資料已自動存入 LocalStorage。可將下方字串複製給他人匯入。</p>
+          <div class="mb-3">
+            <label class="form-label small">匯出字串（共 {{ characters.length }} 個角色）</label>
+            <div class="input-group">
+              <textarea v-model="shareString" class="form-control form-control-sm font-monospace" rows="3" readonly></textarea>
+              <button class="btn btn-outline-secondary" type="button" @click="copyShare">複製</button>
+            </div>
+          </div>
+          <hr class="my-2">
+          <div>
+            <label class="form-label small text-danger">匯入（將覆蓋現有角色）</label>
+            <div class="input-group">
+              <textarea v-model="importString" class="form-control form-control-sm font-monospace" rows="3" placeholder="貼入分享字串..."></textarea>
+              <button class="btn btn-danger" type="button" @click="importChars">匯入</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- #app -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
+
+<!-- 全域 talent tooltip -->
+<div id="talent-tip" class="talent-tip" style="display:none"></div>
+<script>
+(function() {
+  const tip = document.getElementById('talent-tip');
+  let current = null;
+  document.addEventListener('mouseover', e => {
+    const el = e.target.closest('[data-tip-name]');
+    if (!el) { tip.style.display = 'none'; current = null; return; }
+    if (el === current) return;
+    current = el;
+    const name = el.dataset.tipName || '';
+    const desc = el.dataset.tipDesc || '';
+    tip.innerHTML = `<h6 class="tip-name">${name}</h6><div>${desc}</div>`;
+    tip.style.display = 'block';
+  });
+  document.addEventListener('mousemove', e => {
+    if (!current) return;
+    tip.style.left = (e.clientX + 12) + 'px';
+    tip.style.top  = (e.clientY + 12) + 'px';
+  });
+  document.addEventListener('mouseout', e => {
+    const el = e.target.closest('[data-tip-name]');
+    if (el) { tip.style.display = 'none'; current = null; }
+  });
+})();
+</script>
+
+<script src="js/app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,7082 @@
+[
+  {
+    "game_ids": [
+      100011,
+      100012,
+      100013
+    ],
+    "name": "Swift Pace",
+    "description": "Fast paced, Movement Speed +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_yidongsudutisheng.webp",
+    "slot": "normal",
+    "talent_id": 1,
+    "key": "swift_pace",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100021,
+      100022,
+      100023
+    ],
+    "name": "Fierce Attack",
+    "description": "Launches a fierce attack, Attack Speed +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_gongjisudutisheng.webp",
+    "slot": "normal",
+    "talent_id": 2,
+    "key": "fierce_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100031,
+      100032,
+      100033
+    ],
+    "name": "Powerful Attack",
+    "description": "Has a brutal strength. ATK +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_gongjilitisheng.webp",
+    "slot": "normal",
+    "talent_id": 3,
+    "key": "powerful_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100041,
+      100042,
+      100043
+    ],
+    "name": "Enhance DEF",
+    "description": "Has a higher defense than most people, DEF +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_fangyutisheng.webp",
+    "slot": "normal",
+    "talent_id": 4,
+    "key": "enhance_def",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100051,
+      100052,
+      100053
+    ],
+    "name": "Injury Relieve",
+    "description": "Born to be tough and resilient, DMG taken -#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_shanghaijianmiantisheng.webp",
+    "slot": "normal",
+    "talent_id": 5,
+    "key": "injury_relieve",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100061,
+      100062,
+      100063
+    ],
+    "name": "Full Vitality",
+    "description": "A rosy, glowing complexion indicates good health, Max HP +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_shengmingzhitisheng.webp",
+    "slot": "normal",
+    "talent_id": 6,
+    "key": "full_vitality",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100071,
+      100072,
+      100073
+    ],
+    "name": "Light Footsteps",
+    "description": "Takes soft steps, reducing the volume footfall noise by #%.",
+    "description_values": [
+      10,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_bulvqingying.webp",
+    "slot": "normal",
+    "talent_id": 7,
+    "key": "light_footsteps",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100081,
+      100082,
+      100083
+    ],
+    "name": "Without a Sound",
+    "description": "Moves stealthily, making #% fewer sounds.",
+    "description_values": [
+      10,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_qiaowushengxi.webp",
+    "slot": "normal",
+    "talent_id": 8,
+    "key": "without_a_sound",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100091,
+      100092,
+      100093
+    ],
+    "name": "Unnoticeable",
+    "description": "Good at disguising. When spotted by enemies, Vigilance -#%.",
+    "description_values": [
+      20,
+      40,
+      60
+    ],
+    "icon": "img/ng/tianfu_shanyuweizhuang.webp",
+    "slot": "normal",
+    "talent_id": 9,
+    "key": "unnoticeable",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      100101,
+      100102,
+      100103
+    ],
+    "name": "Resourceful",
+    "description": "When self-awareness dominates the body, the likelihood of the body reacting to danger +#%.",
+    "description_values": [
+      10,
+      20,
+      35
+    ],
+    "icon": "img/ng/tianfu_jimin.webp",
+    "slot": "normal",
+    "talent_id": 10,
+    "key": "resourceful",
+    "tag_ids": []
+  },
+  {
+    "game_ids": [
+      100123
+    ],
+    "name": "Nimble Movement",
+    "description": "I'm always a step ahead of death. Movement Speed +5%.",
+    "description_values": null,
+    "icon": "img/ng/tianfu_tuijiaolinghuo.webp",
+    "slot": "normal",
+    "talent_id": 11,
+    "key": "nimble_movement",
+    "tag_ids": []
+  },
+  {
+    "game_ids": [
+      100133
+    ],
+    "name": "Strong Physique",
+    "description": "This body has endured so much. Max Stamina +20.",
+    "description_values": null,
+    "icon": "img/ng/tianfu_shenqianglizhuang.webp",
+    "slot": "normal",
+    "talent_id": 12,
+    "key": "strong_physique",
+    "tag_ids": []
+  },
+  {
+    "game_ids": [
+      100143
+    ],
+    "name": "Crisis Response",
+    "description": "When attacked, has a 20% chance to increase DEF and Max HP by 5% each for 30 seconds. (CD: 50s)",
+    "description_values": null,
+    "icon": "img/ng/tianfu_weijifanying.webp",
+    "slot": "normal",
+    "talent_id": 13,
+    "key": "crisis_response",
+    "tag_ids": []
+  },
+  {
+    "game_ids": [
+      100153
+    ],
+    "name": "Desperate Struggle",
+    "description": "Recovers 15% of HP in 5 seconds when HP is below 15%. (CD: 35s)",
+    "description_values": null,
+    "icon": "img/ng/tianfu_chuisizhengzha.webp",
+    "slot": "normal",
+    "talent_id": 14,
+    "key": "desperate_struggle",
+    "tag_ids": []
+  },
+  {
+    "game_ids": [
+      100163
+    ],
+    "name": "Critical Counter",
+    "description": "Gains a 5% damage boost for 6 seconds after blocking an enemy attack. (CD: 15s)",
+    "description_values": null,
+    "icon": "img/ng/tianfu_fanjishike.webp",
+    "slot": "normal",
+    "talent_id": 15,
+    "key": "critical_counter",
+    "tag_ids": []
+  },
+  {
+    "game_ids": [
+      100173
+    ],
+    "name": "Escaping Death",
+    "description": "When HP is low (<15% or near death) and under attack, the attacker may face God's fury. (CD: 15s)",
+    "description_values": null,
+    "icon": "img/ng/tianfu_taotuosuming.webp",
+    "slot": "normal",
+    "talent_id": 16,
+    "key": "escaping_death",
+    "tag_ids": []
+  },
+  {
+    "game_ids": [
+      110011,
+      110012,
+      110013
+    ],
+    "name": "Camel Cow",
+    "description": "Carries weight skillfully, Max Load +#%.",
+    "description_values": [
+      20,
+      40,
+      60
+    ],
+    "icon": "img/ng/tianfu_fuzhongtisheng.webp",
+    "slot": "normal",
+    "talent_id": 17,
+    "key": "camel_cow",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      110021,
+      110022,
+      110023
+    ],
+    "name": "Anti-Hunger",
+    "description": "Has a strong body that is more resistant to hunger and able to store more food. Max Satiety +#%.",
+    "description_values": [
+      20,
+      30,
+      40
+    ],
+    "icon": "img/ng/tianfu_kangjie.webp",
+    "slot": "normal",
+    "talent_id": 18,
+    "key": "anti_hunger",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      110031,
+      110032,
+      110033
+    ],
+    "name": "Anti-Thirst",
+    "description": "Has a strong body that is more resistant to thirst and able to store more water. Max Hydration +#%.",
+    "description_values": [
+      20,
+      30,
+      40
+    ],
+    "icon": "img/ng/tianfu_kangkouke.webp",
+    "slot": "normal",
+    "talent_id": 19,
+    "key": "anti_thirst",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      110041,
+      110042,
+      110043
+    ],
+    "name": "Long Sight",
+    "description": "Exceptional vision, view distance +# meters.",
+    "description_values": [
+      3,
+      5,
+      10
+    ],
+    "icon": "img/ng/tianfu_qianliyan.webp",
+    "slot": "normal",
+    "talent_id": 20,
+    "key": "long_sight",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      110051,
+      110052,
+      110053
+    ],
+    "name": "Good Hearing",
+    "description": "Good hearing, able to hear sounds # decibels lower than the average person.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_shunfenger.webp",
+    "slot": "normal",
+    "talent_id": 21,
+    "key": "good_hearing",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      120011,
+      120012,
+      120013
+    ],
+    "name": "Blood Activating",
+    "description": "Has abundant vitality, HP Recovery Speed +#%.",
+    "description_values": [
+      50,
+      100,
+      200
+    ],
+    "icon": "img/ng/tianfu_shengminghuifujiakuai.webp",
+    "slot": "normal",
+    "talent_id": 22,
+    "key": "blood_activating",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      120021,
+      120022,
+      120023
+    ],
+    "name": "Full Stamina",
+    "description": "Improves stamina recovery, receiving an additional #% from each stamina recovery.",
+    "description_values": [
+      15,
+      25,
+      50
+    ],
+    "icon": "img/ng/tianfu_tilihuifujiakuai.webp",
+    "slot": "normal",
+    "talent_id": 23,
+    "key": "full_stamina",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      120031,
+      120032,
+      120033
+    ],
+    "name": "Slow Absorption (Food)",
+    "description": "The food is digested slower, Satiety Consumption -#%.",
+    "description_values": [
+      10,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_baoshiduxiaohaosudujiangdi.webp",
+    "slot": "normal",
+    "talent_id": 24,
+    "key": "slow_absorption_food",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      120041,
+      120042,
+      120043
+    ],
+    "name": "Slow Absorption (Water)",
+    "description": "Slow water absorption. Water Consumption -#%",
+    "description_values": [
+      10,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_shuifenxiaohaosudujiangdi.webp",
+    "slot": "normal",
+    "talent_id": 25,
+    "key": "slow_absorption_water",
+    "tag_ids": [
+      51,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      120051,
+      120052,
+      120053
+    ],
+    "name": "Rapid Growth",
+    "description": "Good at reflecting on the past. Character EXP gained +#%.",
+    "description_values": [
+      30,
+      50,
+      80
+    ],
+    "icon": "img/ng/tianfu_kuaisuchengzhang.webp",
+    "slot": "normal",
+    "talent_id": 26,
+    "key": "rapid_growth",
+    "tag_ids": [
+      81,
+      82,
+      51,
+      52,
+      53,
+      22,
+      83
+    ]
+  },
+  {
+    "game_ids": [
+      130011,
+      130012,
+      130013
+    ],
+    "name": "Single Blade DMG Increase",
+    "description": "A blade is more powerful when used with one hand. Single blade DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_daoleiwuqishanghaitigao.webp",
+    "slot": "normal",
+    "talent_id": 27,
+    "key": "single_blade_dmg_increase",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      130021,
+      130022,
+      130023
+    ],
+    "name": "Spear DMG Increase",
+    "description": "A spear grants greater power. Spear DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_maoleiwuqishanghaitigao.webp",
+    "slot": "normal",
+    "talent_id": 28,
+    "key": "spear_dmg_increase",
+    "tag_ids": [
+      81,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      130031,
+      130032,
+      130033
+    ],
+    "name": "Bow DMG Increase",
+    "description": "Using a bow deals more damage. Bow DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_gongleiwuqishanghaitigao.webp",
+    "slot": "normal",
+    "talent_id": 29,
+    "key": "bow_dmg_increase",
+    "tag_ids": [
+      81,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      130041,
+      130042,
+      130043
+    ],
+    "name": "Hammer DMG Increase",
+    "description": "A hammer grants greater power. Hammer DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_chuileiwuqishanghaitigao.webp",
+    "slot": "normal",
+    "talent_id": 30,
+    "key": "hammer_dmg_increase",
+    "tag_ids": [
+      82,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      130051,
+      130052,
+      130053
+    ],
+    "name": "Gauntlets DMG Increase",
+    "description": "Using a pair of gauntlets deals more damage. Gauntlets DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_quantaoiwuqishanghaitigao.webp",
+    "slot": "normal",
+    "talent_id": 31,
+    "key": "gauntlets_dmg_increase",
+    "tag_ids": [
+      81,
+      82,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      130061,
+      130062,
+      130063
+    ],
+    "name": "Giant Sword DMG Increase",
+    "description": "Using a giant sword deals more damage. Giant sword DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_zhongjianwuqishanghaitigao.webp",
+    "slot": "normal",
+    "talent_id": 32,
+    "key": "giant_sword_dmg_increase",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      130071,
+      130072,
+      130073
+    ],
+    "name": "Dual-blade DMG Increase",
+    "description": "Using a dual-blade deals more damage. Dual-blades DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_shuangdaowuqishanghaitigao.webp",
+    "slot": "normal",
+    "talent_id": 33,
+    "key": "dual_blade_dmg_increase",
+    "tag_ids": [
+      81,
+      82,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      130081,
+      130082,
+      130083
+    ],
+    "name": "Hardened Skin - Anti-Pierce",
+    "description": "Thick skin resists Pierce attacks. DMG taken from piercing-type attacks -#%.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_yingpikangchuanci.webp",
+    "slot": "normal",
+    "talent_id": 34,
+    "key": "hardened_skin_anti_pierce",
+    "tag_ids": [
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      130091,
+      130092,
+      130093
+    ],
+    "name": "Hardened Skin - Anti-Slash",
+    "description": "Thick skin resists slashes. DMG taken from slash-type attacks -#%.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_yingpikangqiege.webp",
+    "slot": "normal",
+    "talent_id": 35,
+    "key": "hardened_skin_anti_slash",
+    "tag_ids": [
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      130101,
+      130102,
+      130103
+    ],
+    "name": "Hardened Skin - Anti-Blunt Strike",
+    "description": "Thick skin resists slams. DMG taken from blunt-type attacks -#%.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_yingpikangdaji.webp",
+    "slot": "normal",
+    "talent_id": 36,
+    "key": "hardened_skin_anti_blunt_strike",
+    "tag_ids": [
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      150011,
+      150012,
+      150013
+    ],
+    "name": "Pain Reversal",
+    "description": "Turn pain into power. Taking damage has a #% chance to reset the talent cooldown (CD: 20s).",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__tongkunizhuan.webp",
+    "slot": "normal",
+    "talent_id": 37,
+    "key": "pain_reversal",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150021
+    ],
+    "name": "Multiple Shooting",
+    "description": "[Hunter Exclusive] Mastered the exclusive multi-shooting skill of bows. Shoots more arrows at the same time every time using this kind of skill.",
+    "description_values": null,
+    "icon": "img/ng/tianfu_duochongsheji.webp",
+    "slot": "normal",
+    "talent_id": 38,
+    "key": "multiple_shooting",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150041,
+      150042,
+      150043
+    ],
+    "name": "Trick Force",
+    "description": "Mastered how to use force most effectively. Stamina cost -#%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_qiaojin.webp",
+    "slot": "normal",
+    "talent_id": 39,
+    "key": "trick_force",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150051,
+      150052,
+      150053
+    ],
+    "name": "Good at Melee Combat",
+    "description": "Enthusiastic about close-quarters combat. DMG to enemies within 5 meters +#%",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_shanchangroubo.webp",
+    "slot": "normal",
+    "talent_id": 40,
+    "key": "good_at_melee_combat",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150061,
+      150062,
+      150063
+    ],
+    "name": "Remote Strike",
+    "description": "The attack gets stronger the farther away the enemy is. DMG to enemies 15 meters away +#%",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu_yuanchengdaji.webp",
+    "slot": "normal",
+    "talent_id": 41,
+    "key": "remote_strike",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150071,
+      150072,
+      150073
+    ],
+    "name": "Extraordinary Talent",
+    "description": "Blessing bestowed by the gods; triggering chance of all probabilistic talents +#%.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_xingyun.webp",
+    "slot": "normal",
+    "talent_id": 42,
+    "key": "extraordinary_talent",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      150081,
+      150082,
+      150083
+    ],
+    "name": "Marksman Footstep",
+    "description": "[Hunter Exclusive] Mastered the special movement skills of bows. Movement Speed +#% for 5 seconds when drawing a bow, with a #% chance to remove most Slow effects when triggered. (CD: 8s)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_sheshoujiaobu.webp",
+    "slot": "normal",
+    "talent_id": 43,
+    "key": "marksman_footstep",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150091,
+      150092,
+      150093
+    ],
+    "name": "Rapid Fire",
+    "description": "[Hunter Exclusive] An extremely challenging shot technique for archers to master. Full-charge time of bows -#%.",
+    "description_values": [
+      15,
+      35,
+      55
+    ],
+    "icon": "img/ng/tianfu_shuliansheji.webp",
+    "slot": "normal",
+    "talent_id": 44,
+    "key": "rapid_fire",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150101,
+      150102,
+      150103
+    ],
+    "name": "Quick Reload",
+    "description": "A born genius, natural with all sorts of gadgets. Crossbow Tower, Ballista Reload Speed +#%.",
+    "description_values": [
+      20,
+      35,
+      50
+    ],
+    "icon": "img/ng/tianfu_kuaisutianzhuang.webp",
+    "slot": "normal",
+    "talent_id": 45,
+    "key": "quick_reload",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      150111,
+      150112,
+      150113
+    ],
+    "name": "Bone-gnawing Wound",
+    "description": "[Hunter Exclusive] Not all wounds show immediately. Ranged hits have a #% chance to inflict a 5-sec Hidden Wound. Dashing during this time will cause Coma.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__zhuiguzhishang.webp",
+    "slot": "normal",
+    "talent_id": 46,
+    "key": "bone_gnawing_wound",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160011,
+      160012,
+      160013
+    ],
+    "name": "Last Radiance",
+    "description": "Possesses tenacious vitality, able to recover 20% of HP in 5 seconds when HP is below #%. (CD: 40s)",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_huiguangfanzhao.webp",
+    "slot": "normal",
+    "talent_id": 47,
+    "key": "last_radiance",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160021,
+      160022,
+      160023
+    ],
+    "name": "Wild Nature Awakened",
+    "description": "Dangers of death will bring out the wildness within. When HP is below 30%, ATK +#%, Stamina +# per second, DEF -20%, lasting for 15 seconds. (CD: 30s)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_yexingjuexing.webp",
+    "slot": "normal",
+    "talent_id": 48,
+    "key": "wild_nature_awakened",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160031,
+      160032,
+      160033
+    ],
+    "name": "Raging Inferno",
+    "description": "[Claw Exclusive] Reduces the burn effect caused by flames. When the body is ignited, each attack gains a damage boost equal to the ignition damage taken, stacking up to 10 times.",
+    "description_values": [
+      1.5,
+      2
+    ],
+    "icon": "img/ng/tianfu__nuyanfenshen.webp",
+    "slot": "normal",
+    "talent_id": 49,
+    "key": "raging_inferno",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160041,
+      160042,
+      160043
+    ],
+    "name": "Spreading Flames",
+    "description": "When I'm on fire, no one can escape! When the body is ignited, the burn effect can be transferred to enemies within a #m radius.",
+    "description_values": [
+      1,
+      2,
+      3
+    ],
+    "icon": "img/ng/tianfu__lieyankuosan.webp",
+    "slot": "normal",
+    "talent_id": 50,
+    "key": "spreading_flames",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160051,
+      160052,
+      160053
+    ],
+    "name": "Fatal",
+    "description": "Damaging a target with less than 30% HP has a 20% chance to increase the damage by #% and inflict a 5-sec Hidden Wound. If the target dashes while wounded, they suffer Heavy Bleeding, losing HP equal to #% of their ATK per second.",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu__zhiming.webp",
+    "slot": "normal",
+    "talent_id": 51,
+    "key": "fatal",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160061,
+      160062,
+      160063
+    ],
+    "name": "Acceleration at Stress",
+    "description": "Gets out of danger in a flash. When attacked, has a 20% chance to increase own Movement Speed by #% for 6 seconds. (CD: 20s)",
+    "description_values": [
+      15,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_yingjifanying.webp",
+    "slot": "normal",
+    "talent_id": 52,
+    "key": "acceleration_at_stress",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160071,
+      160072,
+      160073
+    ],
+    "name": "Bite the Bullet",
+    "description": "Potential is activated under the spur of motivation. When under attack, there is a 30% chance to increase self Max Load by #% for 10 seconds. (CD: 30s)",
+    "description_values": [
+      20,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_renrufuzhong.webp",
+    "slot": "normal",
+    "talent_id": 53,
+    "key": "bite_the_bullet",
+    "tag_ids": [
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      160081,
+      160082,
+      160083
+    ],
+    "name": "Getting Braver",
+    "description": "[Claw Exclusive] Attack enemies 5m from self for a 15% chance to gain a stack of Crit +#%, Crit Resist +#%, Crit DMG +#%, Movement Speed +#% for 30 seconds, stacking up to 5 times.",
+    "description_values": [
+      2,
+      3,
+      4
+    ],
+    "icon": "img/ng/tianfu_yuzhanyuyong.webp",
+    "slot": "normal",
+    "talent_id": 54,
+    "key": "getting_braver",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160091,
+      160092,
+      160093
+    ],
+    "name": "Fire Deterrence",
+    "description": "The ghastly vision of the burning body deals a crushing blow to the enemy's courage, reducing their ATK and movement speed by 10% within a #m radius for 10 seconds, stacking up to 3 times.",
+    "description_values": [
+      3,
+      5,
+      8
+    ],
+    "icon": "img/ng/tianfu__ranshaoweixie.webp",
+    "slot": "normal",
+    "talent_id": 55,
+    "key": "fire_deterrence",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160111,
+      160112,
+      160113
+    ],
+    "name": "Crave for Blood",
+    "description": "With the desire for blood, when attacking targets within 5 meters, has a 25% chance to convert #% of damage into HP restoration to self.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_kewangxianxue.webp",
+    "slot": "normal",
+    "talent_id": 56,
+    "key": "crave_for_blood",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160121,
+      160122,
+      160123
+    ],
+    "name": "Surprise Attack",
+    "description": "Each part has weak spots. 10% chance for taking any part hit as a weak spot.",
+    "description_values": null,
+    "icon": "img/ng/tianfu_gongqibubei.webp",
+    "slot": "normal",
+    "talent_id": 57,
+    "key": "surprise_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160131,
+      160132,
+      160133
+    ],
+    "name": "Firm Will",
+    "description": "[Flint Exclusive] Firm and unshakable. Has a #% chance to become immune to Hitstun effects. (CD: 5s)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_yizhijianding.webp",
+    "slot": "normal",
+    "talent_id": 58,
+    "key": "firm_will",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160141,
+      160142,
+      160143
+    ],
+    "name": "Clever Escape",
+    "description": "Stores up Stamina to make a quick getaway at any time, also recovers # Stamina from Hitstun. (CD: 5s)",
+    "description_values": [
+      10,
+      15,
+      25
+    ],
+    "icon": "img/ng/tianfu_linghuotaotuo.webp",
+    "slot": "normal",
+    "talent_id": 59,
+    "key": "clever_escape",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160151,
+      160152,
+      160153
+    ],
+    "name": "Hardened Body",
+    "description": "When facing threats, the body tenses up instantly. During Hitstun, there is a 20% chance of gaining Superarmor for 1 second. (CD: 5s)",
+    "description_values": [
+      2,
+      3
+    ],
+    "icon": "img/ng/tianfu_yinghuashenqu.webp",
+    "slot": "normal",
+    "talent_id": 60,
+    "key": "hardened_body",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160161,
+      160162,
+      160163
+    ],
+    "name": "Head Stress Response",
+    "description": "The stress response has a 20% chance to kick in when the head is attacked, DMG taken -#% for 5 seconds. (CD: 12s)",
+    "description_values": [
+      20,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_toubuyingji.webp",
+    "slot": "normal",
+    "talent_id": 61,
+    "key": "head_stress_response",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160171,
+      160172,
+      160173
+    ],
+    "name": "Arm Stress Response",
+    "description": "The stress response has a 20% chance to kick in when the arm is attacked, DMG taken -#% for 5 seconds. (CD: 12s)",
+    "description_values": [
+      20,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_shoubiyingji.webp",
+    "slot": "normal",
+    "talent_id": 62,
+    "key": "arm_stress_response",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160181,
+      160182,
+      160183
+    ],
+    "name": "Torso Stress Response",
+    "description": "The stress response has a 20% chance to kick in when the torso is attacked, DMG taken -#% for 5 seconds. (CD: 12s)",
+    "description_values": [
+      20,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_quganyingji.webp",
+    "slot": "normal",
+    "talent_id": 63,
+    "key": "torso_stress_response",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160191,
+      160192,
+      160193
+    ],
+    "name": "Thigh Stress Response",
+    "description": "The stress response has a 20% chance to kick in when the thigh is attacked, DMG taken -#% for 5 seconds. (CD: 12s)",
+    "description_values": [
+      20,
+      30,
+      50
+    ],
+    "icon": "img/ng/tianfu_datuiyingji.webp",
+    "slot": "normal",
+    "talent_id": 64,
+    "key": "thigh_stress_response",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160201,
+      160202,
+      160203
+    ],
+    "name": "Limb Destruction",
+    "description": "Limb expert. Attacking the enemy's limbs has a 20% chance of gaining #% bonus damage.",
+    "description_values": [
+      10,
+      15,
+      25
+    ],
+    "icon": "img/ng/tianfu_zhitipohuai.webp",
+    "slot": "normal",
+    "talent_id": 65,
+    "key": "limb_destruction",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160211,
+      160212,
+      160213
+    ],
+    "name": "Torso Destruction",
+    "description": "Familiar with torso structure. When attacking the torso of the target, has a 20% chance to increase DMG by #%.",
+    "description_values": [
+      10,
+      15,
+      25
+    ],
+    "icon": "img/ng/tianfu_quganpohuai.webp",
+    "slot": "normal",
+    "talent_id": 66,
+    "key": "torso_destruction",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160221,
+      160222,
+      160223
+    ],
+    "name": "Head Destruction",
+    "description": "Skull expert. Attacking the enemy's head has a 20% chance of gaining #% bonus damage.",
+    "description_values": [
+      10,
+      15,
+      25
+    ],
+    "icon": "img/ng/tianfu_toubupohuai.webp",
+    "slot": "normal",
+    "talent_id": 67,
+    "key": "head_destruction",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160231,
+      160232,
+      160233
+    ],
+    "name": "Tail Destruction",
+    "description": "Familiar with tail structure. When attacking the tail of the target, has a 20% chance to increase DMG by #%.",
+    "description_values": [
+      10,
+      15,
+      25
+    ],
+    "icon": "img/ng/tianfu_weibupohuai.webp",
+    "slot": "normal",
+    "talent_id": 68,
+    "key": "tail_destruction",
+    "tag_ids": [
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160241,
+      160242,
+      160243
+    ],
+    "name": "Weak Spot Enhance",
+    "description": "Intentionally strengthens own weak spots. Damage taken when hit -#%.",
+    "description_values": [
+      20,
+      40,
+      60
+    ],
+    "icon": "img/ng/tianfu_ruodianqianghua.webp",
+    "slot": "normal",
+    "talent_id": 69,
+    "key": "weak_spot_enhance",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160251,
+      160252,
+      160253
+    ],
+    "name": "Fight Back",
+    "description": "Each joint of the body is a lethal weapon. When a body part(except head) other than the weak spots is hit by a melee attack within a 5m range, #% of the damage is returned back to the attacker.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_fenqifanji.webp",
+    "slot": "normal",
+    "talent_id": 70,
+    "key": "fight_back",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160261,
+      160262,
+      160263
+    ],
+    "name": "Weakness Thump",
+    "description": "Attacking the enemy's weak spot has a 25% chance of increasing damage by #%.",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_ruodianzhongji.webp",
+    "slot": "normal",
+    "talent_id": 71,
+    "key": "weakness_thump",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160271,
+      160272,
+      160273
+    ],
+    "name": "Loadless Fast Marching",
+    "description": "Unleash agility with a lighter pack. Movement Speed +5% faster the Load is less than 50%.",
+    "description_values": [
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_qingzhuangsuxing.webp",
+    "slot": "normal",
+    "talent_id": 72,
+    "key": "loadless_fast_marching",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160281,
+      160282,
+      160283
+    ],
+    "name": "Loaded Raid",
+    "description": "Travels faster despite carrying weight. When load is above 90%, Movement Speed +#%.",
+    "description_values": [
+      10,
+      20,
+      40
+    ],
+    "icon": "img/ng/tianfu_zhongzhuangbenxi.webp",
+    "slot": "normal",
+    "talent_id": 73,
+    "key": "loaded_raid",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160291,
+      160292,
+      160293
+    ],
+    "name": "Endurance",
+    "description": "After fending off an enemy attack, DEF +#% for 12 seconds and gains immunity to critical hits during this time. (CD: 30s)",
+    "description_values": [
+      30,
+      50,
+      80
+    ],
+    "icon": "img/ng/tianfu__rennai.webp",
+    "slot": "normal",
+    "talent_id": 74,
+    "key": "endurance",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160301,
+      160302,
+      160303
+    ],
+    "name": "Defense to Offense",
+    "description": "Mastered great skills for reflecting attacks. Returns a #% of damage to the attacker after successfully reflecting the enemy's melee attack.",
+    "description_values": [
+      20,
+      35,
+      50
+    ],
+    "icon": "img/ng/tianfu_zhuanshouweigong.webp",
+    "slot": "normal",
+    "talent_id": 75,
+    "key": "defense_to_offense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160331,
+      160332,
+      160333
+    ],
+    "name": "Dodge and Strike",
+    "description": "Successfully dodging an enemy attack increases Movement Speed +#%, Attack Speed +#%, ATK +#% for 5 seconds. (CD: 10s)",
+    "description_values": [
+      10,
+      20
+    ],
+    "icon": "img/ng/tianfu_bishijixu.webp",
+    "slot": "normal",
+    "talent_id": 76,
+    "key": "dodge_and_strike",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160341,
+      160342,
+      160343
+    ],
+    "name": "Extreme Dodge",
+    "description": "Instantly recovers # Stamina after dodging enemy attacks.",
+    "description_values": [
+      15,
+      25,
+      35
+    ],
+    "icon": "img/ng/tianfu_jixianshanbi.webp",
+    "slot": "normal",
+    "talent_id": 77,
+    "key": "extreme_dodge",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160351,
+      160352,
+      160353
+    ],
+    "name": "Tactical Dodge",
+    "description": "[Flint Exclusive] Successfully dodging an enemy attack reset the talent cooldown (CD: #s).",
+    "description_values": [
+      60,
+      45,
+      30
+    ],
+    "icon": "img/ng/tianfu__zhanshushanbi.webp",
+    "slot": "normal",
+    "talent_id": 78,
+    "key": "tactical_dodge",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160371,
+      160372,
+      160373
+    ],
+    "name": "Calm and Peaceful",
+    "description": "[Fang Exclusive] Fight with grace and elegance. Gain a stat boost after receiving no damage for 12 seconds, ATK +#%, Attack Speed +2%, Crit +#%, Crit DMG +#% at the cost of taking slightly higher damage, stacking up to 5 times; taking damage removes 1 stack each time.",
+    "description_values": [
+      1,
+      1.5,
+      2
+    ],
+    "icon": "img/ng/tianfu_qidingshenxian.webp",
+    "slot": "normal",
+    "talent_id": 79,
+    "key": "calm_and_peaceful",
+    "tag_ids": [
+      3,
+      81,
+      82,
+      83,
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160381,
+      160382,
+      160383
+    ],
+    "name": "Static Recovery",
+    "description": "Life is in stillness. When remaining stationary for 15 seconds without any movement, slowly recovers HP equal to #% of DEF per second.",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_jingtaihuifu.webp",
+    "slot": "normal",
+    "talent_id": 80,
+    "key": "static_recovery",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160391,
+      160392,
+      160393
+    ],
+    "name": "Logging Pro",
+    "description": "[Fang Exclusive] Cuts down trees without damaging their roots, greatly reducing the time required for the felled trees to regrow by #%.",
+    "description_values": [
+      20,
+      30,
+      40
+    ],
+    "icon": "img/ng/tianfu_famuqiaoshou.webp",
+    "slot": "normal",
+    "talent_id": 81,
+    "key": "logging_pro",
+    "tag_ids": [
+      51,
+      3,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160401,
+      160402,
+      160403
+    ],
+    "name": "Vein Protection",
+    "description": "[Fang Exclusive] Mine minerals without damaging the veins. Mine Regen Time -#%.",
+    "description_values": [
+      20,
+      30,
+      40
+    ],
+    "icon": "img/ng/tianfu_kuangmaishouhu.webp",
+    "slot": "normal",
+    "talent_id": 82,
+    "key": "vein_protection",
+    "tag_ids": [
+      51,
+      3,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160411,
+      160412,
+      160413
+    ],
+    "name": "Planting Pro",
+    "description": "[Fang Exclusive] Tends crops meticulously and with extra care. Output of planted and harvested plants +#%.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_zhongzhinengshou.webp",
+    "slot": "normal",
+    "talent_id": 83,
+    "key": "planting_pro",
+    "tag_ids": [
+      51,
+      3,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160421,
+      160422,
+      160423
+    ],
+    "name": "Quick Bandaging",
+    "description": "The multi-time 3rd place of the tribe's bandaging competition. Bandage Time -30%.",
+    "description_values": null,
+    "icon": "img/ng/tianfu_kuaisubaoza.webp",
+    "slot": "normal",
+    "talent_id": 84,
+    "key": "quick_bandaging",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      160431,
+      160432,
+      160433
+    ],
+    "name": "Blood Absorption",
+    "description": "Satiate hunger with blood. Dealing damage to targets within 5 meters has a #% chance to inflict additional damage equal to 3% of their Max HP (up to 100 HP) and heal the attacker for the same amount. This effect is 5% stronger (up to 150 HP) against bleeding targets.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_xianxuexishou.webp",
+    "slot": "normal",
+    "talent_id": 85,
+    "key": "blood_absorption",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160441,
+      160442,
+      160443
+    ],
+    "name": "Tear Wound",
+    "description": "[Fang Exclusive] Ruptures the wound. Damage dealt to bleeding targets +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_silieshangkou.webp",
+    "slot": "normal",
+    "talent_id": 86,
+    "key": "tear_wound",
+    "tag_ids": [
+      3,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160451,
+      160452,
+      160453
+    ],
+    "name": "Fight to Death",
+    "description": "Prefers counterattack to defense. 20% chance when attacked to increase damage dealt by #% but also increase damage taken by #% for 15 sec. (Cooldown: 25 seconds)",
+    "description_values": [
+      20,
+      30,
+      40
+    ],
+    "icon": "img/ng/tianfu_shemingxiangbo.webp",
+    "slot": "normal",
+    "talent_id": 87,
+    "key": "fight_to_death",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160461,
+      160462,
+      160463
+    ],
+    "name": "Bloodbath Recovery",
+    "description": "Blood is life. Taking damage has a 20% chance to activate Bloodlust Recovery, restoring HP equal to 10% of own ATK per second for 15 seconds. HP lost to Bleeding during this effect is converted into an equal amount of HP recovery. (CD: 25s)",
+    "description_values": [
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_yuxuehuifu.webp",
+    "slot": "normal",
+    "talent_id": 88,
+    "key": "bloodbath_recovery",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160471,
+      160472,
+      160473
+    ],
+    "name": "Lose-lose",
+    "description": "The pain gradually becomes unbearable. When own weak spot is attacked, has a 25% chance to increase the damage dealt to the enemy's weak spot by #% in the next 15 seconds. However, the DMG taken on own weak spot also increases by #%. The effect lasts for 15 seconds. (CD: 25s)",
+    "description_values": [
+      20,
+      40,
+      60
+    ],
+    "icon": "img/ng/tianfu_liangbaijushang.webp",
+    "slot": "normal",
+    "talent_id": 89,
+    "key": "lose_lose",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160481,
+      160482,
+      160483
+    ],
+    "name": "Overwhelming Force",
+    "description": "[Claw Exclusive] Each strike carries tremendous force. When damaging a target, an extra 15 Stamina is consumed to increase the damage by #% and drain # Stamina from the target.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_shidalichen.webp",
+    "slot": "normal",
+    "talent_id": 90,
+    "key": "overwhelming_force",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160491,
+      160492,
+      160493
+    ],
+    "name": "Shield Bash",
+    "description": "By mastering the shield technique, you can use (10% Max Stamina+#) Stamina to deflect melee attacks, inflicting damage equal to 100% of your ATK on the attacker. However, if your Stamina is less than 30% while defending yourself, you will take 200% damage.",
+    "description_values": [
+      17,
+      12,
+      7
+    ],
+    "icon": "img/ng/tianfu_fangyufanji.webp",
+    "slot": "normal",
+    "talent_id": 91,
+    "key": "shield_bash",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160501,
+      160502,
+      160503
+    ],
+    "name": "Endurance Burst",
+    "description": "[Flint Exclusive] Stop tolerating when you cannot. After successfully defending against enemy attacks, if Stamina is above 60%, recovers Resilience by # and gains a stack of 10% increase in DEF. When reaching more than 5 stacks, enters the burst status that deals #% more damage for 6 seconds.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_rennaibaofa.webp",
+    "slot": "normal",
+    "talent_id": 92,
+    "key": "endurance_burst",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160511,
+      160512,
+      160513
+    ],
+    "name": "Skill Recovery",
+    "description": "Times the tempo of recovery. Recovers HP equal to #% of the damage dealt after successfully reflecting the enemy's attack.",
+    "description_values": [
+      15,
+      25,
+      35
+    ],
+    "icon": "img/ng/tianfu_jiqiaohuifu.webp",
+    "slot": "normal",
+    "talent_id": 93,
+    "key": "skill_recovery",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160521,
+      160522,
+      160523
+    ],
+    "name": "Insight DEF",
+    "description": "[Flint Exclusive] Detects enemy's defensive deficiencies. Ignores the enemy's DEF within # seconds after reflecting the enemy's attack. (CD: 30s)",
+    "description_values": [
+      3,
+      5,
+      7
+    ],
+    "icon": "img/ng/tianfu_dongchafangyu.webp",
+    "slot": "normal",
+    "talent_id": 94,
+    "key": "insight_def",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160531,
+      160532,
+      160533
+    ],
+    "name": "Wrath of Revenge",
+    "description": "Channels fury into strength, becoming utterly infuriated when there's a dying or dead ally within 10 meters, ATK +#%, DEF +#%, Attack Speed +#%, Movement Speed +#%, and recover # Stamina per second for 20 seconds. (CD: 50s)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_fuchouzhinu.webp",
+    "slot": "normal",
+    "talent_id": 95,
+    "key": "wrath_of_revenge",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160541,
+      160542,
+      160543
+    ],
+    "name": "Enemy Down Fervency",
+    "description": "Get more pumped after taking down each enemy. If there is a dying or killed enemy within 10 meters, gain 1 stack of attack blocking effect, which is consumed upon being attacked. (CD: 40s)",
+    "description_values": [
+      2,
+      3
+    ],
+    "icon": "img/ng/tianfu_disunkuangre.webp",
+    "slot": "normal",
+    "talent_id": 96,
+    "key": "enemy_down_fervency",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160551,
+      160552,
+      160553
+    ],
+    "name": "Merciless Means",
+    "description": "The enemy died a terrible death, reducing the Attack Speed of surviving enemies within 10 meters, reducing their Attack Speed by #%, Crit Resist by #% and DEF by #% for 20 seconds.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_shouduancairen.webp",
+    "slot": "normal",
+    "talent_id": 97,
+    "key": "merciless_means",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160561,
+      160562,
+      160563
+    ],
+    "name": "Slaughter Fervency",
+    "description": "There are no words to describe the thrill from killing enemies. Each time you kill or bring an enemy to near death, gain Superarmor and a huge Crit Resist boost for # seconds. (CD: 30s)",
+    "description_values": [
+      5,
+      7.5,
+      10
+    ],
+    "icon": "img/ng/tianfu_tulukuangre.webp",
+    "slot": "normal",
+    "talent_id": 98,
+    "key": "slaughter_fervency",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160571,
+      160572,
+      160573
+    ],
+    "name": "Determined",
+    "description": "Stay composed in the face of danger. Gain a stat boost after staying still for 6 seconds, ATK +#%, Attack Speed +2%, Crit +#%, Crit DMG +#% at the cost of taking slightly higher damage, stacking up to 5 times; all effects are removed after moving.",
+    "description_values": [
+      1,
+      1.5,
+      2
+    ],
+    "icon": "img/ng/tianfu_jiandingbuyi.webp",
+    "slot": "normal",
+    "talent_id": 99,
+    "key": "determined",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160581,
+      160582,
+      160583
+    ],
+    "name": "Fatal Rhythm",
+    "description": "[Claw Exclusive] Controls the rhythm of the battle, and gains 1 stack of boosts for ATK +#% and Attack Speed +#% when attacking enemies while maintaining over 70% Stamina, lasting for 10 seconds and stacking up to 5 times. (Removes all effects if conditions are not met)",
+    "description_values": [
+      2,
+      3,
+      4
+    ],
+    "icon": "img/ng/tianfu_zhimingjiezou.webp",
+    "slot": "normal",
+    "talent_id": 100,
+    "key": "fatal_rhythm",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160591,
+      160592,
+      160593
+    ],
+    "name": "Go for the Jugular",
+    "description": "Keen as an eagle's sight. When attacking an enemy 15 meters away, the damage to weak spots +#%.",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_zhijiyaohai.webp",
+    "slot": "normal",
+    "talent_id": 101,
+    "key": "go_for_the_jugular",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160601,
+      160602,
+      160603
+    ],
+    "name": "Avoid Vitals",
+    "description": "[Flint Exclusive] The greater the distance, the less dangerous the threat. When hit by a ranged attack from 10 meters away, there's a 20% chance to reduce the damage taken by #%.",
+    "description_values": [
+      30,
+      50,
+      80
+    ],
+    "icon": "img/ng/tianfu_bikaiyaohai.webp",
+    "slot": "normal",
+    "talent_id": 102,
+    "key": "avoid_vitals",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160611,
+      160612,
+      160613
+    ],
+    "name": "Steel Body",
+    "description": "When attacked, gains immunity to Hitstun if current Resilience is higher than #%.",
+    "description_values": [
+      70,
+      60,
+      50
+    ],
+    "icon": "img/ng/tianfu_gangtiezhiqu.webp",
+    "slot": "normal",
+    "talent_id": 103,
+    "key": "steel_body",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160621,
+      160622,
+      160623
+    ],
+    "name": "Poisoned Body",
+    "description": "[Fang Exclusive] Full of lethal poison, each attack has a #% chance of inflicting a stack of 10-sec Poison effect (DMG Over Time, Stamina Loss, Weak Spirit), stacking up to 5 times.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_duqu.webp",
+    "slot": "normal",
+    "talent_id": 104,
+    "key": "poisoned_body",
+    "tag_ids": [
+      3,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160631,
+      160632,
+      160633
+    ],
+    "name": "Mind-Heart Unison",
+    "description": "Launch fierce attacks; when hitting the target, has a #% chance to enter the heart flow, triggering all talents of self that requires triggering within #s. (Cooldown: 25s)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_xinnianheyi.webp",
+    "slot": "normal",
+    "talent_id": 105,
+    "key": "mind_heart_unison",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160641,
+      160642,
+      160643
+    ],
+    "name": "PEN DEF",
+    "description": "When hitting the target, there's a #% chance to ignore the target's DEF. (Cooldown: 2s)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_chuantoufangyu.webp",
+    "slot": "normal",
+    "talent_id": 106,
+    "key": "pen_def",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160651,
+      160652,
+      160653
+    ],
+    "name": "Morale Dampener",
+    "description": "[Claw Exclusive] The ferocious attacks instill fear in enemies' hearts. When hitting the target, has a #% chance to reduce their ATK by 3%, DEF by 2% and Movement Speed by 5% for 15s, stacking up to 5 times.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_cuodiruiqi.webp",
+    "slot": "normal",
+    "talent_id": 107,
+    "key": "morale_dampener",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160661,
+      160662,
+      160663
+    ],
+    "name": "Suppress Violence",
+    "description": "Suppress enemies with sheer power. When hitting the target, has a #% chance to reduce their Crit by 7% for 15s, stacking up to 5 times.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_yizhibaoli.webp",
+    "slot": "normal",
+    "talent_id": 108,
+    "key": "suppress_violence",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160671,
+      160672,
+      160673
+    ],
+    "name": "Malice",
+    "description": "Generates malice towards enemies carries debuffs; when attacking targets within 5m under Poison, Burn and Bleed, has a 15% chance to gain a stack of effect that boost self Crit by #% and Crit DMG by #%, lasts for 10s, can be stacked up to 5 times.",
+    "description_values": [
+      1,
+      2,
+      3
+    ],
+    "icon": "img/ng/tianfu_eyi.webp",
+    "slot": "normal",
+    "talent_id": 109,
+    "key": "malice",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160681,
+      160682,
+      160683
+    ],
+    "name": "Drunken Senses",
+    "description": "Drunk in appearance, sober in spirit. Dodge 1 attack within 15 seconds after drinking. Drinkers dodge more attacks (CD: 30 seconds).",
+    "description_values": [
+      2,
+      3
+    ],
+    "icon": "img/ng/tianfu__zuitaiganying.webp",
+    "slot": "normal",
+    "talent_id": 110,
+    "key": "drunken_senses",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160691,
+      160692,
+      160693
+    ],
+    "name": "Onslaught",
+    "description": "[Warrior Exclusive] Unleash a ferocious offense to suppress the enemy. Depleting a target's Resilience will also remove their Superarmor. Attack Speed +10% for 12 seconds and gains Stamina if damage per hit > 5% of target's Max HP. (CD: #s)",
+    "description_values": [
+      60,
+      45,
+      30
+    ],
+    "icon": "img/ng/tianfu__menggong.webp",
+    "slot": "normal",
+    "talent_id": 111,
+    "key": "onslaught",
+    "tag_ids": [
+      82,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160701,
+      160702,
+      160703
+    ],
+    "name": "Backpack Expansion",
+    "description": "A hidden compartment in the backpack increases storage space. Has # more inventory slots compared to the average backpack.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_beibaokuorong.webp",
+    "slot": "normal",
+    "talent_id": 112,
+    "key": "backpack_expansion",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      22,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      160711,
+      160712,
+      160713
+    ],
+    "name": "Refined Armor",
+    "description": "[Flint Exclusive] Skilled in crafting. Probability of forging high-quality armor +#%.",
+    "description_values": [
+      5,
+      7.5,
+      10
+    ],
+    "icon": "img/ng/tianfu_jingzhifangju.webp",
+    "slot": "normal",
+    "talent_id": 113,
+    "key": "refined_armor",
+    "tag_ids": [
+      53,
+      5,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160721,
+      160722,
+      160723
+    ],
+    "name": "Weapon Enhancement",
+    "description": "[Flint Exclusive] Artisanal forging. Probability of producing high-quality weapons +#%.",
+    "description_values": [
+      5,
+      7.5,
+      10
+    ],
+    "icon": "img/ng/tianfu_wuqijingzhu.webp",
+    "slot": "normal",
+    "talent_id": 114,
+    "key": "weapon_enhancement",
+    "tag_ids": [
+      53,
+      5,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160731,
+      160732,
+      160733
+    ],
+    "name": "Refined Tool",
+    "description": "[Craftsman Exclusive] Crafting tools with inventive skills. Probability of producing high-quality tools +#%.",
+    "description_values": [
+      5,
+      7.5,
+      10
+    ],
+    "icon": "img/ng/tianfu_jingzhizhubao.webp",
+    "slot": "normal",
+    "talent_id": 115,
+    "key": "refined_tool",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160741,
+      160742,
+      160743
+    ],
+    "name": "Accelerate Wood & Stone",
+    "description": "[Porter Exclusive] Dexterous, the time required to complete wood & stone work is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasupaomu.webp",
+    "slot": "normal",
+    "talent_id": 116,
+    "key": "accelerate_wood_stone",
+    "tag_ids": [
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160751,
+      160752,
+      160753
+    ],
+    "name": "Accelerate Cutting Stone",
+    "description": "Skilled in cutting stone, the time required to complete stone cutting tasks is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuqieshi.webp",
+    "slot": "normal",
+    "talent_id": 117,
+    "key": "accelerate_cutting_stone",
+    "tag_ids": [
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160761,
+      160762,
+      160763
+    ],
+    "name": "Accelerate Kiln",
+    "description": "[Porter Exclusive] Enthusiasm is unaffected by high-temperatures. Time required for kiln work -#%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuronglian.webp",
+    "slot": "normal",
+    "talent_id": 118,
+    "key": "accelerate_kiln",
+    "tag_ids": [
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160771,
+      160772,
+      160773
+    ],
+    "name": "Accelerate leatherworking",
+    "description": "[Porter Exclusive] Expert in leatherworking. Time required for leatherworking -#%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuroupi.webp",
+    "slot": "normal",
+    "talent_id": 119,
+    "key": "accelerate_leatherworking",
+    "tag_ids": [
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160781,
+      160782,
+      160783
+    ],
+    "name": "Accelerate Weaving",
+    "description": "[Porter Exclusive] Skilled in weaving, the time required for weaving work is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasufangzhi.webp",
+    "slot": "normal",
+    "talent_id": 120,
+    "key": "accelerate_weaving",
+    "tag_ids": [
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160791,
+      160792,
+      160793
+    ],
+    "name": "Accelerate Potting",
+    "description": "[Porter Exclusive] Skilled in potting techniques, the time required to complete potting is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuzhitao.webp",
+    "slot": "normal",
+    "talent_id": 121,
+    "key": "accelerate_potting",
+    "tag_ids": [
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160801,
+      160802,
+      160803
+    ],
+    "name": "Accelerate Grinding",
+    "description": "Skilled in grinding, the time required to complete grinding tasks is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuyanmo.webp",
+    "slot": "normal",
+    "talent_id": 122,
+    "key": "accelerate_grinding",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160811,
+      160812,
+      160813
+    ],
+    "name": "Crafting Speed Up",
+    "description": "[Craftsman Exclusive] Skilled in processing, the time required for completing crafting quests is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuqijuzhizao.webp",
+    "slot": "normal",
+    "talent_id": 123,
+    "key": "crafting_speed_up",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160821,
+      160822,
+      160823
+    ],
+    "name": "Accelerate Weapon Crafting",
+    "description": "[Craftsman Exclusive] Experienced in weapon crafting, the time required to complete weapon crafting quests is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuwuqizhizao.webp",
+    "slot": "normal",
+    "talent_id": 124,
+    "key": "accelerate_weapon_crafting",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160831,
+      160832,
+      160833
+    ],
+    "name": "Accelerate Armor Crafting",
+    "description": "[Craftsman Exclusive] Skilled in armor forging, the time required for armor crafting quests is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasufangjuzhizao.webp",
+    "slot": "normal",
+    "talent_id": 125,
+    "key": "accelerate_armor_crafting",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160841,
+      160842,
+      160843
+    ],
+    "name": "Accelerate Jewelry Crafting",
+    "description": "Skilled in jewelry crafting, the time required to complete jewelry crafting tasks is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasuzhubaozhizao.webp",
+    "slot": "normal",
+    "talent_id": 126,
+    "key": "accelerate_jewelry_crafting",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160851,
+      160852,
+      160853
+    ],
+    "name": "Accelerate Building Crafting",
+    "description": "Skilled in building crafting, the time required to complete building crafting tasks is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasujianzhuzhizao.webp",
+    "slot": "normal",
+    "talent_id": 127,
+    "key": "accelerate_building_crafting",
+    "tag_ids": [
+      52,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160861,
+      160862,
+      160863
+    ],
+    "name": "Accelerate Alchemy",
+    "description": "[Craftsman Exclusive] Talented in alchemy, the time required for alchemy quests is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasulianjin.webp",
+    "slot": "normal",
+    "talent_id": 128,
+    "key": "accelerate_alchemy",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160871,
+      160872,
+      160873
+    ],
+    "name": "Accelerate Cooking",
+    "description": "[Craftsman Exclusive] Experienced in cooking, the time required to complete cooking is reduced by #%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu_jiasupengren.webp",
+    "slot": "normal",
+    "talent_id": 129,
+    "key": "accelerate_cooking",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160891,
+      160892,
+      160893
+    ],
+    "name": "Rock-like Resolve",
+    "description": "[Guard Exclusive] After fending off an enemy attack, increases own Coma, Paralysis, and Bleed resistance by #% for 12 seconds. (CD: 30s)",
+    "description_values": [
+      30,
+      50,
+      80
+    ],
+    "icon": "img/ng/tianfu__panshiyizhi.webp",
+    "slot": "normal",
+    "talent_id": 130,
+    "key": "rock_like_resolve",
+    "tag_ids": [
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160901,
+      160902,
+      160903
+    ],
+    "name": "Tit for Tat",
+    "description": "[Claw Exclusive] Endure the pain to retaliate. When attacked, there is a 20% chance of storing and dealing all received damage to enemies for #s. (CD: 30s)",
+    "description_values": [
+      4,
+      6,
+      8
+    ],
+    "icon": "img/ng/tianfu_yiyahuanya.webp",
+    "slot": "normal",
+    "talent_id": 131,
+    "key": "tit_for_tat",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160911,
+      160912,
+      160913
+    ],
+    "name": "Riposte",
+    "description": "When defending against melee attacks with a weapon (not a shield), there is a #% chance to use an additional 30 Stamina to Cripple the attacker for 5 seconds, significantly reducing their ATK.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_gedangfanji.webp",
+    "slot": "normal",
+    "talent_id": 132,
+    "key": "riposte",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160921,
+      160922,
+      160923
+    ],
+    "name": "Pouring Rage",
+    "description": "[Fang Exclusive] Accumulate rage and deal a fatal blow. When attacked, there is a 20% chance of storing the received damage for #s, then dealing all stored damage to enemies in 8s. (CD: 30s)",
+    "description_values": [
+      4,
+      6,
+      8
+    ],
+    "icon": "img/ng/tianfu_nuhuoqingxie.webp",
+    "slot": "normal",
+    "talent_id": 133,
+    "key": "pouring_rage",
+    "tag_ids": [
+      3,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160931,
+      160932,
+      160933
+    ],
+    "name": "Strikeback",
+    "description": "[Fang Exclusive] Strike upon discerning the enemy's maneuver. Dodging 2 enemy attacks (the interval of each attack is less than 6s) in succession grants you the ability to ignore the enemy's defense for #s.",
+    "description_values": [
+      3,
+      5,
+      7
+    ],
+    "icon": "img/ng/tianfu_houfazhiren.webp",
+    "slot": "normal",
+    "talent_id": 134,
+    "key": "strikeback",
+    "tag_ids": [
+      3,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160941,
+      160942,
+      160943
+    ],
+    "name": "Stimulate Morale",
+    "description": "[Flint Exclusive] Pain awakens self-hatred and activates potential. When attacked, has a #% chance to enter the heart flow, triggering all talents of self that requires triggering within #s. (CD: 25s)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_jifadouzhi.webp",
+    "slot": "normal",
+    "talent_id": 135,
+    "key": "stimulate_morale",
+    "tag_ids": [
+      5,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160951,
+      160952,
+      160953
+    ],
+    "name": "Desperate Response",
+    "description": "[Fang only]When near death, a strong will to survive flares up, capping HP loss at #% per hit once below 30% of max HP. (Will not trigger if damage taken is greater than Max HP)",
+    "description_values": [
+      5,
+      4,
+      3
+    ],
+    "icon": "img/ng/tianfu_juejingyingji.webp",
+    "slot": "normal",
+    "talent_id": 136,
+    "key": "desperate_response",
+    "tag_ids": [
+      3,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160961,
+      160962,
+      160963
+    ],
+    "name": "Crisis Resolution",
+    "description": "No one can survive on this land without a trump card. When hit, there's a 15% chance that the damage taken will be capped at #% of max HP. (Will not trigger if damage taken is greater than Max HP)",
+    "description_values": [
+      5,
+      4,
+      3
+    ],
+    "icon": "img/ng/tianfu_huajieweiji.webp",
+    "slot": "normal",
+    "talent_id": 137,
+    "key": "crisis_resolution",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      160971,
+      160972,
+      160973
+    ],
+    "name": "Blood Staunching",
+    "description": "[Fang Exclusive] The blood clots unnaturally fast. When hit, there's a #% chance to instantly remove any Bleed effect and become immune to Bleed for 12 seconds. (CD: 30s)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__chuxueyizhi.webp",
+    "slot": "normal",
+    "talent_id": 138,
+    "key": "blood_staunching",
+    "tag_ids": [
+      3,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170001,
+      170002,
+      170003
+    ],
+    "name": "Breezy Downpour",
+    "description": "Movement Speed -#% permanently, but Attack Speed +#%.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu__weifengjinyu.webp",
+    "slot": "normal",
+    "talent_id": 139,
+    "key": "breezy_downpour",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170011,
+      170012,
+      170013
+    ],
+    "name": "Wolf Pack Protection",
+    "description": "[Wildwolf Exclusive] Upon full HP recovery or reviving from near-death, the character and allied tribesmen within # meters become immune to most Slow effects for # seconds. (Cooldown: 30 seconds)",
+    "description_values": [
+      5,
+      7.5,
+      10
+    ],
+    "icon": "img/ng/tianfu__qunlangpihu.webp",
+    "slot": "normal",
+    "talent_id": 140,
+    "key": "wolf_pack_protection",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170021,
+      170022,
+      170023
+    ],
+    "name": "Protection of the Savagehorn",
+    "description": "[Savagehorn Exclusive] Upon full HP recovery or reviving from near-death, the character and allied tribesmen within # meters become immune to Critical Hits for # seconds. (Cooldown: 30 seconds)",
+    "description_values": [
+      5,
+      7.5,
+      10
+    ],
+    "icon": "img/ng/tianfu__manjiaobihu.webp",
+    "slot": "normal",
+    "talent_id": 141,
+    "key": "protection_of_the_savagehorn",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170031,
+      170032,
+      170033
+    ],
+    "name": "Last Light Counter",
+    "description": "For # seconds after full HP recovery or reviving from near-death, reflect 100% of damage taken from attacks within 5 meters back to the attacker. (Cooldown: 30 seconds)",
+    "description_values": [
+      2,
+      4,
+      6
+    ],
+    "icon": "img/ng/tianfu__huiguangfanji.webp",
+    "slot": "normal",
+    "talent_id": 142,
+    "key": "last_light_counter",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170041,
+      170042,
+      170043
+    ],
+    "name": "Body-Blood Conversion",
+    "description": "Triggers when HP is below 50%; for # seconds, damage taken is converted to Stamina damage proportionally. Stamina does not regenerate automatically during this effect. (Cooldown: 30 seconds)",
+    "description_values": [
+      8,
+      10,
+      12
+    ],
+    "icon": "img/ng/tianfu__juetihuaxue.webp",
+    "slot": "normal",
+    "talent_id": 143,
+    "key": "body_blood_conversion",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170051,
+      170052,
+      170053
+    ],
+    "name": "Body-Resilience Conversion",
+    "description": "Triggers when HP is below 50%; for # seconds, resilience damage taken is converted to Stamina damage proportionally. Stamina does not regenerate automatically during this effect. (Cooldown: 30 seconds)",
+    "description_values": [
+      8,
+      10,
+      12
+    ],
+    "icon": "img/ng/tianfu__juetihuaren.webp",
+    "slot": "normal",
+    "talent_id": 144,
+    "key": "body_resilience_conversion",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170061,
+      170062,
+      170063
+    ],
+    "name": "Resilient Healing",
+    "description": "Taking damage while HP is above 70% restores HP by #% of DEF every second until full.",
+    "description_values": [
+      10,
+      20,
+      30
+    ],
+    "icon": "img/ng/tianfu__tanxinghuifu.webp",
+    "slot": "normal",
+    "talent_id": 145,
+    "key": "resilient_healing",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170071,
+      170072,
+      170073
+    ],
+    "name": "Unyielding Will",
+    "description": "Triggers when HP falls below 50%: unable to Dodge, but Immune to Hitstun for #s. (CD: 60s)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu__shisijuexin.webp",
+    "slot": "normal",
+    "talent_id": 146,
+    "key": "unyielding_will",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170081,
+      170082,
+      170083
+    ],
+    "name": "Embers",
+    "description": "Prevents entering Near-Death when HP is depleted; instead, grants immunity to 3 lethal attacks for 8 sec. The user dies immediately if charges are exhausted. (Cooldown: 45 seconds)",
+    "description_values": [
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu__yujin.webp",
+    "slot": "normal",
+    "talent_id": 147,
+    "key": "embers",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170091,
+      170092,
+      170093
+    ],
+    "name": "Stamina Siphon",
+    "description": "Hitting an enemy has a #% chance to trigger; for 12 seconds, each of the target's attacks consumes an extra # Stamina, restoring # Stamina to the caster.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__tilihongxi.webp",
+    "slot": "normal",
+    "talent_id": 148,
+    "key": "stamina_siphon",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170101,
+      170102,
+      170103
+    ],
+    "name": "Bloodfury Pursuit",
+    "description": "When attacked, a #% chance to sacrifice #% of Max HP to gain a #% Attack Power boost for 12 seconds. (CD: 30 seconds)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu__jiexuezhugong.webp",
+    "slot": "normal",
+    "talent_id": 149,
+    "key": "bloodfury_pursuit",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170111,
+      170112,
+      170113
+    ],
+    "name": "Damage Immunity Blessing",
+    "description": "When attacked, a #% chance to trigger, during which all damage taken from enemies over the next # seconds is calculated at its minimum possible value. (Cooldown: 30 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__mianshangqiyou.webp",
+    "slot": "normal",
+    "talent_id": 150,
+    "key": "damage_immunity_blessing",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170121,
+      170122,
+      170123
+    ],
+    "name": "Bloodstained Thorns",
+    "description": "When under the Bleed effect, the character inflicts Bleed on enemies within # meter.",
+    "description_values": [
+      1,
+      2,
+      3
+    ],
+    "icon": "img/ng/tianfu_xueranjingji.webp",
+    "slot": "normal",
+    "talent_id": 151,
+    "key": "bloodstained_thorns",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170131,
+      170132,
+      170133
+    ],
+    "name": "Life Shacles",
+    "description": "When attacked, a 15% chance to lose all HP recovery abilities for # seconds, but each instance of damage taken cannot exceed 2% of the character's Max HP. (Cooldown: 60 seconds)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_shengmingjiesuo.webp",
+    "slot": "normal",
+    "talent_id": 152,
+    "key": "life_shacles",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170141,
+      170142,
+      170143
+    ],
+    "name": "Scapegoat",
+    "description": "[Savagehorn Exclusive] When attacked, a 15% chance to transfer all debuffs inflicted on the character to another enemy within 15 meters, lasting # seconds. (Cooldown: # seconds)",
+    "description_values": [
+      8,
+      10,
+      12
+    ],
+    "icon": "img/ng/tianfu_jiahuo.webp",
+    "slot": "normal",
+    "talent_id": 153,
+    "key": "scapegoat",
+    "tag_ids": [
+      1,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170151,
+      170152,
+      170153
+    ],
+    "name": "Cunning",
+    "description": "[Wildwolf Exclusive] When attacked, a 15% chance to reflect any effects inflicted on the character back to the source, lasting # seconds. (CD: # seconds)",
+    "description_values": [
+      8,
+      10,
+      12
+    ],
+    "icon": "img/ng/tianfu_jiaozha.webp",
+    "slot": "normal",
+    "talent_id": 154,
+    "key": "cunning",
+    "tag_ids": [
+      2,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170161,
+      170162,
+      170163
+    ],
+    "name": "Tabooed Body",
+    "description": "When attacked, a #% chance to disable all of the attacker's Talents for # seconds. (CD: 40 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__jinjizhiqu.webp",
+    "slot": "normal",
+    "talent_id": 155,
+    "key": "tabooed_body",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170171,
+      170172,
+      170173
+    ],
+    "name": "Rampage",
+    "description": "Enters a #-second Rampage state when Ignited, Poisoned, or Bleeding: +20% Attack Speed and Movement SPD, 20% of DMG dealt is converted to HP Recovery, and becomes immune to most Slow effects. (CD: # seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__baozou.webp",
+    "slot": "normal",
+    "talent_id": 156,
+    "key": "rampage",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170181,
+      170182,
+      170183
+    ],
+    "name": "Courageous Current",
+    "description": "Hitting the target has a #% chance to instantly reset the character's Talent cooldowns. (Cooldown: # seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__yongqijiliu.webp",
+    "slot": "normal",
+    "talent_id": 157,
+    "key": "courageous_current",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170191,
+      170192,
+      170193
+    ],
+    "name": "Damage Boost Blessing",
+    "description": "Hitting an enemy has a #% chance to trigger; the next 10 instances of weapon damage dealt to the target will be locked at the highest damage value, lasting # seconds. (Cooldown: 30 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__zengshangqiyou.webp",
+    "slot": "normal",
+    "talent_id": 158,
+    "key": "damage_boost_blessing",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170201,
+      170202,
+      170203
+    ],
+    "name": "Shield Bash",
+    "description": "[Savagehorn Exclusive] When attacking a defending target, a #% chance to deplete their Stamina and break their Guard. (Cooldown: 5 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__kuifangchongji.webp",
+    "slot": "normal",
+    "talent_id": 159,
+    "key": "shield_bash",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170211,
+      170212,
+      170213
+    ],
+    "name": "Damage Boost Steal",
+    "description": "[Wildwolf Exclusive] Hitting an enemy has a #% chance to steal 10% of their damage boost, lasting 12 seconds, with a maximum of 5 stacks.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__zengshangqiequ.webp",
+    "slot": "normal",
+    "talent_id": 160,
+    "key": "damage_boost_steal",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170221,
+      170222,
+      170223
+    ],
+    "name": "Damage Immunity Steal",
+    "description": "[Savagehorn Exclusive] Hitting an enemy has a #% chance to steal 10% of their damage reduction, lasting 12 seconds, with a maximum of 5 stacks.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__mianshangqiequ.webp",
+    "slot": "normal",
+    "talent_id": 161,
+    "key": "damage_immunity_steal",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170231,
+      170232,
+      170233
+    ],
+    "name": "Attack Steal",
+    "description": "[Warrior Exclusive] Hitting an enemy has a #% chance to steal 10% of their Attack (up to 30 points), lasting 12 seconds, with a maximum of 5 stacks.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__gongjiqiequ.webp",
+    "slot": "normal",
+    "talent_id": 162,
+    "key": "attack_steal",
+    "tag_ids": [
+      82,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170241,
+      170242,
+      170243
+    ],
+    "name": "Defense Steal",
+    "description": "[Guard Exclusive] Hitting an enemy has a #% chance to steal 10% of their Defense (up to 40 points), lasting 12 seconds, with a maximum of 5 stacks.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_fangyuqiequ.webp",
+    "slot": "normal",
+    "talent_id": 163,
+    "key": "defense_steal",
+    "tag_ids": [
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170251,
+      170252,
+      170253
+    ],
+    "name": "Stamina Steal",
+    "description": "[Hunter Exclusive] Hitting an enemy has a #% chance to steal 10% of their Max Stamina (up to 30 points), lasting 12 seconds, with a maximum of 5 stacks.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_tiliqiequ.webp",
+    "slot": "normal",
+    "talent_id": 164,
+    "key": "stamina_steal",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170261,
+      170262,
+      170263
+    ],
+    "name": "Crit steal",
+    "description": "Hitting an enemy has a #% chance to steal 5% Crit and 10% Crit DMG Increase from the target for 12 seconds, with a maximum of 5 stacks.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_baojiqiequ.webp",
+    "slot": "normal",
+    "talent_id": 165,
+    "key": "crit_steal",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170271,
+      170272,
+      170273
+    ],
+    "name": "Crit Resist Steal",
+    "description": "Hitting an enemy has a #% chance to steal 5% Crit Resist and 10% Crit DMG Reduction from the target for 12 seconds, with a maximum of 5 stacks.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_baokangqiequ.webp",
+    "slot": "normal",
+    "talent_id": 166,
+    "key": "crit_resist_steal",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170281,
+      170282,
+      170283
+    ],
+    "name": "Moment of Respite",
+    "description": "Upon taking Weapon Damage for the first time, that Damage is recovered over #s. Taking Weapon Damage again during this recovery immediately inflicts Damage equal to the initial strike and cancels the recovery. (CD: #s)",
+    "description_values": [
+      5,
+      4,
+      3
+    ],
+    "icon": "img/ng/tianfu_yushijufen.webp",
+    "slot": "normal",
+    "talent_id": 167,
+    "key": "moment_of_respite",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170291,
+      170292,
+      170293
+    ],
+    "name": "Attack-Defense Resonance - Attack",
+    "description": "Hitting the target has a #% chance to boost the user's lower stat between Attack and Defense, up to a maximum of 20% boost, lasting 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_gongfanpingheng1.webp",
+    "slot": "normal",
+    "talent_id": 168,
+    "key": "attack_defense_resonance_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170301,
+      170302,
+      170303
+    ],
+    "name": "Damage Resonance - Attack",
+    "description": "Hitting the target has a #% chance to boost the character's lower stat between DMG Increase and DMG Reduction, up to a maximum of 50% boost, lasting 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_shanghaigongming1.webp",
+    "slot": "normal",
+    "talent_id": 169,
+    "key": "damage_resonance_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170311,
+      170312,
+      170313
+    ],
+    "name": "Damage Alteration - Attack",
+    "description": "Hitting an enemy has a #% chance to convert 50% of the user's DMG Reduction into bonus DMG Increase for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_gongshouyishi1.webp",
+    "slot": "normal",
+    "talent_id": 170,
+    "key": "damage_alteration_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170321,
+      170322,
+      170323
+    ],
+    "name": "Attack-Defense Alteration - Attack",
+    "description": "Hitting an enemy has a #% chance to convert 50% of the character's total Defense into Attack for 12 seconds.(Cooldown: # seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_guzhuyizhi1.webp",
+    "slot": "normal",
+    "talent_id": 171,
+    "key": "attack_defense_alteration_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170331,
+      170332,
+      170333
+    ],
+    "name": "Full Power State",
+    "description": "When hitting a target at full HP and Resilience, the user enters a 12-second Full Power state, during which Crit damage increases by 50% and they cannot be critically hit. (Cooldown: # seconds)",
+    "description_values": [
+      60,
+      45,
+      30
+    ],
+    "icon": "img/ng/tianfu_quanshengzhuangtai.webp",
+    "slot": "normal",
+    "talent_id": 172,
+    "key": "full_power_state",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170341,
+      170342,
+      170343
+    ],
+    "name": "Initiative",
+    "description": "Dealing damage to the target's back inflicts an additional # Coma damage. (Cooldown: # seconds)",
+    "description_values": [
+      20,
+      35,
+      50
+    ],
+    "icon": "img/ng/tianfu__xiangong.webp",
+    "slot": "normal",
+    "talent_id": 173,
+    "key": "initiative",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170351,
+      170352,
+      170353
+    ],
+    "name": "Miasmic Blood",
+    "description": "Upon hit, a #% chance to cause the target to accumulate a great amount of poison when using medicinal items, lasting 15 seconds.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__zhuoxuezhidu.webp",
+    "slot": "normal",
+    "talent_id": 174,
+    "key": "miasmic_blood",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170361,
+      170362,
+      170363
+    ],
+    "name": "Stagnating Toxin",
+    "description": "Hitting a poisoned target has a #% chance to trigger, causing their Attack Speed or Movement Speed to become increasingly sluggish whenever they attack or dash, lasting 15 seconds.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__zhihuanzhidu.webp",
+    "slot": "normal",
+    "talent_id": 175,
+    "key": "stagnating_toxin",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170371,
+      170372,
+      170373
+    ],
+    "name": "Cursed Strike",
+    "description": "Upon hit, a #% chance to disable all of the target's Talents for # seconds. (Cooldown: 30 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__zuzhouzhiji.webp",
+    "slot": "normal",
+    "talent_id": 176,
+    "key": "cursed_strike",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170381,
+      170382,
+      170383
+    ],
+    "name": "Arterial Rupture",
+    "description": "Attacking a bleeding enemy has a #% chance to greatly increase their Bleed damage taken for 8 seconds.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__dongmaipohuai.webp",
+    "slot": "normal",
+    "talent_id": 177,
+    "key": "arterial_rupture",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170391,
+      170392,
+      170393
+    ],
+    "name": "Defensive Attack",
+    "description": "After blocking an enemy attack, the character's attack ignores the enemy's defense for the next # second. (Cooldown: 20 seconds)",
+    "description_values": [
+      1,
+      2,
+      3
+    ],
+    "icon": "img/ng/tianfu__fangyuqiangxi.webp",
+    "slot": "normal",
+    "talent_id": 178,
+    "key": "defensive_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170401,
+      170402,
+      170403
+    ],
+    "name": "Attack-Defense Resonance - Defense",
+    "description": "When defending against enemy attacks, a #% chance to boost the user's lower stat between Attack and Defense by 20% of the higher stat's value, lasting 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_gongfanpingheng2.webp",
+    "slot": "normal",
+    "talent_id": 179,
+    "key": "attack_defense_resonance_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170411,
+      170412,
+      170413
+    ],
+    "name": "Damage Resonance - Defense",
+    "description": "When defending against enemy attacks, a #% chance to boost the user's lower stat between DMG Increase and DMG Reduction by 50% of the higher stat's value, lasting 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_shanghaigongming2.webp",
+    "slot": "normal",
+    "talent_id": 180,
+    "key": "damage_resonance_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170421,
+      170422,
+      170423
+    ],
+    "name": "Damage Alteration - Defense",
+    "description": "When defending against enemy attacks, a #% chance to convert half of the user's current DMG Increase into DMG Reduction for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_gongshouyishi2.webp",
+    "slot": "normal",
+    "talent_id": 181,
+    "key": "damage_alteration_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170431,
+      170432,
+      170433
+    ],
+    "name": "Attack-Defense Alteration - Defense",
+    "description": "When defending against enemy attacks, a #% chance to convert half of the user's Attack into Defense at 200% conversation rate for 12 seconds.(Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_guzhuyizhi2.webp",
+    "slot": "normal",
+    "talent_id": 182,
+    "key": "attack_defense_alteration_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170441,
+      170442,
+      170443
+    ],
+    "name": "Chaos Defense",
+    "description": "When defending against enemy attacks, a #% chance to Baffle the attacker, reversing their movement controls for 5 seconds. (Cooldown: 20 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_hunluanfangyu.webp",
+    "slot": "normal",
+    "talent_id": 183,
+    "key": "chaos_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170451,
+      170452,
+      170453
+    ],
+    "name": "Confusion Defense",
+    "description": "When defending against enemy attacks, a #% chance to Confuse the attacker, reversing their camera controls for 5 seconds. (Cooldown: 20 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_mihuofangyu.webp",
+    "slot": "normal",
+    "talent_id": 184,
+    "key": "confusion_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170461,
+      170462,
+      170463
+    ],
+    "name": "Shock Defense",
+    "description": "When defending against enemy attacks, a #% chance to paralyze the attacker, making them unable to defend themselves for 5 seconds. (Cooldown: 20 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_fangyuzhendang.webp",
+    "slot": "normal",
+    "talent_id": 185,
+    "key": "shock_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170471,
+      170472,
+      170473
+    ],
+    "name": "Superarmor Break",
+    "description": "When reflecting an enemy attack, a 20% chance to remove the attacker's Superarmor.(Cooldown: 15 seconds)",
+    "description_values": [
+      30,
+      40
+    ],
+    "icon": "img/ng/tianfu_batibengjie.webp",
+    "slot": "normal",
+    "talent_id": 186,
+    "key": "superarmor_break",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170481,
+      170482,
+      170483
+    ],
+    "name": "Confusion Reflect",
+    "description": "When reflecting an enemy's attack, the character Baffles the attacker, reversing their movement controls for # seconds. (Cooldown: 25 seconds)",
+    "description_values": [
+      6,
+      8,
+      10
+    ],
+    "icon": "img/ng/tianfu_hunluanfantan.webp",
+    "slot": "normal",
+    "talent_id": 187,
+    "key": "confusion_reflect",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170491,
+      170492,
+      170493
+    ],
+    "name": "Baffle Reflect",
+    "description": "When reflecting an enemy's attack, the character confuses the attacker, reversing their camera controls for # seconds. (Cooldown: 25 seconds)",
+    "description_values": [
+      6,
+      8,
+      10
+    ],
+    "icon": "img/ng/tianfu_mihuofantan.webp",
+    "slot": "normal",
+    "talent_id": 188,
+    "key": "baffle_reflect",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170501,
+      170502,
+      170503
+    ],
+    "name": "Momentum Shift",
+    "description": "When reflecting an enemy's attack, if the enemy's attack or defense stats exceed the character's, the character boosts the lower stat by up to 20% based on the enemy's strength for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      60,
+      45,
+      30
+    ],
+    "icon": "img/ng/tianfu_duoshi.webp",
+    "slot": "normal",
+    "talent_id": 189,
+    "key": "momentum_shift",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170511,
+      170512,
+      170513
+    ],
+    "name": "Shock Reflect",
+    "description": "When reflecting an enemy's attack, the character paralyzes the attacker, making them unable to defend themselves for # seconds. (Cooldown: 25 seconds)",
+    "description_values": [
+      6,
+      8,
+      10
+    ],
+    "icon": "img/ng/tianfu_fantanzhendang.webp",
+    "slot": "normal",
+    "talent_id": 190,
+    "key": "shock_reflect",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170521,
+      170522,
+      170523
+    ],
+    "name": "Chain Dodge",
+    "description": "Successfully dodging an enemy attack grants immunity to next incoming damage for the next # seconds. (CD: 5 seconds)",
+    "description_values": [
+      2,
+      3,
+      4
+    ],
+    "icon": "img/ng/tianfu__liansuoshanbi.webp",
+    "slot": "normal",
+    "talent_id": 191,
+    "key": "chain_dodge",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170531,
+      170532,
+      170533
+    ],
+    "name": "Limb Shatter",
+    "description": "#% chance to trigger after successfully dodging an enemy's attack; the next attack within # sec has +100% Crit Rate and randomly inflicts Baffle, Confuse or Reverse-Dodge for 6 seconds. (Cooldown: 12 seconds)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu__pohuaishanji.webp",
+    "slot": "normal",
+    "talent_id": 192,
+    "key": "limb_shatter",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170541,
+      170542,
+      170543
+    ],
+    "name": "Offense is the Best Defense",
+    "description": "After a successful dodge, the character's attacks cannot be reflected back for #s, and their weapon attacks can reflect enemy attacks.",
+    "description_values": [
+      4,
+      6,
+      8
+    ],
+    "icon": "img/ng/tianfu__yigongdaishou.webp",
+    "slot": "normal",
+    "talent_id": 193,
+    "key": "offense_is_the_best_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170551,
+      170552,
+      170553
+    ],
+    "name": "Reorganize",
+    "description": "While in a [Near-Death] state, if a nearby enemy is downed to near-death or killed, the character immediately exits the [Near-Death] state.",
+    "description_values": [
+      10,
+      20
+    ],
+    "icon": "img/ng/tianfu__chongzhengqigu.webp",
+    "slot": "normal",
+    "talent_id": 194,
+    "key": "reorganize",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170561,
+      170562,
+      170563
+    ],
+    "name": "Executioner's Dread",
+    "description": "When executing a target, enemies within 10 meters are weakened and enter the Coward state, suffering a #% reduction in ATK and Crit, and a #% reduction in Attack Speed, lasting 15 seconds.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu__chujueweixie.webp",
+    "slot": "normal",
+    "talent_id": 195,
+    "key": "executioner_s_dread",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170571,
+      170572,
+      170573
+    ],
+    "name": "Perfect Absorption",
+    "description": "All HP recovery effects are increased by #%.",
+    "description_values": [
+      20,
+      35,
+      50
+    ],
+    "icon": "img/ng/tianfu__wanmeixishou.webp",
+    "slot": "normal",
+    "talent_id": 196,
+    "key": "perfect_absorption",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170581,
+      170582,
+      170583
+    ],
+    "name": "Spirit of the Pack",
+    "description": "[Wildwolf Exclusive] Hitting an enemy has a #% chance to trigger, gaining a #% damage boost for each allied tribesman within 15 meters (up to 5 allies). This bonus is increased to #% for each Wildwolf tribesman; lasting 20 seconds. (Cooldown: 10 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__qunlangzhanhun.webp",
+    "slot": "normal",
+    "talent_id": 197,
+    "key": "spirit_of_the_pack",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170591,
+      170592,
+      170593
+    ],
+    "name": "Savagehorn Soul",
+    "description": "[Savagehorn Exclusive] Hitting an enemy has a #% chance to trigger, gaining a #% damage reduction for each allied tribesman within 15 meters (up to 5 allies). This bonus is increased to #% for each Savagehorn tribesman; lasting 20 seconds. (Cooldown: 10 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__manjiaozhanhun.webp",
+    "slot": "normal",
+    "talent_id": 198,
+    "key": "savagehorn_soul",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170601,
+      170602,
+      170603
+    ],
+    "name": "Courage Transfer",
+    "description": "Gaining a buff has a #% chance to transfer some of the character's buffs to allied units within 15 meters in the next # seconds. (Cooldown: 25 seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu__yongqichuandi.webp",
+    "slot": "normal",
+    "talent_id": 199,
+    "key": "courage_transfer",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170611,
+      170612,
+      170613
+    ],
+    "name": "Bloodline Suppression",
+    "description": "#% chance when attacked to inflict Dread on the attacker for 10 seconds. During this time, the enemy's Single-hit DMG cannot exceed 300. Effect reduced against Bosses. (CD: #s)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu__xuemaiyazhi.webp",
+    "slot": "normal",
+    "talent_id": 200,
+    "key": "bloodline_suppression",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170621,
+      170622,
+      170623
+    ],
+    "name": "Swiftness Resonance - Attack",
+    "description": "Hitting the target has a #% chance to boost the user's lower stat between Movement Speed and Attack Speed by 50% of the higher stat's value for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu__xunjiegongminggong.webp",
+    "slot": "normal",
+    "talent_id": 201,
+    "key": "swiftness_resonance_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170631,
+      170632,
+      170633
+    ],
+    "name": "Swiftness Resonance - Defense",
+    "description": "When defending against enemy attacks, a #% chance to boost the character's lower stat between Movement Speed and Attack Speed by 50% of the higher stat's value for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu__xunjiegongmingfang.webp",
+    "slot": "normal",
+    "talent_id": 202,
+    "key": "swiftness_resonance_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170641,
+      170642,
+      170643
+    ],
+    "name": "Resurgence",
+    "description": "Enters a 10-second Rampage state upon reaching full HP or recovering from Near-Death, increasing Attack Speed and Movement Speed by 20%, converting 20% of damage dealt to the target into HP recovery, and gaining immunity to most Slow effects. (Cooldown: # seconds)",
+    "description_values": [
+      60,
+      45,
+      30
+    ],
+    "icon": "img/ng/tianfu__sihuifuran.webp",
+    "slot": "normal",
+    "talent_id": 203,
+    "key": "resurgence",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170651,
+      170652,
+      170653
+    ],
+    "name": "Reverse-Dodge Defense",
+    "description": "When defending against enemy attacks, a #% chance to disorient the attacker with Reverse-Dodge, reversing their dodge direction for 5 seconds. (Cooldown: 20 seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__nishanfangyu.webp",
+    "slot": "normal",
+    "talent_id": 204,
+    "key": "reverse_dodge_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170661,
+      170662,
+      170663
+    ],
+    "name": "Reverse-Dodge Reflect",
+    "description": "When reflecting an enemy's attack, the character disorients the attacker with Reverse-Dodge, reversing their dodge direction for # seconds. (Cooldown: 25 seconds)",
+    "description_values": [
+      6,
+      8,
+      10
+    ],
+    "icon": "img/ng/tianfu__nishantanfan.webp",
+    "slot": "normal",
+    "talent_id": 205,
+    "key": "reverse_dodge_reflect",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170671,
+      170672,
+      170673
+    ],
+    "name": "Seed of Combustion",
+    "description": "Attacking an Ignited enemy with a Weapon has a #% chance to inflict \"Seed of Combustion\" for 5s: Rolling or Dodging will trigger a combustion, Igniting all targets within # meters.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__baoranzhizhong.webp",
+    "slot": "normal",
+    "talent_id": 206,
+    "key": "seed_of_combustion",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170681,
+      170682,
+      170683
+    ],
+    "name": "Seed of Vemon",
+    "description": "Attacking a Poisoned enemy with a Weapon has a #% chance to inflict \"Seed of Venom\" for 5s: Rolling or Dodging will trigger a toxic explosion, Poisoning all targets within # meters.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__baoduzhizhong.webp",
+    "slot": "normal",
+    "talent_id": 207,
+    "key": "seed_of_vemon",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170691,
+      170692,
+      170693
+    ],
+    "name": "Seed of Bloodboil",
+    "description": "Attacking a Bleeding enemy with a Weapon has a #% chance to inflict \"Seed of Bloodboil\" for 5s: Rolling or Dodging will trigger a blood eruption, Bleeding all targets within # meters.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__baoxuezhizhong.webp",
+    "slot": "normal",
+    "talent_id": 208,
+    "key": "seed_of_bloodboil",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170701,
+      170702,
+      170703
+    ],
+    "name": "Movement Speed Steal",
+    "description": "[Savagehorn Exclusive] Hitting an enemy has a #% chance to steal 6% of the target's Movement Speed for 10 seconds. Stacks up to 5 times.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__yisuqiequ.webp",
+    "slot": "normal",
+    "talent_id": 209,
+    "key": "movement_speed_steal",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170711,
+      170712,
+      170713
+    ],
+    "name": "Attack Speed Steal",
+    "description": "[Wildwolf Exclusive] Hitting an enemy has a #% chance to steal 5% of the target's Attack Speed for 10 seconds. Stacks up to 5 times.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu__gongsuqiequ.webp",
+    "slot": "normal",
+    "talent_id": 210,
+    "key": "attack_speed_steal",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170721,
+      170722,
+      170723
+    ],
+    "name": "Spiked Whip Damage Boost",
+    "description": "Using a spiked whip grants greater power. Spiked whip weapons DMG +#%.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/tianfu__cibianzengshang.webp",
+    "slot": "normal",
+    "talent_id": 211,
+    "key": "spiked_whip_damage_boost",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170731,
+      170732,
+      170733
+    ],
+    "name": "Sleight of Hand",
+    "description": "#% chance to not consume the item when firing an arrow or using a throwable.",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_guijizhishou.webp",
+    "slot": "normal",
+    "talent_id": 212,
+    "key": "sleight_of_hand",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170751,
+      170752,
+      170753
+    ],
+    "name": "Multi-Throw",
+    "description": "#% chance to throw several extras when using a throwable item.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_duochongtouzhi.webp",
+    "slot": "normal",
+    "talent_id": 213,
+    "key": "multi_throw",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170761,
+      170762,
+      170763
+    ],
+    "name": "Throw Dodge",
+    "description": "Dodging automatically throws an equipped Throwing Axe, Knife, or Spear at an enemy within # meters.",
+    "description_values": [
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_shanbitouzhi.webp",
+    "slot": "normal",
+    "talent_id": 214,
+    "key": "throw_dodge",
+    "tag_ids": [
+      81,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170771,
+      170772,
+      170773
+    ],
+    "name": "Grapple-Throw",
+    "description": "Hitting a target with a Throwing Axe, Knife, or Spear pulls them towards the character.",
+    "description_values": null,
+    "icon": "img/ng/tianfu_qianyintouzhi.webp",
+    "slot": "normal",
+    "talent_id": 215,
+    "key": "grapple_throw",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170781,
+      170782,
+      170783
+    ],
+    "name": "Resonant Burst - Attack",
+    "description": "Hitting an enemy has a #% chance to boost the lower stat between Crit Rate and Crit Resist by 30% of the higher stat's value for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_baofagongming1.webp",
+    "slot": "normal",
+    "talent_id": 216,
+    "key": "resonant_burst_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170791,
+      170792,
+      170793
+    ],
+    "name": "Burst Alteration - Attack",
+    "description": "Hitting an enemy has a #% chance to convert all current [Crit Resist] into [Crit Rate] at a 50% ratio for 12 seconds.(Cooldown: # seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_baofazhuanhuan1.webp",
+    "slot": "normal",
+    "talent_id": 217,
+    "key": "burst_alteration_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170801,
+      170802,
+      170803
+    ],
+    "name": "Resonant Burst - Defense",
+    "description": "When defending against enemy attacks, a #% chance to boost the user's lower stat between Crit Rate and Crit Resist by 30% of the higher stat's value for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/tianfu_baofagongming2.webp",
+    "slot": "normal",
+    "talent_id": 218,
+    "key": "resonant_burst_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170811,
+      170812,
+      170813
+    ],
+    "name": "Burst Alteration - Defense",
+    "description": "When defending against enemy attacks, a #% chance to convert 50% of the user's current Crit Rate into Crit Resist for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_baofazhuanhuan2.webp",
+    "slot": "normal",
+    "talent_id": 219,
+    "key": "burst_alteration_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170821,
+      170822,
+      170823
+    ],
+    "name": "Opportunistic Chain Strike",
+    "description": "Upon successfully Dodging an enemy attack, gain 1 stack of \"Chain Strike\" for 3s: The next Backstab with a Weapon will deal extra hits based on the number of stacks. Max # stacks.",
+    "description_values": [
+      2,
+      3,
+      4
+    ],
+    "icon": "img/ng/tianfu_luetijifeng.webp",
+    "slot": "normal",
+    "talent_id": 220,
+    "key": "opportunistic_chain_strike",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170831,
+      170832,
+      170833
+    ],
+    "name": "Soulflame Sniping",
+    "description": "[Hunter Exclusive] While charging a bow, HP continuously drains; arrows fired deal additional damage equal to #% of HP lost during charging (Damage cap: 100% of Max HP).",
+    "description_values": [
+      50,
+      75
+    ],
+    "icon": "img/ng/tianfu_ranhunjuji.webp",
+    "slot": "normal",
+    "talent_id": 221,
+    "key": "soulflame_sniping",
+    "tag_ids": [
+      81,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170841,
+      170842,
+      170843
+    ],
+    "name": "Intimidating Strike",
+    "description": "#% chance on melee hit to inflict Dread for 6 seconds, during which, the target's single-hit damage capped at 300. Effect reduced against Bosses. (Cooldown: # seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_podanzhongji.webp",
+    "slot": "normal",
+    "talent_id": 222,
+    "key": "intimidating_strike",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170851,
+      170852,
+      170853
+    ],
+    "name": "Prime Battle Spirit",
+    "description": "When at full HP and Resilience, hitting an enemy grants a #-sec [Offense is the Best Defense]: The user's attacks cannot be reflected, and can reflect enemy attacks with any weapon. (Cooldown: 25 seconds)",
+    "description_values": [
+      4,
+      6,
+      8
+    ],
+    "icon": "img/ng/tianfu_quanshengzhanyi.webp",
+    "slot": "normal",
+    "talent_id": 223,
+    "key": "prime_battle_spirit",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170861,
+      170862,
+      170863
+    ],
+    "name": "Swiftness Alteration - Attack",
+    "description": "Hitting an enemy has a #% chance to convert 25% of the user's current [Movement Speed] into [Attack Speed] for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/tianfu_xunjieliuzhuan1.webp",
+    "slot": "normal",
+    "talent_id": 224,
+    "key": "swiftness_alteration_attack",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      170871,
+      170872,
+      170873
+    ],
+    "name": "Swiftness Alteration - Defense",
+    "description": "When defending against enemy attacks, a #% chance to convert 25% of the user's current [Attack Speed] into [Movement Speed] for 12 seconds. (Cooldown: # seconds)",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/tianfu_xunjieliuzhuan2.webp",
+    "slot": "normal",
+    "talent_id": 225,
+    "key": "swiftness_alteration_defense",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      171001,
+      171002,
+      171003
+    ],
+    "name": "Skillful Hand",
+    "description": "[Wildwolf Exclusive] As a craftsman, the character has a #% chance to add one extra stat when crafting a weapon.",
+    "description_values": [
+      5,
+      10
+    ],
+    "icon": "img/ng/tianfu_cuifengqiaoshou.webp",
+    "slot": "normal",
+    "talent_id": 226,
+    "key": "skillful_hand",
+    "tag_ids": [
+      2,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      171011,
+      171012,
+      171013
+    ],
+    "name": "Masterwork Armor",
+    "description": "[Savagehorn Exclusive] As a craftsman, the character has a #% chance to add one extra stat when crafting gear.",
+    "description_values": [
+      5,
+      10
+    ],
+    "icon": "img/ng/tianfu_qiaozhufangju.webp",
+    "slot": "normal",
+    "talent_id": 227,
+    "key": "masterwork_armor",
+    "tag_ids": [
+      1,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      171021,
+      171022,
+      171023
+    ],
+    "name": "Armorer's Focus",
+    "description": "[Craftsman Exclusive] Exceptionally focused when crafting armor, chance to produce high-quality items +5%.",
+    "description_values": null,
+    "icon": "img/ng/tianfu_zhijiazhuanzhu.webp",
+    "slot": "normal",
+    "talent_id": 228,
+    "key": "armorer_s_focus",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      171031,
+      171032,
+      171033
+    ],
+    "name": "Weaponsmith's Focus",
+    "description": "[Craftsman Exclusive] Exceptionally focused while forging weapons, chance to produce high-quality items +#%.",
+    "description_values": [
+      5,
+      7.5,
+      10
+    ],
+    "icon": "img/ng/tianfu_duanqizhuanzhu.webp",
+    "slot": "normal",
+    "talent_id": 229,
+    "key": "weaponsmith_s_focus",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      171041,
+      171042,
+      171043
+    ],
+    "name": "Weapon Maintenance",
+    "description": "[Wildwolf Exclusive] As a craftsman, the character reduces durability cost by #% when repairing weapons.",
+    "description_values": [
+      20,
+      35
+    ],
+    "icon": "img/ng/tianfu_wuqijingxiu.webp",
+    "slot": "normal",
+    "talent_id": 230,
+    "key": "weapon_maintenance",
+    "tag_ids": [
+      2,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      171051,
+      171052,
+      171053
+    ],
+    "name": "Armor Maintenance",
+    "description": "[Savagehorn Exclusive] As a craftsman, the character reduces durability cost by #% when repairing armor.",
+    "description_values": [
+      20,
+      35
+    ],
+    "icon": "img/ng/tianfu_fangjujingxiu.webp",
+    "slot": "normal",
+    "talent_id": 231,
+    "key": "armor_maintenance",
+    "tag_ids": [
+      1,
+      52,
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      171061,
+      171062,
+      171063
+    ],
+    "name": "Tool Maintenance",
+    "description": "[Craftsman Exclusive] Durability cost of repairer tools is reduced by #%.",
+    "description_values": [
+      20,
+      35
+    ],
+    "icon": "img/ng/tianfu_gongjujingxiu.webp",
+    "slot": "normal",
+    "talent_id": 232,
+    "key": "tool_maintenance",
+    "tag_ids": [
+      53,
+      22
+    ]
+  },
+  {
+    "game_ids": [
+      500011,
+      500012,
+      500013
+    ],
+    "name": "Origin - Laborer",
+    "description": "Born into a poor and inferior clan and makes a living through hard manual labor. Proficiency growth rate for logging, mining, planting, and harvesting +50%.",
+    "description_values": null,
+    "icon": "img/ng/chushen_kuli.webp",
+    "slot": "origin",
+    "talent_id": 233,
+    "key": "origin_laborer",
+    "tag_ids": [
+      51,
+      21
+    ]
+  },
+  {
+    "game_ids": [
+      500021,
+      500022,
+      500023
+    ],
+    "name": "Origin - Porter",
+    "description": "There are many apprentices in the clan, and as a result of the influences, the proficiency growth rate for learning weaving, potting, wood & stone, leatherworking, and kilning +50%.",
+    "description_values": null,
+    "icon": "img/ng/chushen_zagong.webp",
+    "slot": "origin",
+    "talent_id": 234,
+    "key": "origin_porter",
+    "tag_ids": [
+      52,
+      21
+    ]
+  },
+  {
+    "game_ids": [
+      500031,
+      500032,
+      500033
+    ],
+    "name": "Origin - Craftsman",
+    "description": "Born into a craftsman clan and skilled in crafting. Proficiency growth rate for learning craftsmanship, alchemy, weapon crafting, armor crafting and cooking +50%.",
+    "description_values": null,
+    "icon": "img/ng/chushen_zongjiang.webp",
+    "slot": "origin",
+    "talent_id": 235,
+    "key": "origin_craftsman",
+    "tag_ids": [
+      21,
+      53
+    ]
+  },
+  {
+    "game_ids": [
+      500041,
+      500042,
+      500043
+    ],
+    "name": "Origin - Fighting",
+    "description": "Born into a warrior clan and skilled in fighting. Proficiency growth rate for blade, dual-blade, hammer, great sword, and gauntlets +50%.",
+    "description_values": null,
+    "icon": "img/ng/chushen_bodou.webp",
+    "slot": "origin",
+    "talent_id": 236,
+    "key": "origin_fighting",
+    "tag_ids": [
+      82,
+      21
+    ]
+  },
+  {
+    "game_ids": [
+      500051,
+      500052,
+      500053
+    ],
+    "name": "Origin - Hunting",
+    "description": "Born into a hunter clan and skilled in hunting. Proficiency growth rate for bow, spear, blade, dual-blade, and gauntlets +50%.",
+    "description_values": null,
+    "icon": "img/ng/chushen_shoulie.webp",
+    "slot": "origin",
+    "talent_id": 237,
+    "key": "origin_hunting",
+    "tag_ids": [
+      81,
+      21
+    ]
+  },
+  {
+    "game_ids": [
+      500061,
+      500062,
+      500063
+    ],
+    "name": "Origin - Guard",
+    "description": "Raised in the company of a squad of clan guards, and as a result of their influences, the proficiency growth rate for great sword, blade, spear, shield, and bow +50%.",
+    "description_values": null,
+    "icon": "img/ng/chushen_huwei.webp",
+    "slot": "origin",
+    "talent_id": 238,
+    "key": "origin_guard",
+    "tag_ids": [
+      83,
+      21
+    ]
+  },
+  {
+    "game_ids": [
+      500071,
+      500072,
+      500073
+    ],
+    "name": "出身·生存",
+    "description": "亲人有着出色的生存技巧，从小耳濡目染学习医疗、游泳、攀爬的熟练度成长速度大幅度提升。",
+    "description_values": null,
+    "icon": "img/ng/chushen_shengcun.webp",
+    "slot": "origin",
+    "talent_id": 239,
+    "key": "",
+    "tag_ids": [
+      21
+    ]
+  },
+  {
+    "game_ids": [
+      700011,
+      700012,
+      700013
+    ],
+    "name": "Experience - Battle-tested",
+    "description": "Has a lot of combat experience and skills. DMG taken -#% when fighting as a companion.",
+    "description_values": [
+      40,
+      50,
+      60
+    ],
+    "icon": "img/ng/Icon_NG_JingLi_nengzhengshanzhan.webp",
+    "slot": "experience",
+    "talent_id": 240,
+    "key": "experience_battle_tested",
+    "tag_ids": [
+      81,
+      25,
+      82,
+      83
+    ]
+  },
+  {
+    "game_ids": [
+      600011
+    ],
+    "name": "Weapon Master",
+    "description": "Proficient in a variety of weapons, DMG dealt with any weapon +10%, Attack Speed +10%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_wuqidashi.webp",
+    "slot": "title",
+    "talent_id": 241,
+    "key": "weapon_master",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600012
+    ],
+    "name": "Hardbone",
+    "description": "A true master of endurance. Immune to critical hits if the unit's Resilience is above 50% when attacked.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_yinggutou.webp",
+    "slot": "title",
+    "talent_id": 242,
+    "key": "hardbone",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600013
+    ],
+    "name": "Heartcaptor",
+    "description": "The notorious executioner of the tribe. +12% Damage when attacking the Torso of the target.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_duoxinzhe.webp",
+    "slot": "title",
+    "talent_id": 243,
+    "key": "heartcaptor",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600014
+    ],
+    "name": "Nightwalker",
+    "description": "Get used to the dark and become a part of it. When moving at night, Movement Speed +10%, Crit +5%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_yexingzhe.webp",
+    "slot": "title",
+    "talent_id": 244,
+    "key": "nightwalker",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600015
+    ],
+    "name": "Axe Killer",
+    "description": "The ancestral throwing axe skill has the power to render prey fragile. Hitting a target with the throwing axe increases its DMG taken by 10% for 10 seconds.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_fatoushashou.webp",
+    "slot": "title",
+    "talent_id": 245,
+    "key": "axe_killer",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600016
+    ],
+    "name": "Fly Cutter Assassin",
+    "description": "Made a name by taking down a tribal leader with a fly cutter from several meters away, leaving him bleeding out. When hitting the target, inflicts a bleeding effect that drains HP equal to 20% of self ATK per second, lasting 10s, and stackable.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_feidaocike.webp",
+    "slot": "title",
+    "talent_id": 246,
+    "key": "fly_cutter_assassin",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600017
+    ],
+    "name": "Lung Piercer",
+    "description": "Throws off the prey's breathing rhythm. Hitting a target with the lance reduces its Stamina Recovery by 80% for 10 seconds.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_chuanfeizhe.webp",
+    "slot": "title",
+    "talent_id": 247,
+    "key": "lung_piercer",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600018
+    ],
+    "name": "Archery Master",
+    "description": "The prey's destiny is sealed as the arrow leaves the bowstring. Using a bow grants a 20% chance to designate any hit part as a weak spot, and reduces the target's Movement Speed by 50% for 6 seconds.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_jianshudashi.webp",
+    "slot": "title",
+    "talent_id": 248,
+    "key": "archery_master",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600021
+    ],
+    "name": "Expert Craftsman",
+    "description": "Skilled in crafting, the proficiency growth rate for cooking and crafting +50%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_shougongnengren.webp",
+    "slot": "title",
+    "talent_id": 249,
+    "key": "expert_craftsman",
+    "tag_ids": [
+      53,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600022
+    ],
+    "name": "Skilled Hand",
+    "description": "Skilled in crafting, the proficiency growth rate for weapon crafting, armor crafting, and alchemy +50%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_jingzaoqiaoshou.webp",
+    "slot": "title",
+    "talent_id": 250,
+    "key": "skilled_hand",
+    "tag_ids": [
+      53,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600031
+    ],
+    "name": "Butcher In Woods",
+    "description": "Animal killer; Damage dealt to non-human creatures +10%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_linzhongtufu.webp",
+    "slot": "title",
+    "talent_id": 251,
+    "key": "butcher_in_woods",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600041
+    ],
+    "name": "Death Bringer",
+    "description": "Gets a rush from attacking near-death enemies or enemies below 30% of Max HP, gaining a 25% chance to increase ATK and Movement Speed by 20%, and Attack Speed by 10% for 8 seconds. (CD: 30s)",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_songzangzhe.webp",
+    "slot": "title",
+    "talent_id": 252,
+    "key": "death_bringer",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600052
+    ],
+    "name": "Chest Breaker",
+    "description": "Able to quickly open any box, no matter how intricate it is. The speed of opening boxes +80%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_poxiangren.webp",
+    "slot": "title",
+    "talent_id": 253,
+    "key": "chest_breaker",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      51,
+      52,
+      53,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600053
+    ],
+    "name": "The Chosen",
+    "description": "There are always a few lucky folks in every village, and I'm one of them! Chance of dropping rare items +20%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_xingyunzhe.webp",
+    "slot": "title",
+    "talent_id": 254,
+    "key": "the_chosen",
+    "tag_ids": [
+      81,
+      82,
+      51,
+      52,
+      53,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600055
+    ],
+    "name": "Mad Worker",
+    "description": "Tireless as a machine and make people worry about the mental health. Max Morale +100%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_laodongkuangren.webp",
+    "slot": "title",
+    "talent_id": 255,
+    "key": "mad_worker",
+    "tag_ids": [
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600057
+    ],
+    "name": "The Unburned",
+    "description": "Because of their strange skin, tribesmen see them as alien. They are not affected by burn or ignition effects.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_bufenzhe.webp",
+    "slot": "title",
+    "talent_id": 256,
+    "key": "the_unburned",
+    "tag_ids": [
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600059
+    ],
+    "name": "Blood Drinker",
+    "description": "Blood nourishment. 40% of Bleeding DMG dealt to melee targets is converted into healing. If the unit is currently Bleeding, this effect is increased to 80%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_yinxuezhe.webp",
+    "slot": "title",
+    "talent_id": 257,
+    "key": "blood_drinker",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600060
+    ],
+    "name": "The Dauntless",
+    "description": "Sacrifices Dodge ability for Immunity to Hitstun.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_wuweizhe.webp",
+    "slot": "title",
+    "talent_id": 258,
+    "key": "the_dauntless",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600061
+    ],
+    "name": "Skilled Work Expert",
+    "description": "Attentive to details. Proficiency growth rate for weaving, potting, and leatherworking +50%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_xihaonengshou.webp",
+    "slot": "title",
+    "talent_id": 259,
+    "key": "skilled_work_expert",
+    "tag_ids": [
+      52,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600062
+    ],
+    "name": "Manual Labor Expert",
+    "description": "Good at heavy works. Proficiency growth rate for wood planing, stone cutting, and kilning +50%",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_cuhuonengshou.webp",
+    "slot": "title",
+    "talent_id": 260,
+    "key": "manual_labor_expert",
+    "tag_ids": [
+      52,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600063
+    ],
+    "name": "Fate-Choker",
+    "description": "Suppress enemies with an invisible hand clamping their throat. Taking damage from melee attackers reduces their talent skill activation chance by 5% for 12 seconds. Stacks up to 5 times.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_eyunzhe.webp",
+    "slot": "title",
+    "talent_id": 261,
+    "key": "fate_choker",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600064
+    ],
+    "name": "Bonebreaker",
+    "description": "Greatsword Mastery: Release the button at the perfect moment during a Charged Heavy Strike to unleash an even more devastating slash.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_duanguzhe.webp",
+    "slot": "title",
+    "talent_id": 262,
+    "key": "bonebreaker",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600068
+    ],
+    "name": "Oppressor",
+    "description": "Hitting an enemy has a 15% chance to inflict a 15-sec Dread on them: the target's single-hit damage capped at 300. Cap scales with the [Tribal Status] of both parties. (CD: 30s)",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_zhenyazhe.webp",
+    "slot": "title",
+    "talent_id": 263,
+    "key": "oppressor",
+    "tag_ids": [
+      81,
+      82,
+      83,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600071
+    ],
+    "name": "Born Laborer",
+    "description": "Destined to be a hardworking laborer, with a 50% increase in proficiency growth rate for logging, mining.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_tianshengkuli.webp",
+    "slot": "title",
+    "talent_id": 264,
+    "key": "born_laborer",
+    "tag_ids": [
+      51,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600072
+    ],
+    "name": "Farming Expert",
+    "description": "Experienced in farming. The crops the character plants grow 20% faster.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_zhongtiannengshou.webp",
+    "slot": "title",
+    "talent_id": 265,
+    "key": "farming_expert",
+    "tag_ids": [
+      51,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      600073
+    ],
+    "name": "Expert Slaughter",
+    "description": "The best slaughter in the village; output from slaughtering animals increases by 20%.",
+    "description_values": null,
+    "icon": "img/ng/ChengHao_tuzainengshou.webp",
+    "slot": "title",
+    "talent_id": 266,
+    "key": "expert_slaughter",
+    "tag_ids": [
+      51,
+      23
+    ]
+  },
+  {
+    "game_ids": [
+      100113
+    ],
+    "name": "Tribe - Survivor",
+    "description": "As a survivor of the tribe wars, you'll need strength to survive in this land. Max Load +20%.",
+    "description_values": null,
+    "icon": "img/ng/Icon_NG_BuLuo_xingcunzhe.webp",
+    "slot": "tribe",
+    "talent_id": 267,
+    "key": "tribe_survivor",
+    "tag_ids": [
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      400011,
+      400012,
+      400013
+    ],
+    "name": "Tribe - Power of Erosion",
+    "description": "As people from Claw Tribe, DMG to Flint Tribe, Fang Tribe, Outcast, and Plunderers enemies +#%.",
+    "description_values": [
+      2,
+      5,
+      8
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 268,
+    "key": "tribe_power_of_erosion",
+    "tag_ids": [
+      3,
+      4,
+      5,
+      6,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      400021,
+      400022,
+      400023
+    ],
+    "name": "Tribe - Wild Power",
+    "description": "As people from Claw Tribe, Crit DMG +#% permanently.",
+    "description_values": [
+      6,
+      8,
+      10
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 269,
+    "key": "tribe_wild_power",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      400031,
+      400032,
+      400033
+    ],
+    "name": "Tribe - Power of Crit",
+    "description": "As people from Claw Tribe, Crit Rate +#% permanently.",
+    "description_values": [
+      2,
+      5,
+      8
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 270,
+    "key": "tribe_power_of_crit",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      410011,
+      410012,
+      410013
+    ],
+    "name": "Tribe - Power of Defense",
+    "description": "As people from Flint Tribe, DEF +#% permanently.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 271,
+    "key": "tribe_power_of_defense",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      410021,
+      410022,
+      410023
+    ],
+    "name": "Tribe - Power of Tenacity",
+    "description": "As people from Flint Tribe, Max Resilience +# permanently.",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 272,
+    "key": "tribe_power_of_tenacity",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      410031,
+      410032,
+      410033
+    ],
+    "name": "Tribe - Power of Crit Resist",
+    "description": "As people from Flint Tribe, Crit Resist +#% permanently.",
+    "description_values": [
+      3,
+      6,
+      9
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 273,
+    "key": "tribe_power_of_crit_resist",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420011,
+      420012,
+      420013
+    ],
+    "name": "Tribe - Poison Resist",
+    "description": "As people from Fang Tribe, Poison Resist +# permanently.",
+    "description_values": [
+      20,
+      25,
+      30
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 274,
+    "key": "tribe_poison_resist",
+    "tag_ids": [
+      24,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420021,
+      420022,
+      420023
+    ],
+    "name": "Tribe - Poison Immunity",
+    "description": "As people from Fang Tribe, Poison DMG taken -#% permanently.",
+    "description_values": [
+      15,
+      20,
+      25
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 275,
+    "key": "tribe_poison_immunity",
+    "tag_ids": [
+      83,
+      24,
+      82,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420031,
+      420032,
+      420033
+    ],
+    "name": "Tribe - Crit DMG & Cold Resist",
+    "description": "The Claw Tribe living in the Snow Mountain has developed natural resistance; Cold Resist +#, Crit DMG +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 276,
+    "key": "tribe_crit_dmg_cold_resist",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420041,
+      420042,
+      420043
+    ],
+    "name": "Tribe - Crit & Cold Resist",
+    "description": "The Claw Tribe living in the Snow Mountain has developed natural resistance; Cold Resist +#, Crit +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 277,
+    "key": "tribe_crit_cold_resist",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420051,
+      420052,
+      420053
+    ],
+    "name": "Tribe - Resilience & Cold Resist",
+    "description": "The Flint Tribe living in the Snow Mountain has developed natural resistance; Cold Resist +#, Max Resilience +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 278,
+    "key": "tribe_resilience_cold_resist",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420061,
+      420062,
+      420063
+    ],
+    "name": "Tribe - DEF & Cold Resist",
+    "description": "The Flint Tribe living in the Snow Mountain has developed natural resistance; Cold Resist +#, DEF +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 279,
+    "key": "tribe_def_cold_resist",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420071,
+      420072,
+      420073
+    ],
+    "name": "Tribe - Poison & Cold Resist",
+    "description": "The Fang Tribe living in the Snow Mountain has developed natural resistance; Cold Resist +#, Poison Resist +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 280,
+    "key": "tribe_poison_cold_resist",
+    "tag_ids": [
+      24,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420081,
+      420082,
+      420083
+    ],
+    "name": "Tribe - Poison DMG Immunity & Cold Resist",
+    "description": "The Fang Tribe lives in the Snow Mountain and has developed natural resistance; Cold Resist +#, Poison DMG taken -#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 281,
+    "key": "tribe_poison_dmg_immunity_cold_resist",
+    "tag_ids": [
+      83,
+      24,
+      82,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420091,
+      420092,
+      420093
+    ],
+    "name": "Tribe - Crit DMG & Radiation Resist",
+    "description": "The Claw Tribe living in the Wasteland has developed natural resistance; Radiation Resist +#, Crit DMG +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 282,
+    "key": "tribe_crit_dmg_radiation_resist",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420101,
+      420102,
+      420103
+    ],
+    "name": "Tribe - Crit & Radiation Resist",
+    "description": "The Claw Tribe living in the Wasteland has developed natural resistance; Radiation Resist +#, Crit +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 283,
+    "key": "tribe_crit_radiation_resist",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420111,
+      420112,
+      420113
+    ],
+    "name": "Tribe - Resilience & Radiation Resist",
+    "description": "The Flint Tribe living in the Wasteland has developed natural resistance; Radiation Resist +#, Max Resilience +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 284,
+    "key": "tribe_resilience_radiation_resist",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420121,
+      420122,
+      420123
+    ],
+    "name": "Tribe - DEF & Radiation Resist",
+    "description": "The Flint Tribe living in the Wasteland has developed natural resistance; Radiation Resist +#, DEF +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 285,
+    "key": "tribe_def_radiation_resist",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420131,
+      420132,
+      420133
+    ],
+    "name": "Tribe - Poison & Radiation Resist",
+    "description": "The Fang Tribe living in the Wasteland has developed natural resistance; Radiation Resist +#, Poison Resist +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 286,
+    "key": "tribe_poison_radiation_resist",
+    "tag_ids": [
+      24,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420141,
+      420142,
+      420143
+    ],
+    "name": "Tribe - Poison & Radiation Resist",
+    "description": "The Fang Tribe living in the Wasteland has developed natural resistance; Radiation Resist +#, Poison DMG taken -#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 287,
+    "key": "tribe_poison_radiation_resist",
+    "tag_ids": [
+      83,
+      24,
+      82,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420151,
+      420152,
+      420153
+    ],
+    "name": "Tribe - Crit DMG & Heat Resist",
+    "description": "The Claw Tribe living in the Volcano has developed natural resistance; Scorching Heat Resist +#, Crit DMG +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 288,
+    "key": "tribe_crit_dmg_heat_resist",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420161,
+      420162,
+      420163
+    ],
+    "name": "Tribe - Crit DMG & Scorching Heat Resist",
+    "description": "The Claw Tribe living in the Volcano has developed natural resistance; Scorching Heat Resist +#, Crit +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_LiZhua.webp",
+    "slot": "tribe",
+    "talent_id": 289,
+    "key": "tribe_crit_dmg_scorching_heat_resist",
+    "tag_ids": [
+      4,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420171,
+      420172,
+      420173
+    ],
+    "name": "Tribe - Resilience & Scorching Heat Resist",
+    "description": "The Flint Tribe living in the Volcano has developed natural resistance; Scorching Heat Resist +#, Max Resilience +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 290,
+    "key": "tribe_resilience_scorching_heat_resist",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420181,
+      420182,
+      420183
+    ],
+    "name": "Tribe - DEF & Scorching Heat Resist",
+    "description": "The Flint Tribe living in the Volcano has developed natural resistance; Scorching Heat Resist +#, DEF +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuoShi.webp",
+    "slot": "tribe",
+    "talent_id": 291,
+    "key": "tribe_def_scorching_heat_resist",
+    "tag_ids": [
+      5,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420191,
+      420192,
+      420193
+    ],
+    "name": "Tribe - Poison & Scorching Heat Resist",
+    "description": "The Fang Tribe living in the Volcano has developed natural resistance; Scorching Heat Resist +#, Poison Resist +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 292,
+    "key": "tribe_poison_scorching_heat_resist",
+    "tag_ids": [
+      24,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420201,
+      420202,
+      420203
+    ],
+    "name": "Tribe - Poison DMG Immunity & Scorching Heat Resist",
+    "description": "The Fang Tribe lives in the Volcano and has developed natural resistance; Scorching Heat Resist +#, Poison DMG taken -#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_DuYa.webp",
+    "slot": "tribe",
+    "talent_id": 293,
+    "key": "tribe_poison_dmg_immunity_scorching_heat_resist",
+    "tag_ids": [
+      83,
+      24,
+      82,
+      3
+    ]
+  },
+  {
+    "game_ids": [
+      420401,
+      420402,
+      420403
+    ],
+    "name": "Outcast - Cold Resist",
+    "description": "Folks living in the Snow Mountain are getting used to the cold. Cold Resist +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
+    "slot": "tribe",
+    "talent_id": 294,
+    "key": "outcast_cold_resist",
+    "tag_ids": [
+      24,
+      6
+    ]
+  },
+  {
+    "game_ids": [
+      420411,
+      420412,
+      420413
+    ],
+    "name": "Outcast - Radiation Resist",
+    "description": "Folks living in the Wasteland are getting used to the radiation. Radiation Resist +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
+    "slot": "tribe",
+    "talent_id": 295,
+    "key": "outcast_radiation_resist",
+    "tag_ids": [
+      24,
+      6
+    ]
+  },
+  {
+    "game_ids": [
+      420421,
+      420422,
+      420423
+    ],
+    "name": "Outcast - Scorching Heat Resist",
+    "description": "Folks living in the Volcano are getting used to the scorching heat. Scorching Heat Resist +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
+    "slot": "tribe",
+    "talent_id": 296,
+    "key": "outcast_scorching_heat_resist",
+    "tag_ids": [
+      24,
+      6
+    ]
+  },
+  {
+    "game_ids": [
+      420501,
+      420502,
+      420503
+    ],
+    "name": "Tribe - Breath of the Wildwolf",
+    "description": "The people of the Wildwolf Tribe have extraordinary endurance. Stamina recovery is increased by #%, and their attacks inflict # Paralysis damage.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
+    "slot": "tribe",
+    "talent_id": 297,
+    "key": "tribe_breath_of_the_wildwolf",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420511,
+      420512,
+      420513
+    ],
+    "name": "Tribe - Might of the Wildwolf",
+    "description": "The people of the Wildwolf Tribe are ruthless. Damage +#% and attacks inflict # stacks of [Bleed].",
+    "description_values": [
+      4,
+      6,
+      8
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
+    "slot": "tribe",
+    "talent_id": 298,
+    "key": "tribe_might_of_the_wildwolf",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420521,
+      420522,
+      420523
+    ],
+    "name": "Tribe - Endurance & Heat Resist",
+    "description": "Having long lived in the scorching lands, the Wildwolf people have developed natural resistance: [Heat Resist] +#, Stamina Recovery +#%, and their attacks inflict # Paralysis damage.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
+    "slot": "tribe",
+    "talent_id": 299,
+    "key": "tribe_endurance_heat_resist",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420531,
+      420532,
+      420533
+    ],
+    "name": "Tribe - Increased Damage & Heat Resist",
+    "description": "Having long lived in the scorching lands, the Wildwolf people have developed natural resistance: [Heat Resist] +#, [Damage] +#%, and their attacks inflict # Bleed damage.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
+    "slot": "tribe",
+    "talent_id": 300,
+    "key": "tribe_increased_damage_heat_resist",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420541,
+      420542,
+      420543
+    ],
+    "name": "Tribe - Endurance & Radiation Resist",
+    "description": "Having long lived in the radiation wasteland, the Wildwolf people have developed natural resistance: [Radiation Resist] +#, Stamina Recovery +#%, and their attacks inflict # Paralysis damage.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
+    "slot": "tribe",
+    "talent_id": 301,
+    "key": "tribe_endurance_radiation_resist",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420551,
+      420552,
+      420553
+    ],
+    "name": "Tribe - Increased Damage & Radiation Resist",
+    "description": "Having long lived in the radiation wasteland, the Wildwolf people have developed natural resistance: [Radiation Resist] +#, [Damage] +#%, and their attacks inflict # Bleed damage.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_HuangLang.webp",
+    "slot": "tribe",
+    "talent_id": 302,
+    "key": "tribe_increased_damage_radiation_resist",
+    "tag_ids": [
+      2,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420601,
+      420602,
+      420603
+    ],
+    "name": "Tribe - Breath of the Savagehorn",
+    "description": "The people of the Savagehorn Tribe have an indomitable will. [Max Stamina] +#, [RESIL-Down DEF] +#%.",
+    "description_values": [
+      10,
+      15,
+      20
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
+    "slot": "tribe",
+    "talent_id": 303,
+    "key": "tribe_breath_of_the_savagehorn",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420611,
+      420612,
+      420613
+    ],
+    "name": "Tribe - Might of the Savagehorn",
+    "description": "The people of the Savagehorn Tribe are steadfast and strong. [Damage Reduction] is increased by #%, and their attacks inflict # Coma damage.",
+    "description_values": [
+      4,
+      6,
+      8
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
+    "slot": "tribe",
+    "talent_id": 304,
+    "key": "tribe_might_of_the_savagehorn",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420621,
+      420622,
+      420623
+    ],
+    "name": "Tribe - Stamina & Heat Resist",
+    "description": "Having long lived in the scorching lands, the Savagehorn people have developed natural resistance: [Heat Resist] +#, [Max Stamina] +#, and [RESIL-Down DEF] +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
+    "slot": "tribe",
+    "talent_id": 305,
+    "key": "tribe_stamina_heat_resist",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420631,
+      420632,
+      420633
+    ],
+    "name": "Tribe - DMG Immunity & Heat Resist",
+    "description": "Having long lived in the scorching lands, the Savagehorn people have developed natural resistance: [Heat Resist] +#, [Damage Reduction] +#%, and their attacks inflict # Coma damage.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
+    "slot": "tribe",
+    "talent_id": 306,
+    "key": "tribe_dmg_immunity_heat_resist",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420641,
+      420642,
+      420643
+    ],
+    "name": "Tribe - Stamina & Radiation Resist",
+    "description": "Having long lived in the radiation wasteland, the Savagehorn people have developed natural resistance: [Radiation Resist] +#, [Max Stamina] +#, and [RESIL-Down DEF] +#%.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
+    "slot": "tribe",
+    "talent_id": 307,
+    "key": "tribe_stamina_radiation_resist",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420651,
+      420652,
+      420653
+    ],
+    "name": "Tribe - DMG Immunity & Radiation Resist",
+    "description": "Having long lived in the radiation wasteland, the Savagehorn people have developed natural resistance: [Radiation Resist] +#, [Damage Reduction] +#%, and their attacks inflict # Coma damage.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_ManJiao.webp",
+    "slot": "tribe",
+    "talent_id": 308,
+    "key": "tribe_dmg_immunity_radiation_resist",
+    "tag_ids": [
+      1,
+      81,
+      82,
+      83,
+      24
+    ]
+  },
+  {
+    "game_ids": [
+      420701,
+      420702,
+      420703
+    ],
+    "name": "Outcast - Scorching Heat Resist",
+    "description": "Having long lived in the scorching lands, outcasts have developed natural resistance: [Heat Resist] +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
+    "slot": "tribe",
+    "talent_id": 309,
+    "key": "outcast_scorching_heat_resist",
+    "tag_ids": [
+      24,
+      6
+    ]
+  },
+  {
+    "game_ids": [
+      420711,
+      420712,
+      420713
+    ],
+    "name": "Outcast - Radiation Resist",
+    "description": "Having long lived in the radiation wasteland, outcasts have developed natural resistance: [Radiation Resist] +#.",
+    "description_values": [
+      5,
+      10,
+      15
+    ],
+    "icon": "img/ng/Icon_NG_BuLuo_liufangzhe.webp",
+    "slot": "tribe",
+    "talent_id": 310,
+    "key": "outcast_radiation_resist",
+    "tag_ids": [
+      24,
+      6
+    ]
+  }
+]
