@@ -1568,7 +1568,9 @@
   {
     "talent_id": 214,
     "key": "throw_dodge",
-    "tag_ids": [],
+    "tag_ids": [
+      82
+    ],
     "exclude_tags": []
   },
   {

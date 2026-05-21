@@ -11,8 +11,8 @@ function talentTip(t) {
   let desc = t.description || '';
   if (t.description_values?.length) {
     const vals = t.description_values.map(v => `<b>${v}</b>`);
-    let i = 0;
-    desc = desc.replace(/#/g, () => vals[i++] ?? '#');
+    // 一律使用陣列中最後一個值 (即最高等級的數值) 代替 #
+    desc = desc.replace(/#/g, () => vals[vals.length - 1] ?? '#');
   }
   return { 'data-tip-name': t.name, 'data-tip-desc': desc };
 }

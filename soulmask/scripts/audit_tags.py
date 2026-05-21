@@ -4,7 +4,7 @@ import sys
 import re
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-RAW_PATH       = os.path.join(BASE_DIR, '../data/talents.raw.json')
+RAW_PATH       = os.path.join(BASE_DIR, '../data/_talents.raw.json')
 TAGS_PATH      = os.path.join(BASE_DIR, '../data/tags.json')
 OVERRIDES_PATH = os.path.join(BASE_DIR, '../data/_tag_overrides.json')
 
